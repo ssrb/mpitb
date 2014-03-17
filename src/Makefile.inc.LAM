@@ -1,0 +1,146 @@
+#
+# Environment Makefile
+#
+CP     = cp
+MV     = mv
+#OCONF = octave-config	# not really used, could partially replace
+			# MKOCT functionality. Commented code included
+MKOCT  = mkoctfile
+CXX   := $(shell $(MKOCT) --print CXX)
+DL_LD := $(shell $(MKOCT) --print DL_LD)
+LD_CXX:= $(shell $(MKOCT) --print LD_CXX)
+
+MPICC  = mpiCC
+#MPINFO= laminfo	# almost unused, just to replace mpiCC --showme:link
+#MPINFO= ompi_info	# and reduce library list to -lmpi(-llam)/(-l/pthread)?
+			# See the definitions below, near MPILIBDIR
+#
+# Rules
+#
+# .DELETE_ON_ERROR :
+
+############################################################################
+# These are the "mkoctfile"-cmd compile options for OCTAVE 2.1.73 / 2.9.12
+# under Linux with gcc-3.4.3. Try mkoctfile -v foo.cc
+#
+# g++ -c  -fPIC -mieee-fp (-g) -O2
+#	-I$(OCTAVE)/include/octave-$(OCTVER)
+#	-I$(OCTAVE)/include/octave-$(OCTVER)/octave
+#	-I$(OCTAVE)/include
+#	   foo.cc -o foo.o
+############################################################################
+
+#INCLUDEDIR :=	$(shell $(OCONF) --print INCLUDEDIR)
+#OCTINCDIR  :=	$(shell $(OCONF) --print OCTINCLUDEDIR)
+#OCTINCFLAGS = -I$(OCTINCDIR) -I$(OCTINCDIR)/octave -I$(INCLUDEDIR)
+ OCTINCFLAGS:=	$(shell $(MKOCT) --print INCFLAGS)
+
+#OCTCXXFLAGS = -fPIC -mieee-fp (-g) -O2
+ OCTCXXFLAGS:=	$(shell $(MKOCT) --print CXXPICFLAG) \
+		$(shell $(MKOCT) --print XTRA_CXXFLAGS) \
+		$(shell $(MKOCT) --print CXXFLAGS)
+
+############################################################################
+# g++ -shared -Wl,-Bsymbolic -o foo.oct foo.o
+#	-L$(OCTAVE)/lib/octave-$(OCTVER)
+#	-loctinterp -loctave -lcruft (-llapack) (-lblas)
+#	-lreadline -lncurses -ldl (-lz) -lm
+#	-L/usr/lib/gcc-lib/i386-redhat-linux/4.1.1
+#	-L/usr/lib/gcc-lib/i386-redhat-linux/4.1.1/../../..
+#	(-lfrtbegin -lg2c -lgcc_s)
+#	(-lgfortranbegin -lgfortran)
+############################################################################
+
+#DLDSFX     := $(shell $(MKOCT) --print SHLEXT)	# no longer exists
+ DLDSFX      = oct
+
+#OCTLDFLAGS  = -shared -Wl,-Bsymbolic
+ OCTLDFLAGS :=	$(shell $(MKOCT) --print DL_LDFLAGS)
+
+#OCTLIBDIR  :=	$(shell $(OCONF) --print OCTLIBDIR)
+#OCTLFLAGS   =-L$(OCTLIBDIR)
+ OCTLFLAGS  :=	$(shell $(MKOCT) --print LFLAGS)
+
+
+#		-loctinterp -loctave -lcruft (-llapack -lblas)
+#		-lreadline -lncurses -ldl (-lz) -lm
+#	-L/usr/lib/gcc-lib/i386-redhat-linux/4.1.1
+#	-L/usr/lib/gcc-lib/i386-redhat-linux/4.1.1/../../..
+#		(-lfrtbegin -lg2c -lgcc_s)
+#		(-lgfortranbegin -lgfortran)
+ OCTLIBS    :=	$(shell $(MKOCT) --print OCTAVE_LIBS) \
+		$(shell $(MKOCT) --print BLAS_LIBS) \
+		$(shell $(MKOCT) --print FFTW_LIBS) \
+		$(shell $(MKOCT) --print LIBS) \
+		$(shell $(MKOCT) --print FLIBS)
+
+
+############################################################################
+# These are the mpiCC compile options for LAM-7.1.3/Open-MPI-1.2.3 under Linux
+# simply try mpiCC --showme (:compile / :link)
+# ----------------------------------
+# g++ -I$(LAMHOME)/include -pthread
+#     -L$(LAMHOME)/lib -lmpi -llam
+#			-llammpio -llamf77mpi -laio (with ROMIO/f77/C++)
+#			-llammpi++		    (with mpiCC/C++)
+#			-lutil -ldl
+#     foo.c -o foo
+# ----------------------------------
+# g++ -I$(OMPIHOME)/include -pthread
+#     -L$(OMPIHOME)/lib -pthread -lmpi
+#			-lmpi_cxx -lopen-rte -lopen-pal
+#			 -ldl -Wl,--export-dynamic -lnsl -lutil -lm -ldl
+#     foo.c -o foo
+############################################################################
+
+#MPIINCDIR  :=	$(shell $(MPINFO) -path incdir -parsable | cut -d: -f3)
+#MPIINCFLAGS =-I$(MPIINCDIR)
+#MPICXXFLAGS =			-pthread	### just for RS/6000 - PowerPC?
+#				-lpthread below f/ undefined pthread_create?
+ MPIINCFLAGS:=	$(shell $(MPICC) --showme:compile)
+ MPICXXFLAGS =
+
+
+ MPILDFLAGS =
+#MPILFLAGS :=	$(shell $(MPICC) --showme:link)
+#MPILIBS    =
+
+# --------------------------------------------------------------------------
+# Some ways to avoid too-large (user-incompatible) library-list
+# --------------------------------------------------------------------------
+# MPINFO = laminfo	# if you use this approach, remember to uncomment
+# MPINFO = ompi_info	# one and just one of these below
+# --------------------------------------------------------------------------
+#MPILIBDIR :=	$(shell $(MPINFO) -path libdir -parsable | cut -d: -f3)
+#MPILFLAGS  = -L$(MPILIBDIR)
+# --------------------------------------------------------------------------
+#MPILIBS    =	-lmpi -llam	minimum required by LAM/MPI ?!?
+#		-lpthread	avoid undefined pthread_create?
+#		-lutil -ldl ...
+# --------------------------------------------------------------------------
+#MPILIBS    =	-lmpi		minimum required by Open-MPI ?!?
+#		-pthread	avoid ?
+#		-lopen-rte -lopen-pal
+#		-ldl -Wl,--export-dynamic -lnsl -lutil -lm -ldl
+# --------------------------------------------------------------------------
+
+ MPINFO     =            laminfo
+ MPILIBDIR :=	$(shell $(MPINFO) -path libdir -parsable | cut -d: -f3)
+ MPILFLAGS  = -L$(MPILIBDIR)
+
+ MPILIBS    =  -lmpi -llam
+#MPILIBS    =  -lmpi -llam (-lpthread)		# minimum w/ LAM/MPI
+#MPILIBS    =  -lmpi (-pthread)			# minimum w/ Open-MPI
+
+
+############################################################################
+# Global flags
+############################################################################
+
+INCFLAGS = $(OCTINCFLAGS) $(MPIINCFLAGS)
+CXXFLAGS = $(OCTCXXFLAGS) $(MPICXXFLAGS) -Wall
+
+LDFLAGS  = $(OCTLDFLAGS) $(MPILDFLAGS)
+ LFLAGS  = $(OCTLFLAGS)  $(MPILFLAGS)
+ LIBS    = $(OCTLIBS)    $(MPILIBS)
+

@@ -1,0 +1,19 @@
+# -------------------------------------
+# Uncomment below for a single-node LAM
+# -------------------------------------
+# localhost
+
+# -------------------------------------
+# For multi-node LAM, localhost is not a valid hostname.
+# Edit below to reflect your LAM node-names
+# mpirun will use them round-robin by default
+# See man bhost(5) for additional information
+# -------------------------------------
+#n7
+n6
+n5
+n4
+n3
+n2
+#n1
+n0

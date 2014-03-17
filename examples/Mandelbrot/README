@@ -1,0 +1,72 @@
+## Copyright (C) 2006-2007 Javier Fernández Baldomero, Mancia Anguita López
+##
+## This program is free software
+
+*******************
+* Mandelbrot demo *
+*******************
+
+Classical example of parallel computation & display of the Mandelbrot set.
+Several solutions are explored, with varied performance results:
+- Striped: each node computes a vertical stripe of the complex area considered
+	that's probably the solution used in the below mentioned TechRep
+	carefully choosing limits you might be able to reproduce their results
+- TaskBag: a master casts line indexes, slaves compute & send result back
+	in a first version, master also works if no slave sends results
+		problem: there is some granularity in response to slaves
+	in a second version, master computer runs 2 processes (MPI ranks)
+		one is the master who casts, the other is a normal slave
+		OS does a very good job switching among them
+- Strided: taking advantage of programmer's knowledge about the problem
+	almost linear speedup, efficiency slooooowly degrading with #nodes
+
+------------------------------------------------------------------
+| References for the interested reader:
+| 
+| B.Wilkinson & M. Allen:
+| "Parallel Programming: Techniques..." 2nd Ed. Pearson - Prentice Hall
+|  pp.86--88 sequential code, p.89 parallel
+|  pp.90--93 load-balanced (by lines)
+|  taskbag/workpool algorithm by lines at p.91
+| 
+| TechRep Indiana University IUCS TR631:
+| http://www.cs.indiana.edu/Research/techreports/
+| http://www.cs.indiana.edu/cgi-bin/techreports/TRNNN.cgi?trnum=TR631
+------------------------------------------------------------------
+
+************
+* Contents *
+************
+
+See the included Contents.m file. The above mentioned programs are:
+
+- mandelbrot.m	Sequential
+- mandelStrp.m	Parallel / Stripes
+- mandelTBag.m	TaskBag
+- mandelTBg2.m
+- mandelStrd.m	Strided
+
+- timing.pdf	Our results
+
+***************
+* Suggestions *
+***************
+
+You might:
+- see comments in mandelbrot.m to learn howto run it from command line
+- run it (sequential program, be it from command line or interactively)
+
+- see timing.pdf to build an opinion on the different parallel versions
+- edit lam-bhost.def to reflect your cluster node names
+- run lamboot / lamnodes to start LAM out
+
+- see comments in mandelStrp.m to learn howto run it from command line
+- try them out: mandelStrp, mandelTBag, mandelStrd
+- notice how much better is mandelStrd
+
+- for advanced users: study the timingXXXX scripts and run them
+- (you probably don't want to oversubscribe nodes unless they're biprocs)
+- (like the ones used for timing.pdf)
+- compare your results to timing.pdf
+- notice the different mpirun syntax used for mandelTBg2 (node0 master & slave)
+

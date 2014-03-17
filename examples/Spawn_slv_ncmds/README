@@ -1,0 +1,92 @@
+## Copyright (C) 2004-2007 Javier Fernández Baldomero, Mancia Anguita López
+##
+## This program is free software
+
+**************
+* Spawn demo * the slaves-numcmds variant
+**************
+
+Just a couple of examples to help prospective users to understand
+howto use Octave_spawn to launch (from within this Octave) additional
+slave octave processes, and howto make them run a fixed (or undetermined)
+number of arbitrary commands decided at runtime, sending the commands
+using the proposed protocol (startup and utilities)...
+
+...and help them understand that those are running in _other_ computers :-)
+
+Uses the previously introduced (in Spawn_slv_nostartup):
+	MPITB utility	LAM_Init
+	MPITB utility	LAM_Clean
+	MPITB startup	startup_MPITB
+Uses the previously introduced (in Spawn_slv_merge):
+	MPITB utility	Octave_spawn
+Uses the previously introduced (in Spawn_slv_bcast):
+	***
+Introduces to:
+	MPITB startup	startup_ncmdsSlv
+	MPITB utility	NumCmds_Init
+	MPITB utility	NumCmds_Send
+
+Notice that the startup_MPITB.m file has 1 uncommented line in the else
+branch in the final "if isempty(geten('LAMPARENT')) ... else ... end"
+The line is "startup_ncmdsSlv", thus the variant name. The slave octaves
+can be instructed to perform any arbitrarily long series of commands
+using the protocol (initial message NumCommands-Quit-Debug-Tag) proposed
+in the mentioned slave startup script (read it in the startups subdir).
+
+startup_ncmdsSlv basically performs MPI_Init and MPI_Intercomm_merge
+(just like the previously studied startup_mergeParent/_bcastSlv) and
+instead of MPI_Bcast(cmd) and eval(cmd) (like _bcastSlv), it engages
+slaves in an initial MPI_Bcast specifying the desired Number-Of-Commands
+if known at spawn-time (0 if not) and additional configuration variables
+such as QUIT, TAG and DEBUG.
+
+After this initial MPI_Bcast which must be satisfied by the master
+spawning process (probably using NumCmds_Init), slaves enter a loop
+receive-unpack-eval, which is repeated a fixed (NCMD!=0) or variable
+(until "exit" cmd) number of times. Packed command messages allows
+for companion variables to be sent along with string "cmd".
+
+
+************
+* Contents *
+************
+
+- Spawn_inter.m		Demo using NumCmds_Send the easy way
+- Spawn_auto.m		...& using NumCmds_Send with more complexity
+- lena.mat		Lena image for Spawn_auto demo
+- startup_MPITB.m	MPITB .octaverc startup file
+
+- lam-bhost.def		default bhost file to be used by lamboot
+
+- README		This file
+
+***************
+* Suggestions *
+***************
+
+You could:
+- edit lam-bhost.def to reflect your cluster node names, or...
+- ...alternatively, edit HOSTS cell in these Spawn* M-files or in LAM_Init
+- run lamboot / lamnodes to start LAM out (or let LAM_Init do the job)
+- make sure the lamd process in cluster nodes has inherited a working $DISPLAY
+	(that might be tricky and require local sysadmin advice) (*)
+- run octave
+- try Spawn_inter(2), Spawn_inter(0), and Spawn_auto(3)
+
+
+**************
+* DISCLAIMER *
+**************
+
+Sorry if it doesn't work. Either ask for local help, or give up :-)
+
+Do notice that:
+- mpirun'nable demos were designed because most users get stalled at (*)
+	we are no longer recommending users to MPI_Comm_spawn at all
+- debugging your remote cluster configuration from here is a very hard task
+- just due to your not understanding why it gets blocked, that's why
+	you won't be able to provide useful information for us to debug it
+- if your cluster is so configured, it's because your sysadmin wants it so:
+	paranoid iptables settings, localhost names in DISPLAY, etc
+

@@ -1,0 +1,754 @@
+make -f octMakefile install
+make[1]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73'
+./mkinstalldirs /home/javier/octave-2.1.73/bin /home/javier/octave-2.1.73/lib /home/javier/octave-2.1.73/include/octave-2.1.73/octave /home/javier/octave-2.1.73/share/octave/2.1.73/m /home/javier/octave-2.1.73/libexec/octave/2.1.73/oct/i686-pc-linux-gnu /home/javier/octave-2.1.73/libexec/octave/2.1.73/exec/i686-pc-linux-gnu /home/javier/octave-2.1.73/libexec/octave/site/exec/i686-pc-linux-gnu /home/javier/octave-2.1.73/libexec/octave/2.1.73/site/exec/i686-pc-linux-gnu /home/javier/octave-2.1.73/share/octave/2.1.73/site/m// /home/javier/octave-2.1.73/share/octave/site/api-v13/m// /home/javier/octave-2.1.73/share/octave/site/m// /home/javier/octave-2.1.73/libexec/octave/2.1.73/site/oct/i686-pc-linux-gnu// /home/javier/octave-2.1.73/libexec/octave/site/oct/api-v13/i686-pc-linux-gnu// /home/javier/octave-2.1.73/libexec/octave/site/oct/i686-pc-linux-gnu//
+mkdir /home/javier/octave-2.1.73
+chmod 0755 /home/javier/octave-2.1.73
+mkdir /home/javier/octave-2.1.73/bin
+chmod 0755 /home/javier/octave-2.1.73/bin
+mkdir /home/javier/octave-2.1.73/lib
+chmod 0755 /home/javier/octave-2.1.73/lib
+mkdir /home/javier/octave-2.1.73/include
+chmod 0755 /home/javier/octave-2.1.73/include
+mkdir /home/javier/octave-2.1.73/include/octave-2.1.73
+chmod 0755 /home/javier/octave-2.1.73/include/octave-2.1.73
+mkdir /home/javier/octave-2.1.73/include/octave-2.1.73/octave
+chmod 0755 /home/javier/octave-2.1.73/include/octave-2.1.73/octave
+mkdir /home/javier/octave-2.1.73/share
+chmod 0755 /home/javier/octave-2.1.73/share
+mkdir /home/javier/octave-2.1.73/share/octave
+chmod 0755 /home/javier/octave-2.1.73/share/octave
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m
+mkdir /home/javier/octave-2.1.73/libexec
+chmod 0755 /home/javier/octave-2.1.73/libexec
+mkdir /home/javier/octave-2.1.73/libexec/octave
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave
+mkdir /home/javier/octave-2.1.73/libexec/octave/2.1.73
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/2.1.73
+mkdir /home/javier/octave-2.1.73/libexec/octave/2.1.73/oct
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/2.1.73/oct
+mkdir /home/javier/octave-2.1.73/libexec/octave/2.1.73/oct/i686-pc-linux-gnu
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/2.1.73/oct/i686-pc-linux-gnu
+mkdir /home/javier/octave-2.1.73/libexec/octave/2.1.73/exec
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/2.1.73/exec
+mkdir /home/javier/octave-2.1.73/libexec/octave/2.1.73/exec/i686-pc-linux-gnu
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/2.1.73/exec/i686-pc-linux-gnu
+mkdir /home/javier/octave-2.1.73/libexec/octave/site
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/site
+mkdir /home/javier/octave-2.1.73/libexec/octave/site/exec
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/site/exec
+mkdir /home/javier/octave-2.1.73/libexec/octave/site/exec/i686-pc-linux-gnu
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/site/exec/i686-pc-linux-gnu
+mkdir /home/javier/octave-2.1.73/libexec/octave/2.1.73/site
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/2.1.73/site
+mkdir /home/javier/octave-2.1.73/libexec/octave/2.1.73/site/exec
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/2.1.73/site/exec
+mkdir /home/javier/octave-2.1.73/libexec/octave/2.1.73/site/exec/i686-pc-linux-gnu
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/2.1.73/site/exec/i686-pc-linux-gnu
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/site
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/site
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/site/m
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/site/m
+mkdir /home/javier/octave-2.1.73/share/octave/site
+chmod 0755 /home/javier/octave-2.1.73/share/octave/site
+mkdir /home/javier/octave-2.1.73/share/octave/site/api-v13
+chmod 0755 /home/javier/octave-2.1.73/share/octave/site/api-v13
+mkdir /home/javier/octave-2.1.73/share/octave/site/api-v13/m
+chmod 0755 /home/javier/octave-2.1.73/share/octave/site/api-v13/m
+mkdir /home/javier/octave-2.1.73/share/octave/site/m
+chmod 0755 /home/javier/octave-2.1.73/share/octave/site/m
+mkdir /home/javier/octave-2.1.73/libexec/octave/2.1.73/site/oct
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/2.1.73/site/oct
+mkdir /home/javier/octave-2.1.73/libexec/octave/2.1.73/site/oct/i686-pc-linux-gnu
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/2.1.73/site/oct/i686-pc-linux-gnu
+mkdir /home/javier/octave-2.1.73/libexec/octave/site/oct
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/site/oct
+mkdir /home/javier/octave-2.1.73/libexec/octave/site/oct/api-v13
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/site/oct/api-v13
+mkdir /home/javier/octave-2.1.73/libexec/octave/site/oct/api-v13/i686-pc-linux-gnu
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/site/oct/api-v13/i686-pc-linux-gnu
+mkdir /home/javier/octave-2.1.73/libexec/octave/site/oct/i686-pc-linux-gnu
+chmod 0755 /home/javier/octave-2.1.73/libexec/octave/site/oct/i686-pc-linux-gnu
+rm -f /home/javier/octave-2.1.73/bin/octave-bug
+/usr/bin/install -c octave-bug /home/javier/octave-2.1.73/bin/octave-bug-2.1.73
+ln -s octave-bug-2.1.73 /home/javier/octave-2.1.73/bin/octave-bug
+rm -f /home/javier/octave-2.1.73/bin/octave-config
+/usr/bin/install -c \
+	  octave-config /home/javier/octave-2.1.73/bin/octave-config-2.1.73
+ln -s octave-config-2.1.73 /home/javier/octave-2.1.73/bin/octave-config
+rm -f /home/javier/octave-2.1.73/bin/mkoctfile
+/usr/bin/install -c mkoctfile /home/javier/octave-2.1.73/bin/mkoctfile-2.1.73
+ln -s mkoctfile-2.1.73 /home/javier/octave-2.1.73/bin/mkoctfile
+/usr/bin/install -c -m 644 config.h /home/javier/octave-2.1.73/include/octave-2.1.73/octave/config.h
+echo making install in libcruft; make -C libcruft install;  echo making install in liboctave; make -C liboctave install;  echo making install in src; make -C src install;  echo making install in scripts; make -C scripts install;  echo making install in doc; make -C doc install;  echo making install in examples; make -C examples install;
+making install in libcruft
+make[2]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft'
+making install in amos
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/amos'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/amos'
+making install in blas-xtra
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/blas-xtra'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/blas-xtra'
+making install in daspk
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/daspk'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/daspk'
+making install in dasrt
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/dasrt'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/dasrt'
+making install in dassl
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/dassl'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/dassl'
+making install in fftpack
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/fftpack'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/fftpack'
+making install in lapack
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/lapack'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/lapack'
+making install in lapack-xtra
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/lapack-xtra'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/lapack-xtra'
+making install in minpack
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/minpack'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/minpack'
+making install in misc
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/misc'
+warning: run make in parent directory to update libraries
+../../mkinstalldirs /home/javier/octave-2.1.73/include/octave-2.1.73/octave
+for f in f77-fcn.h lo-error.h quit.h; do \
+	  rm -f /home/javier/octave-2.1.73/include/octave-2.1.73/octave/$f; \
+	  /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/include/octave-2.1.73/octave/$f; \
+	done
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/misc'
+making install in odepack
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/odepack'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/odepack'
+making install in ordered-qz
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/ordered-qz'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/ordered-qz'
+making install in quadpack
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/quadpack'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/quadpack'
+making install in ranlib
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/ranlib'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/ranlib'
+making install in slatec-err
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/slatec-err'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/slatec-err'
+making install in slatec-fn
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/slatec-fn'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/slatec-fn'
+making install in villad
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/villad'
+warning: run make in parent directory to update libraries
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft/villad'
+../mkinstalldirs /home/javier/octave-2.1.73/lib/octave-2.1.73
+mkdir /home/javier/octave-2.1.73/lib/octave-2.1.73
+chmod 0755 /home/javier/octave-2.1.73/lib/octave-2.1.73
+if false; then \
+	  rm -f /home/javier/octave-2.1.73/lib/octave-2.1.73/libcruft.a ; \
+	  /usr/bin/install -c -m 644 libcruft.a \
+	    /home/javier/octave-2.1.73/lib/octave-2.1.73/libcruft.a ; \
+	  ranlib /home/javier/octave-2.1.73/lib/octave-2.1.73/libcruft.a ; \
+	fi
+if true; then \
+	  rm -f /home/javier/octave-2.1.73/lib/octave-2.1.73/libcruft.so.2.1.73; \
+	  /usr/bin/install -c \
+	    libcruft.so /home/javier/octave-2.1.73/lib/octave-2.1.73/libcruft.so.2.1.73; \
+	  rm -f /home/javier/octave-2.1.73/lib/octave-2.1.73/libcruft.so; \
+	  ln -s libcruft.so.2.1.73 /home/javier/octave-2.1.73/lib/octave-2.1.73/libcruft.so; \
+	  if  test x != x ; then \
+	    rm -f /home/javier/octave-2.1.73/bin/libcruft.; \
+	    /usr/bin/install -c \
+	      libcruft. /home/javier/octave-2.1.73/bin/libcruft.; \
+	  fi; \
+	fi
+make[2]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/libcruft'
+making install in liboctave
+make[2]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/liboctave'
+making DASPK-opts.h from DASPK-opts.in
+DASPK-opts.h is unchanged
+making DASSL-opts.h from DASSL-opts.in
+DASSL-opts.h is unchanged
+gawk -f ./mk-ops.awk prefix=mx make_inclusive_header=mx-ops.h ./mx-ops > mx-ops.h-t
+../move-if-change mx-ops.h-t mx-ops.h
+mx-ops.h is unchanged
+../mkinstalldirs /home/javier/octave-2.1.73/lib/octave-2.1.73
+if false; then \
+	  rm -f /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctave.a; \
+	  /usr/bin/install -c -m 644 liboctave.a \
+	    /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctave.a; \
+	  ranlib /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctave.a; \
+	fi
+if true; then \
+	  rm -f /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctave.so.2.1.73; \
+	  /usr/bin/install -c \
+	    liboctave.so /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctave.so.2.1.73; \
+	  rm -f /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctave.so; \
+	  ln -s liboctave.so.2.1.73 /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctave.so; \
+	  if  test x != x ; then \
+	    rm -f /home/javier/octave-2.1.73/bin/liboctave.; \
+	    /usr/bin/install -c \
+	      liboctave. /home/javier/octave-2.1.73/bin/liboctave.; \
+	  fi; \
+	fi
+../mkinstalldirs /home/javier/octave-2.1.73/include/octave-2.1.73/octave
+for f in Bounds.h CollocWt.h DAE.h DAEFunc.h DAERT.h DAERTFunc.h DASPK.h DASRT.h DASSL.h FEGrid.h LinConst.h LP.h LPsolve.h LSODE.h NLConst.h NLEqn.h NLFunc.h NLP.h ODE.h ODEFunc.h ODES.h ODESFunc.h Objective.h QP.h Quad.h Range.h base-dae.h base-de.h base-min.h byte-swap.h cmd-edit.h cmd-hist.h data-conv.h dir-ops.h file-ops.h file-stat.h getopt.h glob-match.h idx-vector.h kpse-xfns.h lo-ieee.h lo-mappers.h lo-specfun.h lo-sstream.h lo-sysdep.h lo-utils.h mach-info.h oct-alloc.h oct-cmplx.h oct-env.h oct-fftw.h oct-getopt.h oct-group.h oct-inttypes.h oct-passwd.h oct-rand.h oct-rl-edit.h oct-rl-hist.h oct-shlib.h oct-sort.h oct-syscalls.h oct-time.h pathlen.h pathsearch.h prog-args.h so-array.h statdefs.h str-vec.h sun-utils.h sysdir.h systime.h syswait.h DASPK-opts.h DASRT-opts.h DASSL-opts.h LSODE-opts.h NLEqn-opts.h Quad-opts.h Array.h Array2.h Array3.h ArrayN.h DiagArray2.h Array-flags.h Array-util.h ArrayN-idx.h MArray-defs.h MArray.h MArray2.h MDiagArray2.h Matrix.h MArrayN.h base-lu.h dim-vector.h mx-base.h mx-op-defs.h mx-ops.h mx-defs.h mx-ext.h CColVector.h CDiagMatrix.h CMatrix.h CNDArray.h CRowVector.h CmplxAEPBAL.h CmplxCHOL.h CmplxDET.h CmplxHESS.h CmplxLU.h CmplxQR.h CmplxQRP.h CmplxSCHUR.h CmplxSVD.h EIG.h boolMatrix.h boolNDArray.h chMatrix.h chNDArray.h dColVector.h dDiagMatrix.h dMatrix.h dNDArray.h dRowVector.h dbleAEPBAL.h dbleCHOL.h dbleDET.h dbleHESS.h dbleLU.h dbleQR.h dbleQRP.h dbleSCHUR.h dbleSVD.h int8NDArray.h uint8NDArray.h int16NDArray.h uint16NDArray.h int32NDArray.h uint32NDArray.h int64NDArray.h uint64NDArray.h intNDArray.h mx-cdm-dm.h mx-dm-cdm.h mx-cs-cdm.h mx-cs-dm.h mx-cs-m.h mx-cs-nda.h mx-cdm-cs.h mx-cdm-cm.h mx-cdm-m.h mx-cdm-s.h mx-cm-cdm.h mx-cm-dm.h mx-cm-m.h mx-cnda-nda.h mx-cm-s.h mx-cnda-s.h mx-dm-cs.h mx-dm-cm.h mx-m-cs.h mx-nda-cs.h mx-m-cdm.h mx-m-cm.h mx-nda-cnda.h mx-s-cdm.h mx-s-cm.h mx-s-cnda.h mx-dm-m.h mx-dm-s.h mx-m-dm.h mx-s-dm.h mx-s-i8nda.h mx-i8nda-s.h mx-s-ui8nda.h mx-ui8nda-s.h mx-s-i16nda.h mx-i16nda-s.h mx-s-ui16nda.h mx-ui16nda-s.h mx-s-i32nda.h mx-i32nda-s.h mx-s-ui32nda.h mx-ui32nda-s.h mx-s-i64nda.h mx-i64nda-s.h mx-s-ui64nda.h mx-ui64nda-s.h mx-nda-i8.h mx-i8-nda.h mx-nda-ui8.h mx-ui8-nda.h mx-nda-i16.h mx-i16-nda.h mx-nda-ui16.h mx-ui16-nda.h mx-nda-i32.h mx-i32-nda.h mx-nda-ui32.h mx-ui32-nda.h mx-nda-i64.h mx-i64-nda.h mx-nda-ui64.h mx-ui64-nda.h mx-nda-i8nda.h mx-i8nda-nda.h mx-nda-ui8nda.h mx-ui8nda-nda.h mx-nda-i16nda.h mx-i16nda-nda.h mx-nda-ui16nda.h mx-ui16nda-nda.h mx-nda-i32nda.h mx-i32nda-nda.h mx-nda-ui32nda.h mx-ui32nda-nda.h mx-nda-i64nda.h mx-i64nda-nda.h mx-nda-ui64nda.h mx-ui64nda-nda.h mx-i8nda-ui8.h mx-i8nda-i16.h mx-i8nda-ui16.h mx-i8nda-i32.h mx-i8nda-ui32.h mx-i8nda-i64.h mx-i8nda-ui64.h mx-i16nda-i8.h mx-i16nda-ui8.h mx-i16nda-ui16.h mx-i16nda-i32.h mx-i16nda-ui32.h mx-i16nda-i64.h mx-i16nda-ui64.h mx-i32nda-i8.h mx-i32nda-ui8.h mx-i32nda-i16.h mx-i32nda-ui16.h mx-i32nda-ui32.h mx-i32nda-i64.h mx-i32nda-ui64.h mx-i64nda-i8.h mx-i64nda-ui8.h mx-i64nda-i16.h mx-i64nda-ui16.h mx-i64nda-i32.h mx-i64nda-ui32.h mx-i64nda-ui64.h mx-ui8nda-i8.h mx-ui8nda-i16.h mx-ui8nda-ui16.h mx-ui8nda-i32.h mx-ui8nda-ui32.h mx-ui8nda-i64.h mx-ui8nda-ui64.h mx-ui16nda-i8.h mx-ui16nda-ui8.h mx-ui16nda-i16.h mx-ui16nda-i32.h mx-ui16nda-ui32.h mx-ui16nda-i64.h mx-ui16nda-ui64.h mx-ui32nda-i8.h mx-ui32nda-ui8.h mx-ui32nda-i16.h mx-ui32nda-ui16.h mx-ui32nda-i32.h mx-ui32nda-i64.h mx-ui32nda-ui64.h mx-ui64nda-i8.h mx-ui64nda-ui8.h mx-ui64nda-i16.h mx-ui64nda-ui16.h mx-ui64nda-i32.h mx-ui64nda-ui32.h mx-ui64nda-i64.h mx-i8-ui8nda.h mx-i8-i16nda.h mx-i8-ui16nda.h mx-i8-i32nda.h mx-i8-ui32nda.h mx-i8-i64nda.h mx-i8-ui64nda.h mx-i16-i8nda.h mx-i16-ui8nda.h mx-i16-ui16nda.h mx-i16-i32nda.h mx-i16-ui32nda.h mx-i16-i64nda.h mx-i16-ui64nda.h mx-i32-i8nda.h mx-i32-ui8nda.h mx-i32-i16nda.h mx-i32-ui16nda.h mx-i32-ui32nda.h mx-i32-i64nda.h mx-i32-ui64nda.h mx-i64-i8nda.h mx-i64-ui8nda.h mx-i64-i16nda.h mx-i64-ui16nda.h mx-i64-i32nda.h mx-i64-ui32nda.h mx-i64-ui64nda.h mx-ui8-i8nda.h mx-ui8-i16nda.h mx-ui8-ui16nda.h mx-ui8-i32nda.h mx-ui8-ui32nda.h mx-ui8-i64nda.h mx-ui8-ui64nda.h mx-ui16-i8nda.h mx-ui16-ui8nda.h mx-ui16-i16nda.h mx-ui16-i32nda.h mx-ui16-ui32nda.h mx-ui16-i64nda.h mx-ui16-ui64nda.h mx-ui32-i8nda.h mx-ui32-ui8nda.h mx-ui32-i16nda.h mx-ui32-ui16nda.h mx-ui32-i32nda.h mx-ui32-i64nda.h mx-ui32-ui64nda.h mx-ui64-i8nda.h mx-ui64-ui8nda.h mx-ui64-i16nda.h mx-ui64-ui16nda.h mx-ui64-i32nda.h mx-ui64-ui32nda.h mx-ui64-i64nda.h mx-i8nda-ui8nda.h mx-i8nda-i16nda.h mx-i8nda-ui16nda.h mx-i8nda-i32nda.h mx-i8nda-ui32nda.h mx-i8nda-i64nda.h mx-i8nda-ui64nda.h mx-i16nda-i8nda.h mx-i16nda-ui8nda.h mx-i16nda-ui16nda.h mx-i16nda-i32nda.h mx-i16nda-ui32nda.h mx-i16nda-i64nda.h mx-i16nda-ui64nda.h mx-i32nda-i8nda.h mx-i32nda-ui8nda.h mx-i32nda-i16nda.h mx-i32nda-ui16nda.h mx-i32nda-ui32nda.h mx-i32nda-i64nda.h mx-i32nda-ui64nda.h mx-i64nda-i8nda.h mx-i64nda-ui8nda.h mx-i64nda-i16nda.h mx-i64nda-ui16nda.h mx-i64nda-i32nda.h mx-i64nda-ui32nda.h mx-i64nda-ui64nda.h mx-ui8nda-i8nda.h mx-ui8nda-i16nda.h mx-ui8nda-ui16nda.h mx-ui8nda-i32nda.h mx-ui8nda-ui32nda.h mx-ui8nda-i64nda.h mx-ui8nda-ui64nda.h mx-ui16nda-i8nda.h mx-ui16nda-ui8nda.h mx-ui16nda-i16nda.h mx-ui16nda-i32nda.h mx-ui16nda-ui32nda.h mx-ui16nda-i64nda.h mx-ui16nda-ui64nda.h mx-ui32nda-i8nda.h mx-ui32nda-ui8nda.h mx-ui32nda-i16nda.h mx-ui32nda-ui16nda.h mx-ui32nda-i32nda.h mx-ui32nda-i64nda.h mx-ui32nda-ui64nda.h mx-ui64nda-i8nda.h mx-ui64nda-ui8nda.h mx-ui64nda-i16nda.h mx-ui64nda-ui16nda.h mx-ui64nda-i32nda.h mx-ui64nda-ui32nda.h mx-ui64nda-i64nda.h vx-ccv-cv.h vx-ccv-s.h vx-crv-rv.h vx-crv-s.h vx-cs-cv.h vx-cs-rv.h vx-cv-ccv.h vx-cv-cs.h vx-rv-crv.h vx-rv-cs.h vx-s-ccv.h vx-s-crv.h Array.cc ArrayN.cc DiagArray2.cc MArray.cc MArray2.cc MArrayN.cc MDiagArray2.cc base-lu.cc oct-sort.cc mx-inlines.cc kpse.cc intNDArray.cc; do \
+	  rm -f /home/javier/octave-2.1.73/include/octave-2.1.73/octave/$f; \
+	  if [ -f $f ]; then \
+	    /usr/bin/install -c -m 644 $f /home/javier/octave-2.1.73/include/octave-2.1.73/octave/$f; \
+	  else \
+	    /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/include/octave-2.1.73/octave/$f; \
+	  fi ; \
+	done
+make[2]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/liboctave'
+making install in src
+make[2]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/src'
+../mkinstalldirs /home/javier/octave-2.1.73/bin
+rm -f /home/javier/octave-2.1.73/bin/octave
+/usr/bin/install -c octave /home/javier/octave-2.1.73/bin/octave-2.1.73
+ln -s octave-2.1.73 /home/javier/octave-2.1.73/bin/octave
+if [ -n " balance.oct  besselj.oct  betainc.oct  chol.oct  colloc.oct  daspk.oct  dasrt.oct  dassl.oct  det.oct  eig.oct  expm.oct  fft.oct  fft2.oct  fftn.oct  fftw_wisdom.oct  filter.oct  find.oct  fsolve.oct  gammainc.oct  gcd.oct  getgrent.oct  getpwent.oct  getrusage.oct  givens.oct  hess.oct  inv.oct  kron.oct  lpsolve.oct  lsode.oct  lu.oct  minmax.oct  pinv.oct  qr.oct  quad.oct  qz.oct  rand.oct  schur.oct  sort.oct  sqrtm.oct  svd.oct  syl.oct  time.oct" ]; then \
+	  ../mkinstalldirs /home/javier/octave-2.1.73/libexec/octave/2.1.73/oct/i686-pc-linux-gnu; \
+	  xfiles=" balance.oct  besselj.oct  betainc.oct  chol.oct  colloc.oct  daspk.oct  dasrt.oct  dassl.oct  det.oct  eig.oct  expm.oct  fft.oct  fft2.oct  fftn.oct  fftw_wisdom.oct  filter.oct  find.oct  fsolve.oct  gammainc.oct  gcd.oct  getgrent.oct  getpwent.oct  getrusage.oct  givens.oct  hess.oct  inv.oct  kron.oct  lpsolve.oct  lsode.oct  lu.oct  minmax.oct  pinv.oct  qr.oct  quad.oct  qz.oct  rand.oct  schur.oct  sort.oct  sqrtm.oct  svd.oct  syl.oct  time.oct"; \
+	  for f in $xfiles; do \
+	    /usr/bin/install -c $f /home/javier/octave-2.1.73/libexec/octave/2.1.73/oct/i686-pc-linux-gnu/$f; \
+	  done; \
+	  ./mk-oct-links /home/javier/octave-2.1.73/libexec/octave/2.1.73/oct/i686-pc-linux-gnu  balance.df  besselj.df  betainc.df  chol.df  colloc.df  daspk.df  dasrt.df  dassl.df  det.df  eig.df  expm.df  fft.df  fft2.df  fftn.df  fftw_wisdom.df  filter.df  find.df  fsolve.df  gammainc.df  gcd.df  getgrent.df  getpwent.df  getrusage.df  givens.df  hess.df  inv.df  kron.df  lpsolve.df  lsode.df  lu.df  minmax.df  pinv.df  qr.df  quad.df  qz.df  rand.df  schur.df  sort.df  sqrtm.df  svd.df  syl.df  time.df; \
+	fi
+creating link airy.oct -> besselj.oct
+creating link besselh.oct -> besselj.oct
+creating link besseli.oct -> besselj.oct
+creating link besselk.oct -> besselj.oct
+creating link bessely.oct -> besselj.oct
+creating link daspk_options.oct -> daspk.oct
+creating link dasrt_options.oct -> dasrt.oct
+creating link dassl_options.oct -> dassl.oct
+creating link ifft.oct -> fft.oct
+creating link ifft2.oct -> fft2.oct
+creating link ifftn.oct -> fftn.oct
+creating link fsolve_options.oct -> fsolve.oct
+creating link endgrent.oct -> getgrent.oct
+creating link getgrgid.oct -> getgrent.oct
+creating link getgrnam.oct -> getgrent.oct
+creating link setgrent.oct -> getgrent.oct
+creating link endpwent.oct -> getpwent.oct
+creating link getpwnam.oct -> getpwent.oct
+creating link getpwuid.oct -> getpwent.oct
+creating link setpwent.oct -> getpwent.oct
+creating link inverse.oct -> inv.oct
+creating link lpsolve_options.oct -> lpsolve.oct
+creating link lsode_options.oct -> lsode.oct
+creating link max.oct -> minmax.oct
+creating link min.oct -> minmax.oct
+creating link quad_options.oct -> quad.oct
+creating link randn.oct -> rand.oct
+creating link gmtime.oct -> time.oct
+creating link localtime.oct -> time.oct
+creating link mktime.oct -> time.oct
+creating link strftime.oct -> time.oct
+creating link strptime.oct -> time.oct
+../mkinstalldirs /home/javier/octave-2.1.73/lib/octave-2.1.73
+if false; then \
+	  rm -f /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctinterp.a; \
+	  /usr/bin/install -c -m 644 liboctinterp.a \
+	    /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctinterp.a; \
+	  ranlib /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctinterp.a; \
+	fi
+if true; then \
+	  rm -f /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctinterp.so.2.1.73; \
+	  /usr/bin/install -c liboctinterp.so \
+	    /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctinterp.so.2.1.73; \
+	  rm -f /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctinterp.so; \
+	  ln -s liboctinterp.so.2.1.73 /home/javier/octave-2.1.73/lib/octave-2.1.73/liboctinterp.so; \
+	  if  test x != x ; then \
+	    rm -f /home/javier/octave-2.1.73/bin/liboctinterp.; \
+	    /usr/bin/install -c \
+	      liboctinterp. /home/javier/octave-2.1.73/bin/liboctinterp.; \
+	  fi; \
+	fi
+../mkinstalldirs /home/javier/octave-2.1.73/include/octave-2.1.73/octave
+for f in Cell.h base-list.h c-file-ptr-stream.h comment-list.h defun-dld.h defun-int.h defun.h dirfns.h dynamic-ld.h error.h file-io.h fn-cache.h gripes.h help.h input.h lex.h load-save.h ls-hdf5.h ls-mat-ascii.h ls-mat4.h ls-mat5.h ls-oct-ascii.h ls-oct-binary.h ls-utils.h oct-fstrm.h oct-hist.h oct-iostrm.h oct-map.h oct-obj.h oct-prcstrm.h oct-procbuf.h oct-stdstrm.h oct-stream.h oct-strstrm.h oct-lvalue.h oct.h octave.h ops.h pager.h parse.h pr-output.h procstream.h sighandlers.h siglist.h symtab.h sysdep.h token.h toplev.h unwind-prot.h utils.h variables.h version.h xdiv.h xpow.h ov-re-mat.h ov-cx-mat.h ov-ch-mat.h ov-cs-list.h ov-list.h ov-struct.h ov-scalar.h ov-range.h ov-complex.h ov-va-args.h ov-colon.h ov-base.h ov-base-mat.h ov-base-scalar.h ov-streamoff.h ov-str-mat.h ov-bool-mat.h ov-bool.h ov-file.h ov-cell.h ov.h ov-fcn.h ov-builtin.h ov-dld-fcn.h ov-mapper.h ov-usr-fcn.h ov-fcn-handle.h ov-fcn-inline.h ov-typeinfo.h ov-type-conv.h ov-base-int.h ov-int-traits.h ov-intx.h ov-int8.h ov-int16.h ov-int32.h ov-int64.h ov-uint8.h ov-uint16.h ov-uint32.h ov-uint64.h pt.h pt-all.h pt-arg-list.h pt-assign.h pt-binop.h pt-bp.h	pt-cell.h pt-check.h pt-cmd.h pt-colon.h pt-const.h pt-decl.h pt-except.h pt-exp.h pt-fcn-handle.h pt-id.h pt-idx.h pt-jump.h pt-loop.h pt-mat.h pt-misc.h pt-plot.h pt-pr-code.h pt-select.h pt-stmt.h pt-unop.h pt-walk.h  ov-base-int.cc ov-base-mat.cc ov-base-scalar.cc; do \
+	  rm -f /home/javier/octave-2.1.73/include/octave-2.1.73/octave/$f; \
+	  /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/include/octave-2.1.73/octave/$f; \
+	done
+for f in defaults.h oct-conf.h oct-gperf.h; do \
+	  rm -f /home/javier/octave-2.1.73/include/octave-2.1.73/octave/$f; \
+	  if [ -f $f ]; then \
+	    /usr/bin/install -c -m 644 $f /home/javier/octave-2.1.73/include/octave-2.1.73/octave/$f ; \
+	  else \
+	    /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/include/octave-2.1.73/octave/$f ; \
+	  fi ; \
+	done
+make[2]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/src'
+making install in scripts
+make[2]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts'
+making install in audio
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/audio'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio
+for f in lin2mu.m loadaudio.m mu2lin.m playaudio.m record.m saveaudio.m setaudio.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio > /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/audio/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/audio'
+making install in control
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control'
+making install in base
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control/base'
+../../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/control
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/control
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base
+for f in analdemo.m are.m bddemo.m bode_bounds.m bode.m __bodquist__.m controldemo.m ctrb.m damp.m dare.m dcgain.m DEMOcontrol.m dgram.m dkalman.m dlqe.m dlqr.m dlyap.m dre.m frdemo.m freqchkw.m __freqresp__.m gram.m impulse.m lqe.m lqg.m lqr.m lsim.m ltifr.m lyap.m nichols.m nyquist.m obsv.m place.m pzmap.m rldemo.m rlocus.m __stepimp__.m step.m tzero2.m tzero.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base/$f; done
+../../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base > /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/base/PKG_ADD.t ; fi
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control/base'
+making install in hinf
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control/hinf'
+../../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf
+for f in dgkfdemo.m dhinfdemo.m h2norm.m h2syn.m hinf_ctr.m hinfdemo.m hinfnorm.m hinfsyn_chk.m hinfsyn.m hinfsyn_ric.m is_dgkf.m wgt1o.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf/$f; done
+../../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf > /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/hinf/PKG_ADD.t ; fi
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control/hinf'
+making install in obsolete
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control/obsolete'
+../../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete
+for f in dezero.m dlqg.m minfo.m packsys.m qzval.m rotg.m series.m swapcols.m swaprows.m syschnames.m unpacksys.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete/$f; done
+../../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete > /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/obsolete/PKG_ADD.t ; fi
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control/obsolete'
+making install in system
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control/system'
+../../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system
+for f in abcddim.m __abcddims__.m buildssic.m c2d.m cellidx.m d2c.m dmr2d.m fir2sys.m is_abcd.m is_controllable.m is_detectable.m is_digital.m is_observable.m is_sample.m is_signal_list.m is_siso.m is_stabilizable.m is_stable.m jet707.m listidx.m moddemo.m ord2.m packedform.m parallel.m ss2sys.m ss2tf.m ss2zp.m ss.m starp.m sys2fir.m sys2ss.m sys2tf.m sys2zp.m sysadd.m sysappend.m __syschnamesl__.m syschtsam.m __sysconcat__.m sysconnect.m __syscont_disc__.m syscont.m __sysdefioname__.m __sysdefstname__.m sysdimensions.m sysdisc.m sysdup.m sysgetsignals.m sysgettsam.m sysgettype.m sysgroup.m __sysgroupn__.m sysidx.m sysmin.m sysmult.m sysout.m sysprune.m sysreorder.m sysrepdemo.m sysscale.m syssetsignals.m syssub.m sysupdate.m tf2ss.m __tf2sysl__.m tf2sys.m tf2zp.m __tfl__.m tf.m tfout.m ugain.m __zp2ssg2__.m zp2ss.m zp2sys.m zp2tf.m zp.m zpout.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system/$f; done
+../../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system > /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/system/PKG_ADD.t ; fi
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control/system'
+making install in util
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control/util'
+../../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util
+for f in axis2dlim.m __outlist__.m prompt.m run_cmd.m sortcom.m strappend.m swap.m zgfmul.m zgfslv.m zginit.m __zgpbal__.m zgreduce.m zgrownorm.m zgscal.m zgsgiv.m zgshsr.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util/$f; done
+../../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util > /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/control/util/PKG_ADD.t ; fi
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control/util'
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/control'
+making install in deprecated
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/deprecated'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated
+for f in com2str.m is_bool.m is_complex.m is_global.m is_list.m is_matrix.m is_scalar.m is_square.m is_stream.m isstr.m is_struct.m is_symmetric.m is_vector.m setstr.m struct_contains.m struct_elements.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated > /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/deprecated/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/deprecated'
+making install in elfun
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/elfun'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun
+for f in acoth.m acot.m acsch.m acsc.m asech.m asec.m coth.m cot.m csch.m csc.m lcm.m sech.m sec.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun > /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/elfun/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/elfun'
+making install in finance
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/finance'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance
+for f in fvl.m fv.m irr.m nper.m npv.m pmt.m pvl.m pv.m rate.m vol.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance > /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/finance/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/finance'
+making install in general
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/general'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/general
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/general
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/general
+for f in bitcmp.m bitget.m bitset.m cart2pol.m cart2sph.m circshift.m columns.m common_size.m deal.m diff.m flipdim.m fliplr.m flipud.m ind2sub.m int2str.m isa.m isdefinite.m is_duplicate_entry.m isscalar.m issquare.m issymmetric.m isvector.m logical.m logspace.m mod.m nargchk.m nextpow2.m num2str.m perror.m pol2cart.m postpad.m prepad.m randperm.m rem.m repmat.m rot90.m rotdim.m rows.m shiftdim.m shift.m sph2cart.m strerror.m sub2ind.m tril.m triu.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/general/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/general/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/general > /home/javier/octave-2.1.73/share/octave/2.1.73/m/general/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/general/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/general/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/general/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/general/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/general'
+making install in image
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/image'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/image
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/image
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/image
+for f in colormap.m gray2ind.m gray.m hsv2rgb.m image.m imagesc.m imshow.m ind2gray.m ind2rgb.m loadimage.m ntsc2rgb.m ocean.m rgb2hsv.m rgb2ind.m rgb2ntsc.m saveimage.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/image/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/image/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/image > /home/javier/octave-2.1.73/share/octave/2.1.73/m/image/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/image/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/image/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/image/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/image/PKG_ADD.t ; fi
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/imagelib
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/imagelib
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/imagelib
+for f in default.img; do \
+	  rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/imagelib/$f; \
+	  /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/imagelib/$f; \
+	done
+../mkinstalldirs /home/javier/octave-2.1.73/libexec/octave/2.1.73/exec/i686-pc-linux-gnu
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/image'
+making install in io
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/io'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/io
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/io
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/io
+for f in beep.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/io/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/io/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/io > /home/javier/octave-2.1.73/share/octave/2.1.73/m/io/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/io/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/io/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/io/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/io/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/io'
+making install in linear-algebra
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/linear-algebra'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra
+for f in commutation_matrix.m cond.m cross.m dmult.m dot.m duplication_matrix.m housh.m krylovb.m krylov.m logm.m norm.m null.m orth.m qzhess.m rank.m trace.m vech.m vec.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra > /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/linear-algebra/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/linear-algebra'
+making install in miscellaneous
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/miscellaneous'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous
+for f in bincoeff.m bug_report.m comma.m computer.m cputime.m delete.m dir.m dump_prefs.m etime.m fileparts.m flops.m fullfile.m is_leap_year.m ispc.m isunix.m list_primes.m menu.m not.m pack.m paren.m path.m popen2.m semicolon.m tempdir.m tempname.m texas_lotto.m tic.m toc.m unix.m version.m xor.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous > /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/miscellaneous/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/miscellaneous'
+making install in plot
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/plot'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot
+for f in __axis_label__.m axis.m bar.m bottom_title.m close.m contour.m __errcomm__.m errorbar.m __errplot__.m figure.m grid.m hist.m loglogerr.m loglog.m meshdom.m meshgrid.m mesh.m mplot.m multiplot.m oneplot.m orient.m plot_border.m plot.m __plr1__.m __plr2__.m __plr__.m __plt1__.m __plt2__.m __plt2mm__.m __plt2mv__.m __plt2ss__.m __plt2vm__.m __plt2vv__.m __plt__.m __pltopt1__.m __pltopt__.m polar.m print.m semilogxerr.m semilogx.m semilogyerr.m semilogy.m shg.m sombrero.m stairs.m subplot.m subwindow.m title.m top_title.m xlabel.m ylabel.m zlabel.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot > /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/plot/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/plot'
+making install in polynomial
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/polynomial'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial
+for f in compan.m conv.m deconv.m polyderiv.m polyder.m polyfit.m polyinteg.m poly.m polyout.m polyreduce.m polyval.m polyvalm.m residue.m roots.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial > /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/polynomial/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/polynomial'
+making install in quaternion
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/quaternion'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion
+for f in demoquat.m qconj.m qcoordinate_plot.m qderiv.m qderivmat.m qinv.m qmult.m qtrans.m qtransv.m qtransvmat.m quaternion.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion > /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/quaternion/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/quaternion'
+making install in set
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/set'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/set
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/set
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/set
+for f in complement.m create_set.m intersection.m union.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/set/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/set/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/set > /home/javier/octave-2.1.73/share/octave/2.1.73/m/set/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/set/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/set/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/set/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/set/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/set'
+making install in signal
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/signal'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal
+for f in arch_fit.m arch_rnd.m arch_test.m arma_rnd.m autocor.m autocov.m autoreg_matrix.m bartlett.m blackman.m detrend.m diffpara.m durbinlevinson.m fftconv.m fftfilt.m fftshift.m fractdiff.m freqz.m freqz_plot.m hamming.m hanning.m hurst.m periodogram.m rectangle_lw.m rectangle_sw.m sinc.m sinetone.m sinewave.m spectral_adf.m spectral_xdf.m spencer.m stft.m synthesis.m triangle_lw.m triangle_sw.m unwrap.m yulewalker.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal > /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/signal/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/signal'
+making install in specfun
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/specfun'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun
+for f in bessel.m betai.m beta.m erfinv.m gammai.m log2.m pow2.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun > /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/specfun/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/specfun'
+making install in special-matrix
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/special-matrix'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix
+for f in hankel.m hilb.m invhilb.m sylvester_matrix.m toeplitz.m vander.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix > /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/special-matrix/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/special-matrix'
+making install in startup
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/startup'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/startup
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/startup
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/startup
+if test -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/startup/octaverc; then true; \
+	else \
+	  /usr/bin/install -c -m 644 ./octaverc \
+	    /home/javier/octave-2.1.73/share/octave/2.1.73/m/startup/octaverc; \
+	fi
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/site/m/startup
+mkdir /home/javier/octave-2.1.73/share/octave/site/m/startup
+chmod 0755 /home/javier/octave-2.1.73/share/octave/site/m/startup
+if test -f /home/javier/octave-2.1.73/share/octave/site/m/startup/octaverc; \
+	then true; \
+	else \
+	  /usr/bin/install -c -m 644 ./octaverc \
+	    /home/javier/octave-2.1.73/share/octave/site/m/startup/octaverc; \
+	fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/startup'
+making install in statistics
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/statistics'
+making install in base
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/statistics/base'
+../../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base
+for f in center.m cloglog.m cor.m corrcoef.m cov.m cut.m gls.m iqr.m kendall.m kurtosis.m logit.m mahalanobis.m mean.m meansq.m median.m moment.m ols.m ppplot.m probit.m qqplot.m range.m ranks.m run_count.m skewness.m spearman.m statistics.m std.m studentize.m table.m values.m var.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base/$f; done
+../../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base > /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/base/PKG_ADD.t ; fi
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/statistics/base'
+making install in distributions
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/statistics/distributions'
+../../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions
+for f in beta_cdf.m beta_inv.m beta_pdf.m beta_rnd.m binomial_cdf.m binomial_inv.m binomial_pdf.m binomial_rnd.m cauchy_cdf.m cauchy_inv.m cauchy_pdf.m cauchy_rnd.m chisquare_cdf.m chisquare_inv.m chisquare_pdf.m chisquare_rnd.m discrete_cdf.m discrete_inv.m discrete_pdf.m discrete_rnd.m empirical_cdf.m empirical_inv.m empirical_pdf.m empirical_rnd.m exponential_cdf.m exponential_inv.m exponential_pdf.m exponential_rnd.m f_cdf.m f_inv.m f_pdf.m f_rnd.m gamma_cdf.m gamma_inv.m gamma_pdf.m gamma_rnd.m geometric_cdf.m geometric_inv.m geometric_pdf.m geometric_rnd.m hypergeometric_cdf.m hypergeometric_inv.m hypergeometric_pdf.m hypergeometric_rnd.m kolmogorov_smirnov_cdf.m laplace_cdf.m laplace_inv.m laplace_pdf.m laplace_rnd.m logistic_cdf.m logistic_inv.m logistic_pdf.m logistic_rnd.m lognormal_cdf.m lognormal_inv.m lognormal_pdf.m lognormal_rnd.m normal_cdf.m normal_inv.m normal_pdf.m normal_rnd.m pascal_cdf.m pascal_inv.m pascal_pdf.m pascal_rnd.m poisson_cdf.m poisson_inv.m poisson_pdf.m poisson_rnd.m stdnormal_cdf.m stdnormal_inv.m stdnormal_pdf.m stdnormal_rnd.m t_cdf.m t_inv.m t_pdf.m t_rnd.m uniform_cdf.m uniform_inv.m uniform_pdf.m uniform_rnd.m weibull_cdf.m weibull_inv.m weibull_pdf.m weibull_rnd.m wiener_rnd.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions/$f; done
+../../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions > /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/distributions/PKG_ADD.t ; fi
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/statistics/distributions'
+making install in models
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/statistics/models'
+../../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models
+for f in logistic_regression_derivatives.m logistic_regression_likelihood.m logistic_regression.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models/$f; done
+../../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models > /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/models/PKG_ADD.t ; fi
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/statistics/models'
+making install in tests
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/statistics/tests'
+../../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests
+for f in anova.m bartlett_test.m chisquare_test_homogeneity.m chisquare_test_independence.m cor_test.m f_test_regression.m hotelling_test_2.m hotelling_test.m kolmogorov_smirnov_test_2.m kolmogorov_smirnov_test.m kruskal_wallis_test.m manova.m mcnemar_test.m prop_test_2.m run_test.m sign_test.m t_test_2.m t_test.m t_test_regression.m u_test.m var_test.m welch_test.m wilcoxon_test.m z_test_2.m z_test.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests/$f; done
+../../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests > /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/statistics/tests/PKG_ADD.t ; fi
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/statistics/tests'
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/statistics'
+making install in strings
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/strings'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings
+for f in base2dec.m bin2dec.m blanks.m deblank.m dec2base.m dec2bin.m dec2hex.m findstr.m hex2dec.m index.m isletter.m lower.m rindex.m split.m str2mat.m str2num.m strcat.m strcmp.m strjust.m strrep.m substr.m upper.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings > /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/strings/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/strings'
+making install in time
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/time'
+../mkinstalldirs /home/javier/octave-2.1.73/share/octave/2.1.73/m/time
+mkdir /home/javier/octave-2.1.73/share/octave/2.1.73/m/time
+chmod 0755 /home/javier/octave-2.1.73/share/octave/2.1.73/m/time
+for f in asctime.m clock.m ctime.m date.m; do rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/time/$f; /usr/bin/install -c -m 644 ./$f /home/javier/octave-2.1.73/share/octave/2.1.73/m/time/$f; done
+../mkpkgadd /home/javier/octave-2.1.73/share/octave/2.1.73/m/time > /home/javier/octave-2.1.73/share/octave/2.1.73/m/time/PKG_ADD.t
+ls: *.cc: No existe el fichero o el directorio
+if [ -n "`cat /home/javier/octave-2.1.73/share/octave/2.1.73/m/time/PKG_ADD.t`" ]; then mv /home/javier/octave-2.1.73/share/octave/2.1.73/m/time/PKG_ADD.t /home/javier/octave-2.1.73/share/octave/2.1.73/m/time/PKG_ADD ; else rm -f /home/javier/octave-2.1.73/share/octave/2.1.73/m/time/PKG_ADD.t ; fi
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts/time'
+ls -LR /home/javier/octave-2.1.73/share/octave > /home/javier/octave-2.1.73/share/octave/ls-R
+ls -LR /home/javier/octave-2.1.73/libexec/octave > /home/javier/octave-2.1.73/libexec/octave/ls-R
+make[2]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts'
+making install in doc
+make[2]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/doc'
+making install in faq
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/doc/faq'
+make[3]: No se hace nada para `install'.
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/doc/faq'
+making install in interpreter
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/doc/interpreter'
+make -C ../../src DOCSTRINGS
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/src'
+make[4]: `DOCSTRINGS' está actualizado.
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/src'
+make -C ../../scripts DOCSTRINGS
+make[4]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/scripts'
+make[4]: `DOCSTRINGS' está actualizado.
+make[4]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/scripts'
+making arith.texi from arith.txi
+arith.texi is unchanged
+making audio.texi from audio.txi
+audio.texi is unchanged
+making basics.texi from basics.txi
+basics.texi is unchanged
+making bugs.texi from bugs.txi
+bugs.texi is unchanged
+making container.texi from container.txi
+container.texi is unchanged
+making control.texi from control.txi
+control.texi is unchanged
+making cp-idx.texi from cp-idx.txi
+cp-idx.texi is unchanged
+making data.texi from data.txi
+data.texi is unchanged
+making debug.texi from debug.txi
+debug.texi is unchanged
+making diffeq.texi from diffeq.txi
+diffeq.texi is unchanged
+making emacs.texi from emacs.txi
+emacs.texi is unchanged
+making errors.texi from errors.txi
+errors.texi is unchanged
+making eval.texi from eval.txi
+eval.texi is unchanged
+making expr.texi from expr.txi
+expr.texi is unchanged
+making finance.texi from finance.txi
+finance.texi is unchanged
+making fn-idx.texi from fn-idx.txi
+fn-idx.texi is unchanged
+making func.texi from func.txi
+func.texi is unchanged
+making gpl.texi from gpl.txi
+gpl.texi is unchanged
+making grammar.texi from grammar.txi
+grammar.texi is unchanged
+making image.texi from image.txi
+image.texi is unchanged
+making install.texi from install.txi
+install.texi is unchanged
+making intro.texi from intro.txi
+intro.texi is unchanged
+making io.texi from io.txi
+io.texi is unchanged
+making linalg.texi from linalg.txi
+linalg.texi is unchanged
+making matrix.texi from matrix.txi
+matrix.texi is unchanged
+making nonlin.texi from nonlin.txi
+nonlin.texi is unchanged
+making numbers.texi from numbers.txi
+numbers.texi is unchanged
+making op-idx.texi from op-idx.txi
+op-idx.texi is unchanged
+making optim.texi from optim.txi
+optim.texi is unchanged
+making plot.texi from plot.txi
+plot.texi is unchanged
+making poly.texi from poly.txi
+poly.texi is unchanged
+making preface.texi from preface.txi
+preface.texi is unchanged
+making quad.texi from quad.txi
+quad.texi is unchanged
+making quaternion.texi from quaternion.txi
+quaternion.texi is unchanged
+making set.texi from set.txi
+set.texi is unchanged
+making signal.texi from signal.txi
+signal.texi is unchanged
+making stats.texi from stats.txi
+stats.texi is unchanged
+making stmt.texi from stmt.txi
+stmt.texi is unchanged
+making stream.texi from stream.txi
+stream.texi is unchanged
+making strings.texi from strings.txi
+strings.texi is unchanged
+making struct.texi from struct.txi
+struct.texi is unchanged
+making system.texi from system.txi
+system.texi is unchanged
+making tips.texi from tips.txi
+tips.texi is unchanged
+making var.texi from var.txi
+var.texi is unchanged
+making vr-idx.texi from vr-idx.txi
+vr-idx.texi is unchanged
+TEXINPUTS=".:./..::" texi2dvi octave.texi
+/bin/sh: texi2dvi: command not found
+make[3]: [octave.dvi] Error 127 (no tiene efecto)
+TEXINPUTS=".:./..::" texi2pdf octave.texi
+/bin/sh: texi2pdf: command not found
+make[3]: [octave.pdf] Error 127 (no tiene efecto)
+../../mkinstalldirs /home/javier/octave-2.1.73/man/man1 /home/javier/octave-2.1.73/info
+mkdir /home/javier/octave-2.1.73/man
+chmod 0755 /home/javier/octave-2.1.73/man
+mkdir /home/javier/octave-2.1.73/man/man1
+chmod 0755 /home/javier/octave-2.1.73/man/man1
+mkdir /home/javier/octave-2.1.73/info
+chmod 0755 /home/javier/octave-2.1.73/info
+installing ./mkoctfile.1 in /home/javier/octave-2.1.73/man/man1
+installing ./octave.1 in /home/javier/octave-2.1.73/man/man1
+installing ./octave-bug.1 in /home/javier/octave-2.1.73/man/man1
+installing ./octave-config.1 in /home/javier/octave-2.1.73/man/man1
+installing info files in /home/javier/octave-2.1.73/info
+installing ./dir in /home/javier/octave-2.1.73/info
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/doc/interpreter'
+making install in liboctave
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/doc/liboctave'
+make[3]: No se hace nada para `install'.
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/doc/liboctave'
+making install in refcard
+make[3]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/doc/refcard'
+make[3]: No se hace nada para `install'.
+make[3]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/doc/refcard'
+make[2]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/doc'
+making install in examples
+make[2]: se ingresa al directorio `/home/javier/ftp/octave/octave-2.1.73/examples'
+for f in info-emacs-info info-emacs-octave-help; do \
+	  /usr/bin/install -c ./$f /home/javier/octave-2.1.73/libexec/octave/2.1.73/exec/i686-pc-linux-gnu/$f; \
+	done
+make[2]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73/examples'
+make[1]: se sale del directorio `/home/javier/ftp/octave/octave-2.1.73'

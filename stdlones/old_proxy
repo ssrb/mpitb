@@ -1,0 +1,3 @@
+xhost +
+export DISPLAY=`xfindproxy -name lbx -server $DISPLAY`
+echo DISPLAY=$DISPLAY

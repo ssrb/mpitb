@@ -1,0 +1,1 @@
+echo DISPLAY=$DISPLAY > ~/.ssh/environment

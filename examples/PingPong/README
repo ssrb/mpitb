@@ -1,0 +1,67 @@
+## Copyright (C) 2004-2007 Javier Fernández Baldomero, Mancia Anguita López
+##
+## This program is free software
+
+******************
+* Ping-Pong demo *
+******************
+
+Classical ping-pong test, to assess communication primitives performance.
+Ideally, one would like to know how fast a message can be sent over the net.
+Problems:
+- sophisticated NIC drivers/sofware can optimize repeated comm patterns
+- for small messages, xmit time is small compared to clock resolution
+
+So data is repeatedly sent and received (NTIMES) (should do something better)
+and walltime divided by 2*NTIMES.
+
+------------------------------------------------------------------
+| References for the interested reader:
+| 
+| Dongarra's (PVM team's) bwtest.c included in PVM sources
+| http://cluster.earlham.edu/detail/bccd/pvm3/examples/bwtest.c
+| 
+| http://www.csm.ornl.gov/pvm/pvm_home.html
+| http://www.csm.ornl.gov/pvm/performance.html
+| http://www.csm.ornl.gov/pvm/perf-graph.html
+| 
+| http://www.google.com/search?hl=en&q=ping+pong+test+&btnG=Google+Search
+| http://www-fp.mcs.anl.gov/hpfmpi/internal/pingpong-data.html
+| http://www.tacc.utexas.edu/services/userguides/mpi/pingpong.php
+------------------------------------------------------------------
+
+************
+* Contents *
+************
+
+- PingPong.m		The test itself
+- startup_MPITB.m	MPITB .octaverc startup file
+
+- lam-bhost.def		cluster description f/ [lamboot / orterun -hostfile]
+- ppong.sh		shell script to produce the PingPong.log & .eps files
+- PingPong.log
+- PingPong.eps
+
+- README		This file
+
+- .Ping2173.m		corresponding app&startup files from 2.1.73 version,
+- .Ping2173r.m		...
+- .s2.1.73_MPITB.m	all them hidden
+- .p2173.sh		corresponding shell script for 2.1.73 version, hidden
+- .Ping2173.log
+-  Ping2173.ps		2.1.73 graphic not hidden, for performance comparison
+
+
+***************
+* Suggestions *
+***************
+
+You could:
+- edit lam-bhost.def to reflect your cluster node names - only 2 required
+- for  LAM/MPI: run lamboot / lamnodes to start LAM out
+- for Open-MPI: bhost can be used with the rsh/ssh starter (-hostfile switch)
+
+- run ./ppong.sh to display results from previous pingpong tests
+- remove PingPong.log
+- run ./ppong.sh again to conduct a new pingpong test and see the graphs
+

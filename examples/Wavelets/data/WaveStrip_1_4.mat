@@ -1,0 +1,1142 @@
+# Created by Octave 2.1.69, Wed May 11 16:10:18 2005 CEST <javier@hypercat02.atc.ugr.es>
+# name: instr
+# type: cell
+# rows: 12
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 16
+WaveStrip_argchk
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+ldimg
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+lboot
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+spawn
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+ncmds
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+loop1
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 10
+WSdwt2TBag
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 1
+-
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 11
+WSidwt2TBag
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 1
+-
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+clean
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+TOTAL:
+
+# name: <cell-element>
+# type: scalar
+0.000600099563598633
+# name: <cell-element>
+# type: scalar
+0.0140829086303711
+# name: <cell-element>
+# type: scalar
+0.1441650390625
+# name: <cell-element>
+# type: scalar
+0.344125032424927
+# name: <cell-element>
+# type: scalar
+0.0145468711853027
+# name: <cell-element>
+# type: scalar
+0.000709056854248047
+# name: <cell-element>
+# type: scalar
+1.21553611755371
+# name: <cell-element>
+# type: scalar
+0.00230288505554199
+# name: <cell-element>
+# type: scalar
+1.1885941028595
+# name: <cell-element>
+# type: scalar
+0.000754833221435547
+# name: <cell-element>
+# type: scalar
+0.0316441059112549
+# name: <cell-element>
+# type: scalar
+2.95706105232239
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 11
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 14
+WSdwt2TBag_ini
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 4
+rows
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 1
+-
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+probe
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 1
+.
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 4
+cols
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 1
+-
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+probe
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 1
+.
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+reorg
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+TOTAL:
+
+# name: <cell-element>
+# type: scalar
+0.000730037689208984
+# name: <cell-element>
+# type: scalar
+0.527883052825928
+# name: <cell-element>
+# type: scalar
+0.000121831893920898
+# name: <cell-element>
+# type: scalar
+0.0228371620178223
+# name: <cell-element>
+# type: scalar
+0.000571012496948242
+# name: <cell-element>
+# type: scalar
+0.633358955383301
+# name: <cell-element>
+# type: scalar
+0.0001220703125
+# name: <cell-element>
+# type: scalar
+0.0111918449401855
+# name: <cell-element>
+# type: scalar
+0.000123023986816406
+# name: <cell-element>
+# type: scalar
+0.0185971260070801
+# name: <cell-element>
+# type: scalar
+1.21553611755371
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 15
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 8
+rows_ini
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#1
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#4
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+alloc
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r1
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r4
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+TOTAL:
+
+# name: <cell-element>
+# type: scalar
+0.0345458984375
+# name: <cell-element>
+# type: scalar
+0.00248312950134277
+# name: <cell-element>
+# type: scalar
+0.00243306159973145
+# name: <cell-element>
+# type: scalar
+0.00246500968933105
+# name: <cell-element>
+# type: scalar
+0.113953828811646
+# name: <cell-element>
+# type: scalar
+0.0231239795684814
+# name: <cell-element>
+# type: scalar
+0.242511987686157
+# name: <cell-element>
+# type: scalar
+0.0182271003723145
+# name: <cell-element>
+# type: scalar
+0.0150818824768066
+# name: <cell-element>
+# type: scalar
+0.0186800956726074
+# name: <cell-element>
+# type: scalar
+0.00917601585388184
+# name: <cell-element>
+# type: scalar
+0.0192079544067383
+# name: <cell-element>
+# type: scalar
+0.00923514366149902
+# name: <cell-element>
+# type: scalar
+0.0167579650878906
+# name: <cell-element>
+# type: scalar
+0.527883052825928
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 15
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 8
+cols_ini
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#1
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#4
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+alloc
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r1
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r4
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+TOTAL:
+
+# name: <cell-element>
+# type: scalar
+0.0313558578491211
+# name: <cell-element>
+# type: scalar
+0.00249719619750977
+# name: <cell-element>
+# type: scalar
+0.00249791145324707
+# name: <cell-element>
+# type: scalar
+0.0024878978729248
+# name: <cell-element>
+# type: scalar
+0.262279033660889
+# name: <cell-element>
+# type: scalar
+0.0111639499664307
+# name: <cell-element>
+# type: scalar
+0.120306015014648
+# name: <cell-element>
+# type: scalar
+0.00899195671081543
+# name: <cell-element>
+# type: scalar
+0.0618391036987305
+# name: <cell-element>
+# type: scalar
+0.00893592834472656
+# name: <cell-element>
+# type: scalar
+0.0466110706329346
+# name: <cell-element>
+# type: scalar
+0.00887703895568848
+# name: <cell-element>
+# type: scalar
+0.058690071105957
+# name: <cell-element>
+# type: scalar
+0.00682592391967773
+# name: <cell-element>
+# type: scalar
+0.633358955383301
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 10
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 15
+WSidwt2TBag_ini
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 4
+cols
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 1
+-
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+probe
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 1
+.
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 4
+rows
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 1
+-
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+probe
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 1
+.
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+TOTAL:
+
+# name: <cell-element>
+# type: scalar
+0.0614140033721924
+# name: <cell-element>
+# type: scalar
+0.637319087982178
+# name: <cell-element>
+# type: scalar
+0.000124931335449219
+# name: <cell-element>
+# type: scalar
+0.000335931777954102
+# name: <cell-element>
+# type: scalar
+0.00048518180847168
+# name: <cell-element>
+# type: scalar
+0.488373994827271
+# name: <cell-element>
+# type: scalar
+0.000123977661132812
+# name: <cell-element>
+# type: scalar
+0.000324010848999023
+# name: <cell-element>
+# type: scalar
+9.29832458496094e-05
+# name: <cell-element>
+# type: scalar
+1.1885941028595
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 15
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 8
+cols_ini
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#1
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#4
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+alloc
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r1
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r4
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+TOTAL:
+
+# name: <cell-element>
+# type: scalar
+0.0141289234161377
+# name: <cell-element>
+# type: scalar
+0.00316619873046875
+# name: <cell-element>
+# type: scalar
+0.00251984596252441
+# name: <cell-element>
+# type: scalar
+0.00254106521606445
+# name: <cell-element>
+# type: scalar
+0.266611099243164
+# name: <cell-element>
+# type: scalar
+0.0115728378295898
+# name: <cell-element>
+# type: scalar
+0.132014036178589
+# name: <cell-element>
+# type: scalar
+0.0089271068572998
+# name: <cell-element>
+# type: scalar
+0.0609560012817383
+# name: <cell-element>
+# type: scalar
+0.00896000862121582
+# name: <cell-element>
+# type: scalar
+0.0512340068817139
+# name: <cell-element>
+# type: scalar
+0.00896000862121582
+# name: <cell-element>
+# type: scalar
+0.05889892578125
+# name: <cell-element>
+# type: scalar
+0.00682902336120605
+# name: <cell-element>
+# type: scalar
+0.637319087982178
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 15
+# columns: 3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 8
+rows_ini
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#1
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+strp#4
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+alloc
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r1
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r2
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r3
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+r4
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 2
+cp
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 6
+TOTAL:
+
+# name: <cell-element>
+# type: scalar
+0.0141029357910156
+# name: <cell-element>
+# type: scalar
+0.0025019645690918
+# name: <cell-element>
+# type: scalar
+0.00253605842590332
+# name: <cell-element>
+# type: scalar
+0.00249195098876953
+# name: <cell-element>
+# type: scalar
+0.111520051956177
+# name: <cell-element>
+# type: scalar
+0.0232100486755371
+# name: <cell-element>
+# type: scalar
+0.227540969848633
+# name: <cell-element>
+# type: scalar
+0.0195648670196533
+# name: <cell-element>
+# type: scalar
+0.0125010013580322
+# name: <cell-element>
+# type: scalar
+0.0188920497894287
+# name: <cell-element>
+# type: scalar
+0.00901007652282715
+# name: <cell-element>
+# type: scalar
+0.0188179016113281
+# name: <cell-element>
+# type: scalar
+0.00905013084411621
+# name: <cell-element>
+# type: scalar
+0.0166339874267578
+# name: <cell-element>
+# type: scalar
+0.488373994827271
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: cell
+# rows: 0
+# columns: 0
+

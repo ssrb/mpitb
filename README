@@ -1,0 +1,714 @@
+## Copyright (C) 2004-2007 Javier Fernández Baldomero, Mancia Anguita López
+##
+## This program is free software
+##
+## You should have received a copy of the GNU General Public
+## License along with MPITB/Octave; see the file COPYING.  If not,
+## write to the Free Software Foundation, Inc., 51 Franklin Street,
+## Fifth Floor, Boston, MA 02110-1301, USA.
+##
+## (or see URL  http://www.fsf.org/licensing/licenses/gpl.html)
+
+
+			***************
+			* MPI TOOLBOX *
+			***************
+
+OCT bindings for [LAM 7.1.3 / Open-MPI 1.2.3] calls (MPI 1.2 - MPI 2.0)
+under Octave [2.1.73 / 2.9.12] Linux (tested with Kernel 2.6.20, Fedora Core 6)
+
+LAM/MPI License also included f/reference, see file LAM_license.txt
+(or see URL  http://www.lam-mpi.org/community/license.php)
+
+Open-MPI "New BSD License" also included f/reference, see file OMPI_license.txt
+(or see URL  http://www.open-mpi.org/community/license.php)
+(or see URL  http://www.opensource.org/licenses/bsd-license.php)
+
+			***********
+			* INSTALL *
+			***********
+
+The preferred setup is a user's own local copy of [LAM/OMPI] & MPITB, since
+- usually not many cluster users will use MPITB (usually just one)
+- MPITB requires a dynamically linked MPI, which _was_ not usual
+	rpm packages used to be configured for only static libmpi.a
+	recently, FC6 comes with a dynlibs lam-libs rpm package
+	fortunately, Open-MPI compiles to dynamic by default
+- you will not depend on lazy sysadmins who do not care
+	We have seen clusters where MPI existed only in the headed node
+	or where the version on headed-node was newer than on headless ones
+	or even of a different implementation (LAM on headed / OMPI elsewhere)
+	that can cause difficult-to-diagnose malfunction
+	specially if path/env is not the same for interactive and remote shells
+
+BTW, your octave must support DLDs, since the whole MPITB consists of
+DLD (.oct) files. Type "octave_config_info" at the Octave prompt and
+look for the "DLD" flag.
+
+
+			-------------------
+			- Install summary -
+			-------------------
+$ cd ~/octave			# choose normal ubication
+# tar zxvf <mpitb_file>.tgz	# Decompress and untar gzip  files (old)
+$ tar jxvf <mpitb_file>.tar.bz2	# Decompress and untar bzip2 files (current)
+$ cd mpitb			# enter the new subdir
+$ cat BASHRC_stub		# study the suggested .bashrc stubs
+		# configure your account so that both Octave & (LAM / OpenMPI)
+		# are correctly included in PATH and LD_LIBRARY_PATH
+		# cyclelogin (logout/login) for changes to take effect
+# ############### try it out ####
+$ octave
+  ...
+    Minimal test:
+	MPI_Init, [a b]=MPI_Initialized, MPI_Finalize, [a b]=MPI_Finalized
+  ...
+octave:1> MPI_Init		# working?
+ ans = 0			# great!
+octave:2>
+# ############### if it doesn't work, you might want to try some other
+		# precompiled Tbx (remember to fix your .bashrc accordingly)
+$ ln -s DLD-oct<>-ompi<>-gcc<>-i386	DLD
+$ octave
+  ...
+# ############### or directly ignore the pre-compiled version and make your own
+$ ls -lad DLD			# remove the DLD link
+$ rm DLD			
+$ mkdir DLD			# create a new DLD subdir
+$ cd src
+$ ls -la Make*			# double-check Makefile.inc is the one you want
+    $ rm Makefile.inc		# change it if it's not
+    $ ln -s Makefile.inc.OMPI     Makefile.inc
+$ make				# rebuild MPITB for your system
+# ############################### this will generate a new DLD subdir
+$ cd ..
+$ octave
+  ...
+    Minimal test:
+	MPI_Init, [a b]=MPI_Initialized, MPI_Finalize, [a b]=MPI_Finalized
+  ...
+octave:1> MPI_Init		# working?
+ ans = 0			# great!
+octave:2>
+# ###############################
+
+
+You can discover the versions of your different software components with:
+=========================================================================
+$ octave-config --print VERSION
+	2.9.12
+$ octave --eval ver
+	----------------------------------------------------------------------
+	GNU Octave Version 2.9.12
+	GNU Octave License: GNU General Public License
+	Operating System: Linux 2.6.20-...
+	----------------------------------------------------------------------
+=========================================================================
+$ laminfo -version lam full
+             LAM/MPI: 7.1.3
+$ lamboot -V
+	LAM 7.1.3/MPI 2 C++/ROMIO - Indiana University
+        Arch:           i686-pc-linux-gnu
+        Prefix:         <...>/lam-7.1.3
+        Configured by:  <...>
+        Configured on:  Tue Jun 26 12:44:08 CEST 2007
+        Configure host: hostname.host.domain
+        SSI rpi:        crtcp lamd sysv tcp usysv
+=========================================================================
+$ ompi_info --version ompi full
+                Open MPI: 1.2.3
+   Open MPI SVN revision: r15136
+                Open RTE: 1.2.3
+   Open RTE SVN revision: r15136
+                    OPAL: 1.2.3
+       OPAL SVN revision: r15136
+$ mpirun -V
+mpirun (Open MPI) 1.2.3
+=========================================================================
+
+
+You can discover which software your MPITB was precompiled for, using:
+=========================================================================
+$ cd ~/octave/mpitb
+$ ls -lad DLD*
+lrwxrwxrwx 1 - -    37 jul 13 20:00 DLD -> DLD-oct2.9.12-ompi1.2.3-gcc4.1.2-i386
+drwxr-xr-x 2 - - 16384 jul  9 20:34 DLD-oct2.9.12-lam_7.1.3-gcc4.1.2-i386
+drwxrwxr-x 2 - - 16384 jul  9 19:34 DLD-oct2.9.12-ompi1.2.3-gcc4.1.2-i386
+
+$ ls -la DLD/MPI_Init.oct
+-rwxrwxr-x 1 - - 15420 jul  9 19:26 DLD/MPI_Init.oct
+
+$ ldd !$
+  linux-gate.so.1 =>  (0x008a9000)
+  ...
+  libmpi.so.0 => /home/.../openmpi-1.2.3/lib/libmpi.so.0 (0x00560000)
+  libopen-rte.so.0 => /home/.../openmpi-1.2.3/lib/libopen-rte.so.0 (0x00ba9000)
+  libopen-pal.so.0 => /home/.../openmpi-1.2.3/lib/libopen-pal.so.0 (0x00156000)
+  ...
+=========================================================================
+Notice the DLD link points to a precompiled DLD*ompi* subdir. It is not
+empty, MPI_Init.oct is there for instance, and "ldd" shows it depends on
+an Open-MPI libmpi.so library.
+
+
+You can discover what software your MPITB is prepared to recompile with,
+using:
+=========================================================================
+$ cd ~/octave/mpitb/src
+$ ls -la Make*
+-rwxr-xr-x 1 - - 17808 jul  9 20:51 Makefile
+lrwxrwxrwx 1 - -    17 jul 10 13:14 Makefile.inc -> Makefile.inc.OMPI
+-rwxr-xr-x 1 - -  5408 jul 10 10:57 Makefile.inc.LAM
+-rwxr-xr-x 1 - -  5402 jul 10 10:56 Makefile.inc.OMPI
+-rwxr-xr-x 1 - -  7294 jul  9 13:02 Makefile.old-gcc-no-mkoctfile
+
+$ $ which mpiCC
+~/openmpi-1.2.3/bin/mpiCC
+$ which ompi_info
+~/openmpi-1.2.3/bin/ompi_info
+$  which mpirun
+~/openmpi-1.2.3/bin/mpirun
+$ ldd `which mpirun`
+  linux-gate.so.1 =>  (0x00ddd000)
+  libopen-rte.so.0 => /home/.../openmpi-1.2.3/lib/libopen-rte.so.0 (0x00d72000)
+  libopen-pal.so.0 => /home/.../openmpi-1.2.3/lib/libopen-pal.so.0 (0x00f60000)
+  ...
+=========================================================================
+Notice the Makefile.inc link points to the OMPI version, and that your
+environment uses the right mpirun/mpiCC/ompi_info commands, depending
+on the right OMPI libraries.
+
+
+The "make" procedure assumes your mkoctfile/octave-config and
+laminfo/ompi_info/mpiCC commands are correctly configured and working,
+and uses them to deduce the libraries and setup required to recompile
+MPITB. See Makefile.inc for details on:
+#
+# octave-config --print INCLUDEDIR OCTINCLUDEDIR
+# octave-config --print OCTLIBDIR
+#
+# mkoctfile --print INCFLAGS CXXFLAGS CXXPICFLAG XTRA_CXXFLAGS
+# mkoctfile --print DL_LDFLAGS LFLAGS
+# mkoctfile --print LIBS FLIBS OCTAVE_LIBS BLAS_LIBS FFTW_LIBS
+#
+# laminfo/ompi_info -path incdir -parsable | cut -d: -f3
+# laminfo/ompi_info -path libdir -parsable | cut -d: -f3
+#
+# mpiCC     --showme:compile
+# mpiCC     --showme:link
+
+
+		--------------------------------
+		- Configuring Octave's startup -
+		--------------------------------
+MPITB comes with an .octaverc file linked to startups/startup_MPITB.m.
+If you run octave from ~/octave/mpitb, it will correctly source the
+provided startup run-command .octaverc.
+--------------------------------
+$ cd ~/octave/mpitb
+$ ls -la .octaverc			# make sure the link is there
+$ octave
+...
+    Minimal test:
+	MPI_Init, [a b]=MPI_Initialized, MPI_Finalize, [a b]=MPI_Finalized
+    Examples of environment variables to affect MPI behaviour
+	LAM/MPI SSI interface: putenv('LAM_MPI_SSI_rpi',     'lamd'), MPI_Init
+	OpenMPI MCA interface: putenv('OMPI_MCA_btl_base_debug','2'), MPI_Init
+    Help on MPI: help mpi
+octave:1>
+--------------------------------
+
+If you run octave from somewhere else, you can simply create a similar
+link there. For instance, if you run octave from ~/octave, simply do:
+--------------------------------
+$ cd ~/octave
+$ ln -s mpitb/startups/startup_MPITB.m .octaverc
+$ ls -la .octaverc			# make sure you did it right
+--------------------------------
+
+If you already had a .octaverc which you must keep, source the
+provided startup code from yours, like this:
+--------------------------------
+$ cd ~/octave
+$ ls -la .octaverc			# make sure you have one
+$ ln -s mpitb/startups/startup_MPITB.m . # link startup_MPITB here, same name
+$ vi .octaverc				# add these lines to yours
+		...
+		% MPI Toolbox startup M-file, if it exists.
+		if exist('startup_MPITB.m','file')
+		    startup_MPITB
+		end
+--------------------------------
+
+Now run octave. If everything is right you will read those help lines
+about MPI:
+--------------------------------
+$ octave
+  ...
+    Minimal test:
+	MPI_Init, [a b]=MPI_Initialized, MPI_Finalize, [a b]=MPI_Finalized
+    Examples of environment variables to affect MPI behaviour
+	LAM/MPI SSI interface: putenv('LAM_MPI_SSI_rpi',     'lamd'), MPI_Init
+	OpenMPI MCA interface: putenv('OMPI_MCA_btl_base_debug','2'), MPI_Init
+    Help on MPI: help mpi
+octave:1>
+--------------------------------
+
+
+		-----------------------------------
+		- Configuring users' shell script -
+		-----------------------------------
+The provided run-command startup_MPITB.m uses an environment variable
+($MPITB_HOME) to discover where MPITB has been installed. If it is not
+defined, it tries the suggested ~/octave/mpitb location, so if you
+install MPITB there, you will not need any .bashrc customization
+(apart from the previous LAM/OMPI and Octave setup you might have).
+Please see startup_MPITB.m (and BASHRC_stub) for details.
+
+If you choose a different location, or want to set MPITB_HOME anyways,
+you can edit your shell-run-command to include the definition. MPITB
+comes with a BASHRC_stub file with suggestions on how you could setup
+your .bashrc file, just in case LAM/OMPI and/or Octave were not already
+included in your PATH and LD_LIBRARY_PATH.
+
+tcsh users should remember their syntax is different
+# export      MPITB_HOME=~/octave/mpitb		# for bash
+# setenv      MPITB_HOME ~/octave/mpitb		# for tcsh
+
+
+			---------------------
+			- About recompiling -
+			---------------------
+Notice that several precompiled versions might be included in the
+compressed tarball, re-made in separate subdirs customarily named
+DLD-<Octave.version>-<LAM/OMPI.version>-gcc<version>-<arch32/64>.
+If some precompiled version matches your setup, you might want to
+relink DLD there and give it a try, saving you from recompiling:
+--------------------------------
+$ cd ~/octave/mpitb
+$ rm DLD					# ignore suggested version
+$ ln -s DLD-oct2.9.12-lam_7.1.3-gcc4.1.2-i386  DLD	# choose preferred one
+$ ls -lad DLD*					# make sure you did it right
+$ octave					# .octaverc will stick to it
+    Minimal test:
+	MPI_Init, [a b]=MPI_Initialized, MPI_Finalize, [a b]=MPI_Finalized
+    Examples of environment variables to affect MPI behaviour
+	LAM/MPI SSI interface: putenv('LAM_MPI_SSI_rpi',     'lamd'), MPI_Init
+	OpenMPI MCA interface: putenv('OMPI_MCA_btl_base_debug','2'), MPI_Init
+    Help on MPI: help mpi
+octave:1> MPI_Initialized			# working?
+ ans = 0					# great!
+octave:2>
+--------------------------------
+
+If no precompiled version works in your setup, you must recompile. The
+Makefiles are in $MPITB_HOME/src. You simply cd there, choose the right
+Makefile.include (linking it to Makefile.inc) and type "make". It will
+recompile the .cc files found there to .oct files in $MPITB_HOME/DLD.
+New include files will be developed to accomodate for other MPI
+implementations. As of Octave-2.9.12, MPITB has been recompiled against
+LAM/MPI and Open-MPI without problems using the provided include files:
+--------------------------------
+$ cd $MPITB_HOME/src
+$ ls -la Make*					# basically 2, Makefile[.inc]
+-rwxr-xr-x 1 <user> <user> 17808 jul  9 20:51 Makefile
+lrwxrwxrwx 1 <user> <user>    17 jul 10 13:14 Makefile.inc -> Makefile.inc.OMPI
+-rwxr-xr-x 1 <user> <user>  5408 jul 10 10:57 Makefile.inc.LAM
+-rwxr-xr-x 1 <user> <user>  5402 jul 10 10:56 Makefile.inc.OMPI
+-rwxr-xr-x 1 <user> <user>  7294 jul  9 13:02 Makefile.old-gcc-no-mkoctfile
+
+$ diff Makefile.inc.LAM Makefile.inc.OMPI	# very little difference
+	127c127
+	<  MPINFO     =            laminfo
+	---
+	>  MPINFO     =          ompi_info
+	131c131
+	<  MPILIBS    =  -lmpi -llam
+	---
+	>  MPILIBS    =  -lmpi
+
+$ rm Makefile.inc				# if you want the other,
+$ ln -s Makefile.inc.LAM Makefile.inc		# simply choose (link) it
+$ ls -la Make*					# double-check you did it right
+$ make						# overwrite or create MPITB DLD
+	# Oops, you are about to overwrite the currently linked MPITB DLD
+	# or create the DLD subdir if it does not exist. You might instead
+	$ ls -lad ../DLD*		# double-check what's there right now
+	$ cd ..				# go there and
+	$ rm DLD			# remove the link (if it's a link)...
+				# right now, "make" would create a new DLD 
+	$ mkdir DLD-oct...		# ...and create a new subdir
+	$ ln -s DLD-oct... DLD		# ...and link it to DLD so that
+	$ cd src			# when you type make
+	$ make				# the new MPITB goes there
+--------------------------------
+
+"make" creates the DLD subdir if required. Existence of the DLD subdir is
+an "order-only" prerequisite (see GNU Make manual, sect.4.3 "Types of
+prerequisites"), and as such it is added after | in the prerequisite
+list:
+--------------------------------
+#$(INSTDLDS): $(INSTDIR)/%: % $(INSTDIR)
+$(INSTDLDS): $(INSTDIR)/%: % | $(INSTDIR)
+--------------------------------
+Some users have remarked that | is a too recent feature of GNU Make
+and their make fails to build MPITB. The older-style, normal
+prerequisite version is commented above the newer order-only syntax.
+Remove the newer line and uncomment the older if your make won't
+support order-only prerequisites. Thanks to Dennis van Dok for
+pointing this out. Michael Creel and Thomas Weber also contributed to
+previous versions of the Makefile. Breanndán Ó Nualláin also helped
+solving bugs in the sources (see acknowledgement in MPI_Unpack.cc).
+
+As told above, the "make" procedure assumes your mkoctfile/octave-
+config and laminfo/ompi_info/mpiCC commands are correctly configured
+and working. You might need to edit/fix your .bashrc run-command as
+suggested in BASHRC_stub and logout/login for changes to take effect,
+so that all those commands work correctly before invoking make.
+
+
+		--------------------------------------
+		- LAM default hostfile (boot schema) -
+		--------------------------------------
+		- vs. Open-MPI -H & -hostfile syntax -
+		--------------------------------------
+
+You need a bhost file to boot a LAM (Local Area Multicomputer). Recent
+LAM versions will pick a ./lam-bhost.def file if it exists in your
+current directory, instead of just relying on a $LAMBHOST environment
+variable pointing to the file. This greatly simplifies configuration,
+since most users will never use $LAMBHOST.
+
+Simply create ./lam-bhost.def and add some hostnames on which you have
+an account. See "man bhost" if you require special syntax for
+multiprocessors or for different username on those hosts. Then boot
+the LAM:
+--------------------------------
+$ cd ~/octave/mpitb
+$ mkdir myproject
+$ cd myproject
+
+$ cp ../startups/startup_MPITB.m .octaverc	# copy-edit startup
+$ vi .octaverc					# & customize it if you want
+#	...
+#	%                    customize the <myappname>-marked sections
+#	...
+#	% q = [p '/<myappname>'];
+#	% if ~exist(q, 'dir'), clear p q, error('<my> not found'), end
+#	% addpath(q);
+
+$ vi lam-bhost.def				# define your LAM
+#	host1
+#	host2 user=guest
+#	host3 cpu=2
+$ lamboot					# boot it
+$ lamnodes					# check it works ok
+
+$ octave					# now from Octave
+    Minimal test:
+	MPI_Init, [a b]=MPI_Initialized, MPI_Finalize, [a b]=MPI_Finalized
+    Examples of environment variables to affect MPI behaviour
+	LAM/MPI SSI interface: putenv('LAM_MPI_SSI_rpi',     'lamd'), MPI_Init
+	OpenMPI MCA interface: putenv('OMPI_MCA_btl_base_debug','2'), MPI_Init
+    Help on MPI: help mpi
+octave:1> MPI_Init				# working?
+ ans = 0					# great!
+octave:2>
+--------------------------------
+
+If you don't get error messages, there you go. If you get errors, you
+must solve them before using MPITB under Octave. LAM must be already
+booted when you use MPI_Init from inside Octave (ok, system("lamboot")
+would have worked too, agreed :-) For LAM-related errors, read the LAM
+FAQ since most probably somebody already had exactly the same problem,
+and the answer is already there.
+http://www.lam-mpi.org/			("Getting Help" & "FAQ" buttons)
+http://www.lam-mpi.org/using/support/
+http://www.lam-mpi.org/faq/
+
+Open-MPI is even easier. Just MPI_Init from octave. It should work.
+If you get messages about LAM, make sure your DLD subdir corresponds
+to an OMPI-recompiled toolbox, enter octave and MPI_Init again. For
+OMPI-related errors, same instructions as above.
+http://www.open-mpi.org/
+http://www.open-mpi.org/community/help/
+http://www.open-mpi.org/faq/
+
+Open-MPI lets users to specify hosts to an mpirun command with the -H
+(-host) and -hostfile switches, this way:
+--------------------------------
+$ cd $MPITB_HOME/Hello
+$ ls
+Hello.m  lam-bhost.def  README  startup_MPITB.m
+
+$ mpirun -H h1,h2,h3 octave -q --eval Hello
+Hello, MPI_COMM_world! I'm rank 0/3 (h1)
+Hello, MPI_COMM_world! I'm rank 2/3 (h3)
+Hello, MPI_COMM_world! I'm rank 1/3 (h2)
+
+$ cat lam-bhost.def
+h1
+h2
+h3
+
+$ mpirun -c 3 -hostfile lam-bhost.def octave -q --eval Hello
+Hello, MPI_COMM_world! I'm rank 0/3 (h1)
+Hello, MPI_COMM_world! I'm rank 1/3 (h2)
+Hello, MPI_COMM_world! I'm rank 2/3 (h3)
+--------------------------------
+
+When using LAM/MPI, the lam daemon must be started on each computer to
+be considered part of the "multicomputer". You can use the -c <#copies>
+syntax to LAM's mpirun to launch a parallel SPMD application.
+
+In old MPITB versions when we recommended using MPI_Comm_spawn from an
+interactive Octave session to launch parallel applications, care should
+be taken to not oversubscribe the master node (on which the interactive
+Octave was already running) with an additional spawned octave process.
+LAM requires the master node to be part of the multicomputer, and the
+daemon must be already launched when you MPI_Init, so the order of nodes
+in the round-robin host-list is already defined by when you MPI_Comm_spawn.
+Thus we recommended placing the master node last in the bhost file.
+That way, spawning an increasing number of octave processes would place
+them on other cluster nodes before starting to oversubscribe the master
+node where you were already running an octave process.
+
+Open-MPI's MPI_Comm_spawn uses the MPI_Info hint to MPI_Comm_spawn to
+indicate the "slave" nodes, but if you try to MPI_Comm_spawn from a
+normal octave interactive session, you'll get the error
+--------------------------------------------------------------------------
+Some of the requested hosts are not included in the current allocation
+for the application:
+  xterm
+The requested hosts were:
+  h8,h5,h4,h2
+ 
+Verify that you have mapped the allocated resources properly using the
+--host specification.
+--------------------------------------------------------------------------
+
+so for OMPI we recommend either not using MPI_Comm_spawn or starting the
+first (master) interactive octave session with
+--------------------------------------------------------------------------
+$ mpirun -c 1 -H h1,h8,h5,h4,h2 octave --interactive
+--------------------------------------------------------------------------
+
+that is, including all slave nodes after the master node (where the
+interactive octave is to be run) so all slave nodes are in master_node_list
+by when you use MPI_Comm_spawn from the interactive octave session.
+
+Launching the parallel application using mpirun avoids these considerations.
+That's the procedure we are recommending now.
+
+Having a bhost file is required for LAM operation (lamboot), and convenient
+for OMPI operation using the -c switch "mpirun -c 3 -hostfile bhost"
+instead of repeatedly writing the hostnames as in "mpirun -H h1,h2..."
+
+
+		---------------------------------------
+		- Utility scripts ($MPITB_HOME/utils) -
+		---------------------------------------
+MPITB_Clean can be used after MPI_Finalize to allow a new MPI epoch.
+In normal use (as per standard), after MPI_Finalize you cannot use
+any other MPI routine again. You can however clean all MPI DLDs from
+Octave memory, and start over from the beginning. That's the purpose
+of MPITB_Clean. It works for both OMPI and LAM. Most of the remaining
+utilities were developed for LAM/MPI, and are still being adapted to
+OMPI. Expect rough spots if you try MPI_Comm_spawn with OMPI.
+
+# ------------------------------------------------------------------
+Note to selves: only MPITB_Detect_mpi.m and MPITB_Init/OMPI_Init for now.
+# ------------------------------------------------------------------
+
+Although the user could conceivably have a different bhost file in
+each project subdir, in normal use he will be always using the same
+multicomputer or cluster nodes. Conceivably, an utility script could
+be customized to boot a new multicomputer on those always-the-same
+computers. Or take advantage of an already booted LAM, if it meets
+the required number of hosts.
+
+That is the role of $MPITB_HOME/utils/LAM_Init.m. If you are planning
+to use the utilities provided in the $MPITB_HOME/utils subdir, you
+might want to edit the LAM_Init.m file so that the builtin HOSTS
+variable describes your cluster. Or perhaps get used to define a
+global HOSTS in your code before invoking LAM_Init.
+
+Octave_Spawn is another interesting utility to simplify the tasks
+involved in using MPI_Comm_spawn() to start slave Octave instances
+from a master Octave session. It assumes that slave Octaves will
+source the provided startup_mergeParent.m (or they will merge with the
+parent communicator somehow else).
+
+Another startup_bcastSlv.m is provided for applications in which the
+command to execute will be decided at runtime (so you cannot use
+mpirun), but all slaves will run the same command.
+
+A much more elaborated protocol is available with the
+startup_ncmdsSlv.m, together with the NumCmds_Init and NumCmds_Send
+utilities. According to this "protocol", the master instance sends an
+initial message indicating the number of commands that will be sent to
+slave instances. The slaves then enter a loop in which they repeatedly
+wait for a new command and evaluate it. If the number of commands is
+"0", slaves repeat the loop forever... until a "break", "quit" or
+"exit" command is sent, of course.
+
+
+		--------------------------------
+		- What now? TUTORIAL or demos? -
+		--------------------------------
+Do skip this indented section
+||| To start getting acquainted to MPI, one should open an xterm window,
+||| "lamboot" a multicomputer and then start "octave". Then, one might want
+||| to open another xterm/editor from where to copy/paste lines from the
+||| tutorial file to the octave window. In the past we have expressed our
+||| opinion that this is the fastest way to learn MPI, and that you won't
+||| regret reproducing the whole tutorial, or at least the sections dealing
+||| on MPI routines you are interested in.
+||| 
+||| But the fact is most users will benefit from the basic six, i.e., they
+||| will just use MPI_Init/_Finalize, MPI_Send/_Recv, MPI_Comm_rank/_size.
+||| No tutorial is required to learn those. In fact most users will have
+||| already figured out the utility and use of the basic six just after
+||| reading the names.
+||| 
+||| System administration is steadily becoming more and more complex,
+||| more and more academically disregarded, and exceedingly difficult
+||| for novice users to simply understand howto spawn a simple xterm
+||| on a slave (X-client) computer and send the window back to the master
+||| (X-server) computer. ssh tunneling only obscures the issue yet more,
+||| since the encripted tunnel is lost for lamd after successful lamboot,
+||| and spawned processes inherit precisely _that_ lamd environment.
+||| iptables standard paranoid settings add fuel to the bonfire. And
+||| recently we have seen clusters with xterm setuid root again and
+||| puzzling miss of environment variables on xterms. Must give up.
+||| Temptative MPITB users don't deserve this nightmare. Learning to
+||| interactively use and debug MPI was so cool, but it's a lost battle
+||| when there are no helpful sysadmins around.
+||| 
+||| So now...
+
+we are recommending the use of demos to start learning MPITB.
+In increasing difficulty order, they are (for now):
+- Hello
+- Pi
+- PingPong
+- Mandelbrot
+- NPB/EP
+- Spawn    -> These demos are not mpirun-nable
+- Wavelets -> they still use the utils subdir
+
+Simply change into the respective subdirs, read the README files, the
+code (specially the help sections) and try to run them. Most of the
+demos have been re-designed to be mpirun'nable, instead of using
+MPI_Comm_spawn from a master Octave to start slave Octaves. A couple
+of older demos may still hang around for those still interested in the
+utilities subdir.
+
+If you suceed with the demos, you can safely ignore the TUTORIAL file
+and the rest of this file. With respect to this file, it finishes with
+some explanations about the tutorial and the latter old-style demos,
+Spawn and Wavelets.
+
+
+			----------------------
+			- The tutorial story -
+			----------------------
+If in a future parallel application of yours you have doubts about
+howto use a particular MPITB command, search in the TUTORIAL for that
+command name to see its typical usage, even if you do not plan to
+try it out interactively. That is the only reason that the TUTORIAL
+file has not been removed from MPITB yet.
+
+Due to its _tutorial_, interactive nature, the tutorial uses
+MPI_Comm_spawn to start and finish new slaves as required for each
+exercise. Not only Octave slaves are dynamically spawned, but they are
+run on top of an xterm window, so the user can see the xterms pop-up,
+and write MPITB commands on them... and see how MPI_Recv gets hung
+until a matching MPI_Send is issued, and cause a fatal error and see
+the slave xterm die and the master Octave hung on an awaiting recv...
+and by the way, learn how to debug a parallel Octave application.
+
+Experience has shown us that this approach is an error, since the
+interest of most users on MPITB dies when they learn they cannot
+get an xterm back in their GUI. Reasons for that are usually:
+- std firewall rules on personal PC/ws (blocking all X traffic back)
+	learning iptables just to be able to use MPITB is an overkill
+- standard SSH tunneling ability
+	which obscures the problem. "xterm problem? Which problem?
+	I can launch all xterms I want, it's just MPITB who won't start them"
+- standard SSH configuration on headed nodes (using localhost:10)
+	the skills to convince sysadmins are yet harder than iptables
+- no direct connectivity from headless nodes (usually in 192.168.x.y)
+	no way back to user's PC, since nobody really sits at the headed node.
+
+Efforts to include explanations and workarounds for these problems has
+proven to be not only a lost battle, but worse a tactical error, since
+users will forever remember that they had problems _with_MPITB_, not
+with X11, sshd, firewalls, 192.168.x.y routing or lack of helpful local
+sysadmin advice. The "lamprep" and "proxy" shell-scripts are kept in the
+"$MPITB_HOME/stdlones" subdir as romantic, silent milestones (statues
+to the unknown soldier if we continue the analogy), to never forget
+this was a lost battle.
+
+
+		--------------------------------
+		- The Spawn and Wavelets demos -
+		--------------------------------
+The Spawn demos make sense with DEBUG set to true, in order to
+see the xterms running Octave on each slave computer. They have
+evolved from a simple exercise on the 'lam_spawn_sched_round_robin'
+LAM/MPI_Info key (now stored in Spawn_slv_bcast/Spawn_staggrd.m)
+to a full set of introductory demos for the utilities subdir.
+
+# ------------------------------------------------------------------
+Note to selves: Remove this remark when they also work with OMPI
+There is a working Spawn_slv_nostartup/Spawn_ompi.m demo for now
+# ------------------------------------------------------------------
+
+In increasing complexity order, the Spawn demos are:
+- Spawn_slv_nostartup: includes	Spawn_xterms	Spawn_octaves
+- Spawn_slv_merge:	incl.	Spawn_oct_man	Spawn_oct_auto Spawn_oct_bcast
+- Spawn_slv_bcast:	incl.	Spawn_bcast	Spawn_staggrd
+- Spawn_slv_ncmds:	incl.	Spawn_inter	Spawn_auto
+- Spawn_slv_eval:	incl.	the second demo of all the previous subdirs
+
+They are grouped depending on the slave startup protocol used.
+The final Spawn demo illustrates howto the --eval switch can be used
+to avoid a fixed slave startup in the startup_MPITB.m file, and thus
+allow for different applications with different startup protocols
+in the same subdir.
+
+The Wavelets demo is really complex. Read the Contents.m file to
+get a "roadmap" of the different files included. It's a step-by-
+step whole example of how would one go through parallelizing a
+sequential octave application. It could probably be still improved
+to get better speedups, but we wanted to keep it didactical, so
+much more time has been spent in documenting the initial, premeditate
+wrong design decisions than in obtaining good speedups.
+
+The data subdir stores the instrumentation data collected
+using the annotation/timestamp utilities 
+init_stamp, time_stamp, last_stamp, clas_instr,
+save_instr, load_instr, look_instr, lkup_label
+
+You might find them useful to timestamp your own parallel
+applications and easily discover where the time is mostly spent.
+
+
+			--------------
+			- What then? -
+			--------------
+
+If you want us to add some MPITB application of yours to the MPITB web
+page, or mention a paper or publication in a congress which uses MPITB,
+or link to some document you prepared for your research fellows/students
+dealing on MPITB, drop us an e-mail. We'd certainly like to see the
+"MPITB papers" list growing :-)
+
+
+		*************************************
+		* Thanks for your interest in MPITB *
+		*************************************
+
+Granada, SPAIN, 17/Jul/2007
+

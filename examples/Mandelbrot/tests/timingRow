@@ -1,0 +1,20 @@
+#!/bin/bash
+	SOFT=octave
+	CMD="$SOFT -q"
+	PROG=mandelrow
+	NC=600
+	echo --------------------------------------
+	echo dividing workload in $NC, $((NC/2)), $((NC/4)).. chunks
+	echo --------------------------------------
+
+	for (( C=NC; C>=1; C/=2 )); do
+	  for (( T=1; T<=3; T++ )); do
+		echo ___ $C chunks ___ time $T ____
+		echo $PROG\($C\) | $CMD
+		sleep 1
+	  done
+	done | tee -a $$
+
+	mv $$ $PROG.$SOFT.log
+#	grep "elapsed" $$ > $PROG.$SOFT.log
+#	rm $$

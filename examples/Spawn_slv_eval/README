@@ -1,0 +1,73 @@
+## Copyright (C) 2004-2007 Javier Fernández Baldomero, Mancia Anguita López
+##
+## This program is free software
+
+**************
+* Spawn demo * the slaves-eval variant
+**************
+
+Just the second example of all the other Spawn demos, but setting the
+particular startup protocol using the --eval octave switch in spawn,
+instead of fixing it with the else branch in the master startup file.
+
+This way, several applications with different protocols can live in
+the same subdir. If protocol was fixed in the master startup file,
+it would force all apps in the same subdir to the same protocol.
+
+Re-uses the second demo of each subdir:
+Spawn_slv_nostartup:	Spawn_octaves	pristine in fact, it's just a link
+Spawn_slv_merge:	Spawn_oct_auto
+Spawn_slv_bcast:	Spawn_staggrd	recall required startup_bcastSlv modif
+Spawn_slv_ncmds:	Spawn_auto	recall required lena.mat
+
+The only differences are:
+	MPITB startup	startup_MPITB	has now an empty else branch
+	MPITB utility	Octave_spawn	uses --eval to choose slave startup
+
+
+************
+* Contents *
+************
+
+- Spawn_octaves.m	Demo for launching slave octaves-MPI_Comm_spawn-noproto
+- Spawn_oct_auto.m	Same demo, using automated script Octave_Spawn-merge-pr
+- Spawn_staggrd.m	Difficult staggering exercise solved using bcast-proto
+- Spawn_auto.m		Demo using NumCmds_Send with more complexity-ncmds-prot
+
+- lena.mat		Lena image for Spawn_auto demo
+- startup_bcastSlv.m	MPITB slv-bcast startup file modified so as not to quit
+- startup_MPITB.m	MPITB .octaverc startup file
+
+- lam-bhost.def		default bhost file to be used by lamboot
+
+- README		This file
+
+***************
+* Suggestions *
+***************
+
+You could:
+- edit lam-bhost.def to reflect your cluster node names, or...
+- ...alternatively, edit HOSTS cell in these Spawn* M-files or in LAM_Init
+- run lamboot / lamnodes to start LAM out (or let LAM_Init do the job)
+- make sure the lamd process in cluster nodes has inherited a working $DISPLAY
+	(that might be tricky and require local sysadmin advice) (*)
+- run octave
+- try Spawn_octaves, Spawn_oct_auto, Spawn_staggrd, Spawn_auto
+
+
+**************
+* DISCLAIMER *
+**************
+
+Sorry if it doesn't work. Either ask for local help, or give up :-)
+
+Do notice that:
+- mpirun'nable demos were designed because most users get stalled at (*)
+	we are no longer recommending users to MPI_Comm_spawn at all
+- debugging your remote cluster configuration from here is a very hard task
+- just due to your not understanding why it gets blocked, that's why
+	you won't be able to provide useful information for us to debug it
+- if your cluster is so configured, it's because your sysadmin wants it so:
+	paranoid iptables settings, localhost names in DISPLAY, etc
+

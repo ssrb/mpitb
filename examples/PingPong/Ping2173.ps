@@ -1,0 +1,11789 @@
+%!PS-Adobe-2.0
+%%Title: Ping2173.ps
+%%Creator: gnuplot 4.0 patchlevel 0
+%%CreationDate: Wed Jun 27 11:04:55 2007
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 554 770
+%%Orientation: Landscape
+%%Pages: (atend)
+%%EndComments
+/gnudict 256 dict def
+gnudict begin
+/Color false def
+/Solid false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/vshift -46 def
+/dl {10.0 mul} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/Rounded false def
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow { currentpoint stroke M
+  0 vshift R show } def
+/Rshow { currentpoint stroke M
+  dup stringwidth pop neg vshift R show } def
+/Cshow { currentpoint stroke M
+  dup stringwidth pop -2 div vshift R show } def
+/UP { dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def } def
+/DL { Color {setrgbcolor Solid {pop []} if 0 setdash }
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse } def
+/BL { stroke userlinewidth 2 mul setlinewidth
+      Rounded { 1 setlinejoin 1 setlinecap } if } def
+/AL { stroke userlinewidth 2 div setlinewidth
+      Rounded { 1 setlinejoin 1 setlinecap } if } def
+/UL { dup gnulinewidth mul /userlinewidth exch def
+      dup 1 lt {pop 1} if 10 mul /udl exch def } def
+/PL { stroke userlinewidth setlinewidth
+      Rounded { 1 setlinejoin 1 setlinecap } if } def
+/LTw { PL [] 1 setgray } def
+/LTb { BL [] 0 0 0 DL } def
+/LTa { AL [1 udl mul 2 udl mul] 0 setdash 0 0 0 setrgbcolor } def
+/LT0 { PL [] 1 0 0 DL } def
+/LT1 { PL [4 dl 2 dl] 0 1 0 DL } def
+/LT2 { PL [2 dl 3 dl] 0 0 1 DL } def
+/LT3 { PL [1 dl 1.5 dl] 1 0 1 DL } def
+/LT4 { PL [5 dl 2 dl 1 dl 2 dl] 0 1 1 DL } def
+/LT5 { PL [4 dl 3 dl 1 dl 3 dl] 1 1 0 DL } def
+/LT6 { PL [2 dl 2 dl 2 dl 4 dl] 0 0 0 DL } def
+/LT7 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 1 0.3 0 DL } def
+/LT8 { PL [2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 2 dl 4 dl] 0.5 0.5 0.5 DL } def
+/Pnt { stroke [] 0 setdash
+   gsave 1 setlinecap M 0 0 V stroke grestore } def
+/Dia { stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt } def
+/Pls { stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+  } def
+/Box { stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt } def
+/Crs { stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke } def
+/TriU { stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt  } def
+/Star { 2 copy Pls Crs } def
+/BoxF { stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V  hpt2 0 V  0 vpt2 V
+  hpt2 neg 0 V  closepath fill } def
+/TriUF { stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill } def
+/TriD { stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt  } def
+/TriDF { stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF { stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill } def
+/Pent { stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt } def
+/PentF { stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore } def
+/Circle { stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt } def
+/CircleF { stroke [] 0 setdash hpt 0 360 arc fill } def
+/C0 { BL [] 0 setdash 2 copy moveto vpt 90 450  arc } bind def
+/C1 { BL [] 0 setdash 2 copy        moveto
+       2 copy  vpt 0 90 arc closepath fill
+               vpt 0 360 arc closepath } bind def
+/C2 { BL [] 0 setdash 2 copy moveto
+       2 copy  vpt 90 180 arc closepath fill
+               vpt 0 360 arc closepath } bind def
+/C3 { BL [] 0 setdash 2 copy moveto
+       2 copy  vpt 0 180 arc closepath fill
+               vpt 0 360 arc closepath } bind def
+/C4 { BL [] 0 setdash 2 copy moveto
+       2 copy  vpt 180 270 arc closepath fill
+               vpt 0 360 arc closepath } bind def
+/C5 { BL [] 0 setdash 2 copy moveto
+       2 copy  vpt 0 90 arc
+       2 copy moveto
+       2 copy  vpt 180 270 arc closepath fill
+               vpt 0 360 arc } bind def
+/C6 { BL [] 0 setdash 2 copy moveto
+      2 copy  vpt 90 270 arc closepath fill
+              vpt 0 360 arc closepath } bind def
+/C7 { BL [] 0 setdash 2 copy moveto
+      2 copy  vpt 0 270 arc closepath fill
+              vpt 0 360 arc closepath } bind def
+/C8 { BL [] 0 setdash 2 copy moveto
+      2 copy vpt 270 360 arc closepath fill
+              vpt 0 360 arc closepath } bind def
+/C9 { BL [] 0 setdash 2 copy moveto
+      2 copy  vpt 270 450 arc closepath fill
+              vpt 0 360 arc closepath } bind def
+/C10 { BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+       2 copy moveto
+       2 copy vpt 90 180 arc closepath fill
+               vpt 0 360 arc closepath } bind def
+/C11 { BL [] 0 setdash 2 copy moveto
+       2 copy  vpt 0 180 arc closepath fill
+       2 copy moveto
+       2 copy  vpt 270 360 arc closepath fill
+               vpt 0 360 arc closepath } bind def
+/C12 { BL [] 0 setdash 2 copy moveto
+       2 copy  vpt 180 360 arc closepath fill
+               vpt 0 360 arc closepath } bind def
+/C13 { BL [] 0 setdash  2 copy moveto
+       2 copy  vpt 0 90 arc closepath fill
+       2 copy moveto
+       2 copy  vpt 180 360 arc closepath fill
+               vpt 0 360 arc closepath } bind def
+/C14 { BL [] 0 setdash 2 copy moveto
+       2 copy  vpt 90 360 arc closepath fill
+               vpt 0 360 arc } bind def
+/C15 { BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+               vpt 0 360 arc closepath } bind def
+/Rec   { newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+       neg 0 rlineto closepath } bind def
+/Square { dup Rec } bind def
+/Bsquare { vpt sub exch vpt sub exch vpt2 Square } bind def
+/S0 { BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare } bind def
+/S1 { BL [] 0 setdash 2 copy vpt Square fill Bsquare } bind def
+/S2 { BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare } bind def
+/S3 { BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare } bind def
+/S4 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare } bind def
+/S5 { BL [] 0 setdash 2 copy 2 copy vpt Square fill
+       exch vpt sub exch vpt sub vpt Square fill Bsquare } bind def
+/S6 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare } bind def
+/S7 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+       2 copy vpt Square fill
+       Bsquare } bind def
+/S8 { BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare } bind def
+/S9 { BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare } bind def
+/S10 { BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+       Bsquare } bind def
+/S11 { BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+       Bsquare } bind def
+/S12 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare } bind def
+/S13 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+       2 copy vpt Square fill Bsquare } bind def
+/S14 { BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+       2 copy exch vpt sub exch vpt Square fill Bsquare } bind def
+/S15 { BL [] 0 setdash 2 copy Bsquare fill Bsquare } bind def
+/D0 { gsave translate 45 rotate 0 0 S0 stroke grestore } bind def
+/D1 { gsave translate 45 rotate 0 0 S1 stroke grestore } bind def
+/D2 { gsave translate 45 rotate 0 0 S2 stroke grestore } bind def
+/D3 { gsave translate 45 rotate 0 0 S3 stroke grestore } bind def
+/D4 { gsave translate 45 rotate 0 0 S4 stroke grestore } bind def
+/D5 { gsave translate 45 rotate 0 0 S5 stroke grestore } bind def
+/D6 { gsave translate 45 rotate 0 0 S6 stroke grestore } bind def
+/D7 { gsave translate 45 rotate 0 0 S7 stroke grestore } bind def
+/D8 { gsave translate 45 rotate 0 0 S8 stroke grestore } bind def
+/D9 { gsave translate 45 rotate 0 0 S9 stroke grestore } bind def
+/D10 { gsave translate 45 rotate 0 0 S10 stroke grestore } bind def
+/D11 { gsave translate 45 rotate 0 0 S11 stroke grestore } bind def
+/D12 { gsave translate 45 rotate 0 0 S12 stroke grestore } bind def
+/D13 { gsave translate 45 rotate 0 0 S13 stroke grestore } bind def
+/D14 { gsave translate 45 rotate 0 0 S14 stroke grestore } bind def
+/D15 { gsave translate 45 rotate 0 0 S15 stroke grestore } bind def
+/DiaE { stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke } def
+/BoxE { stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke } def
+/TriUE { stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke } def
+/TriDE { stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke } def
+/PentE { stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore } def
+/CircE { stroke [] 0 setdash 
+  hpt 0 360 arc stroke } def
+/Opaque { gsave closepath 1 setgray fill grestore 0 setgray closepath } def
+/DiaW { stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke } def
+/BoxW { stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke } def
+/TriUW { stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke } def
+/TriDW { stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke } def
+/PentW { stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore } def
+/CircW { stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke } def
+/BoxFill { gsave Rec 1 setgray fill grestore } def
+/BoxColFill {
+  gsave Rec
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor
+  fill grestore } def
+%
+% PostScript Level 1 Pattern Fill routine
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill { gsave /PFa [ 9 2 roll ] def
+    PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+    PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+    gsave 1 setgray fill grestore clip
+    currentlinewidth 0.5 mul setlinewidth
+    /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+    0 0 M PFa 5 get rotate PFs -2 div dup translate
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{ PFa 4 get mul 0 M 0 PFs V } for
+    0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{ PFa 4 get mul 0 2 1 roll M PFs 0 V } for
+    } if
+    stroke grestore } def
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+1.000 UL
+LTb
+574 2800 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 0) Rshow
+grestore
+1.000 UL
+LTb
+574 3214 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 0.5) Rshow
+grestore
+1.000 UL
+LTb
+574 3629 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+574 4043 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 1.5) Rshow
+grestore
+1.000 UL
+LTb
+574 4458 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 2) Rshow
+grestore
+1.000 UL
+LTb
+574 4872 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 2.5) Rshow
+grestore
+1.000 UL
+LTb
+574 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 0) Cshow
+grestore
+1.000 UL
+LTb
+972 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+1371 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 2e+07) Cshow
+grestore
+1.000 UL
+LTb
+1769 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 3e+07) Cshow
+grestore
+1.000 UL
+LTb
+2167 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 4e+07) Cshow
+grestore
+1.000 UL
+LTb
+2565 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 5e+07) Cshow
+grestore
+1.000 UL
+LTb
+2964 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 6e+07) Cshow
+grestore
+1.000 UL
+LTb
+3362 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 7e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+574 2800 M
+2788 0 V
+0 2072 V
+-2788 0 V
+0 -2072 V
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+574 2801 M
+0 -1 V
+1 0 V
+0 1 V
+2 0 V
+2 1 V
+5 1 V
+11 3 V
+21 6 V
+42 12 V
+83 24 V
+167 46 V
+334 94 V
+668 187 V
+1337 374 V
+574 2801 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2800 Box
+575 2801 Box
+577 2801 Box
+579 2802 Box
+584 2803 Box
+595 2806 Box
+616 2812 Box
+658 2824 Box
+741 2848 Box
+908 2894 Box
+1242 2988 Box
+1910 3175 Box
+3247 3549 Box
+1.000 UP
+1.000 UL
+LT0
+574 2801 M
+0 -1 V
+1 0 V
+0 1 V
+2 0 V
+2 1 V
+5 2 V
+11 4 V
+21 8 V
+42 15 V
+83 30 V
+167 63 V
+334 123 V
+668 248 V
+1337 484 V
+574 2801 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2800 Box
+575 2801 Box
+577 2801 Box
+579 2802 Box
+584 2804 Box
+595 2808 Box
+616 2816 Box
+658 2831 Box
+741 2861 Box
+908 2924 Box
+1242 3047 Box
+1910 3295 Box
+3247 3779 Box
+1.000 UP
+1.000 UL
+LT0
+574 2801 M
+0 -1 V
+1 1 V
+2 1 V
+2 2 V
+5 3 V
+11 7 V
+21 14 V
+42 28 V
+83 54 V
+167 112 V
+334 220 V
+668 415 V
+1337 828 V
+574 2801 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2801 Box
+575 2801 Box
+577 2802 Box
+579 2804 Box
+584 2807 Box
+595 2814 Box
+616 2828 Box
+658 2856 Box
+741 2910 Box
+908 3022 Box
+1242 3242 Box
+1910 3657 Box
+3247 4485 Box
+1.000 UP
+1.000 UL
+LT0
+574 2800 M
+1 1 V
+2 1 V
+2 2 V
+5 4 V
+11 8 V
+21 16 V
+42 32 V
+83 63 V
+167 126 V
+334 252 V
+668 465 V
+1337 926 V
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2801 Box
+575 2801 Box
+577 2802 Box
+579 2804 Box
+584 2808 Box
+595 2816 Box
+616 2832 Box
+658 2864 Box
+741 2927 Box
+908 3053 Box
+1242 3305 Box
+1910 3770 Box
+3247 4696 Box
+1.000 UL
+LTb
+574 2800 M
+2788 0 V
+0 2072 V
+-2788 0 V
+0 -2072 V
+1.000 UP
+stroke
+0 2520 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 2800 M
+2788 0 V
+1.000 UL
+LTb
+574 2800 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 0) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 3214 M
+2788 0 V
+1.000 UL
+LTb
+574 3214 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 0.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 3629 M
+2788 0 V
+1.000 UL
+LTb
+574 3629 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 4043 M
+2788 0 V
+1.000 UL
+LTb
+574 4043 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 1.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 4458 M
+2788 0 V
+1.000 UL
+LTb
+574 4458 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 2) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 4872 M
+2788 0 V
+1.000 UL
+LTb
+574 4872 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 2.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 2800 M
+0 2072 V
+1.000 UL
+LTb
+574 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 0) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+972 2800 M
+0 2072 V
+1.000 UL
+LTb
+972 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+1371 2800 M
+0 2072 V
+1.000 UL
+LTb
+1371 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 2e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+1769 2800 M
+0 2072 V
+1.000 UL
+LTb
+1769 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 3e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2167 2800 M
+0 2072 V
+1.000 UL
+LTb
+2167 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 4e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2565 2800 M
+0 2072 V
+1.000 UL
+LTb
+2565 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 5e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2964 2800 M
+0 2009 V
+0 63 V
+1.000 UL
+LTb
+2964 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 6e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+3362 2800 M
+0 2072 V
+1.000 UL
+LTb
+3362 2800 M
+0 63 V
+0 2009 R
+0 -63 V
+0 -2149 R
+gsave 0 setgray
+( 7e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+574 2800 M
+2788 0 V
+0 2072 V
+-2788 0 V
+0 -2072 V
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+574 2801 M
+0 -1 V
+1 0 V
+0 1 V
+2 0 V
+2 1 V
+5 1 V
+11 3 V
+21 6 V
+42 12 V
+83 24 V
+167 46 V
+334 94 V
+668 187 V
+1337 374 V
+574 2801 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2800 Box
+575 2801 Box
+577 2801 Box
+579 2802 Box
+584 2803 Box
+595 2806 Box
+616 2812 Box
+658 2824 Box
+741 2848 Box
+908 2894 Box
+1242 2988 Box
+1910 3175 Box
+3247 3549 Box
+1.000 UP
+1.000 UL
+LT0
+574 2801 M
+0 -1 V
+1 0 V
+0 1 V
+2 0 V
+2 1 V
+5 2 V
+11 4 V
+21 8 V
+42 15 V
+83 30 V
+167 63 V
+334 123 V
+668 248 V
+1337 484 V
+574 2801 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2800 Box
+575 2801 Box
+577 2801 Box
+579 2802 Box
+584 2804 Box
+595 2808 Box
+616 2816 Box
+658 2831 Box
+741 2861 Box
+908 2924 Box
+1242 3047 Box
+1910 3295 Box
+3247 3779 Box
+1.000 UP
+1.000 UL
+LT0
+574 2801 M
+0 -1 V
+1 1 V
+2 1 V
+2 2 V
+5 3 V
+11 7 V
+21 14 V
+42 28 V
+83 54 V
+167 112 V
+334 220 V
+668 415 V
+1337 828 V
+574 2801 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2801 Box
+575 2801 Box
+577 2802 Box
+579 2804 Box
+584 2807 Box
+595 2814 Box
+616 2828 Box
+658 2856 Box
+741 2910 Box
+908 3022 Box
+1242 3242 Box
+1910 3657 Box
+3247 4485 Box
+1.000 UP
+1.000 UL
+LT0
+574 2800 M
+1 1 V
+2 1 V
+2 2 V
+5 4 V
+11 8 V
+21 16 V
+42 32 V
+83 63 V
+167 126 V
+334 252 V
+668 465 V
+1337 926 V
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2801 Box
+575 2801 Box
+577 2802 Box
+579 2804 Box
+584 2808 Box
+595 2816 Box
+616 2832 Box
+658 2864 Box
+741 2927 Box
+908 3053 Box
+1242 3305 Box
+1910 3770 Box
+3247 4696 Box
+1.000 UL
+LTb
+574 2800 M
+2788 0 V
+0 2072 V
+-2788 0 V
+0 -2072 V
+1.000 UP
+stroke
+0 2520 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 2800 M
+2788 0 V
+1.000 UL
+LTb
+574 2800 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 0) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 3136 M
+2788 0 V
+1.000 UL
+LTb
+574 3136 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 0.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 3472 M
+2788 0 V
+1.000 UL
+LTb
+574 3472 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 3808 M
+2788 0 V
+1.000 UL
+LTb
+574 3808 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 1.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 4144 M
+2788 0 V
+1.000 UL
+LTb
+574 4144 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 2) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 4480 M
+2788 0 V
+1.000 UL
+LTb
+574 4480 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 2.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 2800 M
+0 1680 V
+1.000 UL
+LTb
+574 2800 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 0) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+972 2800 M
+0 1680 V
+1.000 UL
+LTb
+972 2800 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+1371 2800 M
+0 1680 V
+1.000 UL
+LTb
+1371 2800 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 2e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+1769 2800 M
+0 1680 V
+1.000 UL
+LTb
+1769 2800 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 3e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2167 2800 M
+0 1680 V
+1.000 UL
+LTb
+2167 2800 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 4e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2565 2800 M
+0 1680 V
+1.000 UL
+LTb
+2565 2800 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 5e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2964 2800 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+2964 2800 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 6e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+3362 2800 M
+0 1680 V
+1.000 UL
+LTb
+3362 2800 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 7e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+574 2800 M
+2788 0 V
+0 1680 V
+-2788 0 V
+0 -1680 V
+LTb
+1968 4830 M
+gsave 0 setgray
+(Ping2173 one-way time between) Cshow
+grestore
+1968 4690 M
+gsave 0 setgray
+(hypercat01.atc.ugr.es-hypercat02.atc.ugr.es-) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+574 2800 M
+1 0 V
+2 1 V
+2 1 V
+5 1 V
+11 2 V
+21 5 V
+42 10 V
+83 19 V
+167 37 V
+334 76 V
+668 152 V
+1337 304 V
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2800 Box
+575 2800 Box
+577 2801 Box
+579 2802 Box
+584 2803 Box
+595 2805 Box
+616 2810 Box
+658 2820 Box
+741 2839 Box
+908 2876 Box
+1242 2952 Box
+1910 3104 Box
+3247 3408 Box
+1.000 UP
+1.000 UL
+LT0
+574 2801 M
+0 -1 V
+1 0 V
+2 1 V
+2 1 V
+5 1 V
+11 4 V
+21 6 V
+42 12 V
+83 25 V
+167 51 V
+334 100 V
+668 200 V
+1337 393 V
+574 2801 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2800 Box
+575 2800 Box
+577 2801 Box
+579 2802 Box
+584 2803 Box
+595 2807 Box
+616 2813 Box
+658 2825 Box
+741 2850 Box
+908 2901 Box
+1242 3001 Box
+1910 3201 Box
+3247 3594 Box
+1.000 UP
+1.000 UL
+LT0
+574 2800 M
+1 1 V
+2 1 V
+2 1 V
+5 3 V
+11 5 V
+21 11 V
+42 23 V
+83 44 V
+167 91 V
+334 179 V
+668 336 V
+1337 671 V
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2801 Box
+575 2801 Box
+577 2802 Box
+579 2803 Box
+584 2806 Box
+595 2811 Box
+616 2822 Box
+658 2845 Box
+741 2889 Box
+908 2980 Box
+1242 3159 Box
+1910 3495 Box
+3247 4166 Box
+1.000 UP
+1.000 UL
+LT0
+574 2800 M
+1 1 V
+2 1 V
+2 1 V
+5 3 V
+11 7 V
+21 13 V
+42 26 V
+83 51 V
+167 102 V
+334 205 V
+668 377 V
+1337 750 V
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+574 2800 Box
+575 2801 Box
+575 2801 Box
+577 2802 Box
+579 2803 Box
+584 2806 Box
+595 2813 Box
+616 2826 Box
+658 2852 Box
+741 2903 Box
+908 3005 Box
+1242 3210 Box
+1910 3587 Box
+3247 4337 Box
+1.000 UL
+LTb
+574 2800 M
+2788 0 V
+0 1680 V
+-2788 0 V
+0 -1680 V
+1.000 UP
+stroke
+0 2520 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 2940 M
+2788 0 V
+1.000 UL
+LTb
+574 2940 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 0) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 3248 M
+2788 0 V
+1.000 UL
+LTb
+574 3248 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 0.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 3556 M
+2788 0 V
+1.000 UL
+LTb
+574 3556 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 3864 M
+2788 0 V
+1.000 UL
+LTb
+574 3864 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 1.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 4172 M
+2788 0 V
+1.000 UL
+LTb
+574 4172 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 2) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 4480 M
+2788 0 V
+1.000 UL
+LTb
+574 4480 M
+63 0 V
+2725 0 R
+-63 0 V
+-2809 0 R
+gsave 0 setgray
+( 2.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+574 2940 M
+0 1540 V
+1.000 UL
+LTb
+574 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 0) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+972 2940 M
+0 1540 V
+1.000 UL
+LTb
+972 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+1371 2940 M
+0 1540 V
+1.000 UL
+LTb
+1371 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 2e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+1769 2940 M
+0 1540 V
+1.000 UL
+LTb
+1769 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 3e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2167 2940 M
+0 1540 V
+1.000 UL
+LTb
+2167 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 4e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2565 2940 M
+0 1540 V
+1.000 UL
+LTb
+2565 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 5e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2964 2940 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+2964 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 6e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+3362 2940 M
+0 1540 V
+1.000 UL
+LTb
+3362 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 7e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+574 2940 M
+2788 0 V
+0 1540 V
+-2788 0 V
+0 -1540 V
+LTb
+1968 2590 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+1968 4830 M
+gsave 0 setgray
+(Ping2173 one-way time between) Cshow
+grestore
+1968 4690 M
+gsave 0 setgray
+(hypercat01.atc.ugr.es-hypercat02.atc.ugr.es-) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+574 2940 M
+1 0 V
+2 1 V
+2 0 V
+5 2 V
+11 2 V
+21 4 V
+42 9 V
+83 17 V
+167 35 V
+334 70 V
+668 139 V
+1337 278 V
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+575 2940 Box
+575 2940 Box
+577 2941 Box
+579 2941 Box
+584 2943 Box
+595 2945 Box
+616 2949 Box
+658 2958 Box
+741 2975 Box
+908 3010 Box
+1242 3080 Box
+1910 3219 Box
+3247 3497 Box
+1.000 UP
+1.000 UL
+LT0
+574 2941 M
+0 -1 V
+1 0 V
+2 1 V
+2 1 V
+5 1 V
+11 3 V
+21 6 V
+42 11 V
+83 23 V
+167 46 V
+334 92 V
+668 184 V
+1337 360 V
+574 2941 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+575 2940 Box
+575 2940 Box
+577 2941 Box
+579 2942 Box
+584 2943 Box
+595 2946 Box
+616 2952 Box
+658 2963 Box
+741 2986 Box
+908 3032 Box
+1242 3124 Box
+1910 3308 Box
+3247 3668 Box
+1.000 UP
+1.000 UL
+LT0
+574 2940 M
+1 1 V
+2 1 V
+2 1 V
+5 2 V
+11 5 V
+21 11 V
+42 20 V
+83 41 V
+167 83 V
+334 164 V
+668 308 V
+1337 615 V
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+575 2941 Box
+575 2941 Box
+577 2942 Box
+579 2943 Box
+584 2945 Box
+595 2950 Box
+616 2961 Box
+658 2981 Box
+741 3022 Box
+908 3105 Box
+1242 3269 Box
+1910 3577 Box
+3247 4192 Box
+1.000 UP
+1.000 UL
+LT0
+574 2940 M
+1 1 V
+2 1 V
+2 1 V
+5 3 V
+11 6 V
+21 12 V
+42 23 V
+83 47 V
+167 94 V
+334 188 V
+668 345 V
+1337 688 V
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+574 2940 Box
+575 2941 Box
+575 2941 Box
+577 2942 Box
+579 2943 Box
+584 2946 Box
+595 2952 Box
+616 2964 Box
+658 2987 Box
+741 3034 Box
+908 3128 Box
+1242 3316 Box
+1910 3661 Box
+3247 4349 Box
+1.000 UL
+LTb
+574 2940 M
+2788 0 V
+0 1540 V
+-2788 0 V
+0 -1540 V
+1.000 UP
+stroke
+0 2520 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+714 2940 M
+2648 0 V
+1.000 UL
+LTb
+714 2940 M
+63 0 V
+2585 0 R
+-63 0 V
+-2669 0 R
+gsave 0 setgray
+( 0) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+714 3248 M
+2648 0 V
+1.000 UL
+LTb
+714 3248 M
+63 0 V
+2585 0 R
+-63 0 V
+-2669 0 R
+gsave 0 setgray
+( 0.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+714 3556 M
+2648 0 V
+1.000 UL
+LTb
+714 3556 M
+63 0 V
+2585 0 R
+-63 0 V
+-2669 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+714 3864 M
+2648 0 V
+1.000 UL
+LTb
+714 3864 M
+63 0 V
+2585 0 R
+-63 0 V
+-2669 0 R
+gsave 0 setgray
+( 1.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+714 4172 M
+2648 0 V
+1.000 UL
+LTb
+714 4172 M
+63 0 V
+2585 0 R
+-63 0 V
+-2669 0 R
+gsave 0 setgray
+( 2) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+714 4480 M
+2648 0 V
+1.000 UL
+LTb
+714 4480 M
+63 0 V
+2585 0 R
+-63 0 V
+-2669 0 R
+gsave 0 setgray
+( 2.5) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+714 2940 M
+0 1540 V
+1.000 UL
+LTb
+714 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 0) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+1092 2940 M
+0 1540 V
+1.000 UL
+LTb
+1092 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+1471 2940 M
+0 1540 V
+1.000 UL
+LTb
+1471 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 2e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+1849 2940 M
+0 1540 V
+1.000 UL
+LTb
+1849 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 3e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2227 2940 M
+0 1540 V
+1.000 UL
+LTb
+2227 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 4e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2605 2940 M
+0 1540 V
+1.000 UL
+LTb
+2605 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 5e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+2984 2940 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+2984 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 6e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+3362 2940 M
+0 1540 V
+1.000 UL
+LTb
+3362 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 7e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+714 2940 M
+2648 0 V
+0 1540 V
+-2648 0 V
+0 -1540 V
+LTb
+140 3710 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(seconds) Cshow
+grestore
+grestore
+LTb
+2038 2590 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+2038 4830 M
+gsave 0 setgray
+(Ping2173 one-way time between) Cshow
+grestore
+2038 4690 M
+gsave 0 setgray
+(hypercat01.atc.ugr.es-hypercat02.atc.ugr.es-) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+714 2940 M
+1 0 V
+1 1 V
+3 0 V
+5 2 V
+10 2 V
+20 4 V
+39 9 V
+80 17 V
+158 35 V
+318 70 V
+634 139 V
+1270 278 V
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+715 2940 Box
+715 2940 Box
+716 2941 Box
+719 2941 Box
+724 2943 Box
+734 2945 Box
+754 2949 Box
+793 2958 Box
+873 2975 Box
+1031 3010 Box
+1349 3080 Box
+1983 3219 Box
+3253 3497 Box
+1.000 UP
+1.000 UL
+LT0
+714 2941 M
+0 -1 V
+1 0 V
+1 1 V
+3 1 V
+5 1 V
+10 3 V
+20 6 V
+39 11 V
+80 23 V
+158 46 V
+318 92 V
+634 184 V
+1270 360 V
+714 2941 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+715 2940 Box
+715 2940 Box
+716 2941 Box
+719 2942 Box
+724 2943 Box
+734 2946 Box
+754 2952 Box
+793 2963 Box
+873 2986 Box
+1031 3032 Box
+1349 3124 Box
+1983 3308 Box
+3253 3668 Box
+1.000 UP
+1.000 UL
+LT0
+714 2940 M
+1 1 V
+1 1 V
+3 1 V
+5 2 V
+10 5 V
+20 11 V
+39 20 V
+80 41 V
+158 83 V
+318 164 V
+634 308 V
+1270 615 V
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+715 2941 Box
+715 2941 Box
+716 2942 Box
+719 2943 Box
+724 2945 Box
+734 2950 Box
+754 2961 Box
+793 2981 Box
+873 3022 Box
+1031 3105 Box
+1349 3269 Box
+1983 3577 Box
+3253 4192 Box
+1.000 UP
+1.000 UL
+LT0
+714 2940 M
+1 1 V
+1 1 V
+3 1 V
+5 3 V
+10 6 V
+20 12 V
+39 23 V
+80 47 V
+158 94 V
+318 188 V
+634 345 V
+1270 688 V
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+714 2940 Box
+715 2941 Box
+715 2941 Box
+716 2942 Box
+719 2943 Box
+724 2946 Box
+734 2952 Box
+754 2964 Box
+793 2987 Box
+873 3034 Box
+1031 3128 Box
+1349 3316 Box
+1983 3661 Box
+3253 4349 Box
+1.000 UL
+LTb
+714 2940 M
+2648 0 V
+0 1540 V
+-2648 0 V
+0 -1540 V
+1.000 UP
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 2940 M
+2732 0 V
+1.000 UL
+LTb
+4230 2940 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 0) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3133 M
+2732 0 V
+1.000 UL
+LTb
+4230 3133 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3325 M
+2732 0 V
+1.000 UL
+LTb
+4230 3325 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 20) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3518 M
+2732 0 V
+1.000 UL
+LTb
+4230 3518 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 30) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3710 M
+2732 0 V
+1.000 UL
+LTb
+4230 3710 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 40) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3903 M
+2732 0 V
+1.000 UL
+LTb
+4230 3903 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 50) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4095 M
+2732 0 V
+1.000 UL
+LTb
+4230 4095 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 60) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4288 M
+2732 0 V
+1.000 UL
+LTb
+4230 4288 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 70) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4480 M
+2732 0 V
+1.000 UL
+LTb
+4230 4480 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 80) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 2940 M
+0 1540 V
+1.000 UL
+LTb
+4230 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 0) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4620 2940 M
+0 1540 V
+1.000 UL
+LTb
+4620 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5011 2940 M
+0 1540 V
+1.000 UL
+LTb
+5011 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 2e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5401 2940 M
+0 1540 V
+1.000 UL
+LTb
+5401 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 3e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5791 2940 M
+0 1540 V
+1.000 UL
+LTb
+5791 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 4e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6181 2940 M
+0 1540 V
+1.000 UL
+LTb
+6181 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 5e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6572 2940 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+6572 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 6e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6962 2940 M
+0 1540 V
+1.000 UL
+LTb
+6962 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 7e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+4230 2940 M
+2732 0 V
+0 1540 V
+-2732 0 V
+0 -1540 V
+LTb
+3740 3710 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(seconds) Cshow
+grestore
+grestore
+LTb
+5596 2590 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+5596 4830 M
+gsave 0 setgray
+(Ping2173 one-way time between) Cshow
+grestore
+5596 4690 M
+gsave 0 setgray
+(hypercat01.atc.ugr.es-hypercat02.atc.ugr.es-) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 1 V
+0 3 V
+0 4 V
+0 9 V
+0 17 V
+0 12 V
+0 69 V
+0 82 V
+0 136 V
+0 167 V
+1 212 V
+0 214 V
+2 116 V
+2 45 V
+5 130 V
+10 98 V
+21 45 V
+41 30 V
+82 17 V
+163 11 V
+328 5 V
+655 3 V
+1309 2 V
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2942 Box
+4230 2945 Box
+4230 2949 Box
+4230 2958 Box
+4230 2975 Box
+4230 2987 Box
+4230 3056 Box
+4230 3138 Box
+4230 3274 Box
+4230 3441 Box
+4231 3653 Box
+4231 3867 Box
+4233 3983 Box
+4235 4028 Box
+4240 4158 Box
+4250 4256 Box
+4271 4301 Box
+4312 4331 Box
+4394 4348 Box
+4557 4359 Box
+4885 4364 Box
+5540 4367 Box
+6849 4369 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 2 V
+0 5 V
+0 9 V
+0 18 V
+0 34 V
+0 53 V
+0 81 V
+0 139 V
+0 170 V
+1 199 V
+0 159 V
+2 36 V
+2 32 V
+5 55 V
+10 24 V
+21 33 V
+41 22 V
+82 15 V
+163 -12 V
+328 5 V
+655 0 V
+1309 11 V
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2945 Box
+4230 2950 Box
+4230 2959 Box
+4230 2977 Box
+4230 3011 Box
+4230 3064 Box
+4230 3145 Box
+4230 3284 Box
+4230 3454 Box
+4231 3653 Box
+4231 3812 Box
+4233 3848 Box
+4235 3880 Box
+4240 3935 Box
+4250 3959 Box
+4271 3992 Box
+4312 4014 Box
+4394 4029 Box
+4557 4017 Box
+4885 4022 Box
+5540 4022 Box
+6849 4033 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 2 V
+0 5 V
+0 9 V
+0 19 V
+0 34 V
+0 51 V
+0 89 V
+0 109 V
+1 -21 V
+0 109 V
+2 98 V
+2 62 V
+5 26 V
+10 2 V
+21 6 V
+41 -1 V
+82 5 V
+163 -3 V
+328 1 V
+655 19 V
+1309 11 V
+4230 2940 Box
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2945 Box
+4230 2950 Box
+4230 2959 Box
+4230 2978 Box
+4230 3012 Box
+4230 3063 Box
+4230 3152 Box
+4230 3261 Box
+4231 3240 Box
+4231 3349 Box
+4233 3447 Box
+4235 3509 Box
+4240 3535 Box
+4250 3537 Box
+4271 3543 Box
+4312 3542 Box
+4394 3547 Box
+4557 3544 Box
+4885 3545 Box
+5540 3564 Box
+6849 3575 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 3 V
+0 5 V
+0 10 V
+0 20 V
+0 33 V
+0 50 V
+0 86 V
+0 92 V
+1 -8 V
+0 89 V
+2 77 V
+2 53 V
+5 10 V
+10 -5 V
+21 1 V
+41 6 V
+82 2 V
+163 3 V
+328 0 V
+655 22 V
+1309 13 V
+4230 2940 Box
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2946 Box
+4230 2951 Box
+4230 2961 Box
+4230 2981 Box
+4230 3014 Box
+4230 3064 Box
+4230 3150 Box
+4230 3242 Box
+4231 3234 Box
+4231 3323 Box
+4233 3400 Box
+4235 3453 Box
+4240 3463 Box
+4250 3458 Box
+4271 3459 Box
+4312 3465 Box
+4394 3467 Box
+4557 3470 Box
+4885 3470 Box
+5540 3492 Box
+6849 3505 Box
+1.000 UL
+LTb
+4230 2940 M
+2732 0 V
+0 1540 V
+-2732 0 V
+0 -1540 V
+1.000 UP
+stroke
+3600 2520 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 2940 M
+2732 0 V
+1.000 UL
+LTb
+4230 2940 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 0) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3133 M
+2732 0 V
+1.000 UL
+LTb
+4230 3133 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3325 M
+2732 0 V
+1.000 UL
+LTb
+4230 3325 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 20) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3518 M
+2732 0 V
+1.000 UL
+LTb
+4230 3518 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 30) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3710 M
+2732 0 V
+1.000 UL
+LTb
+4230 3710 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 40) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3903 M
+2732 0 V
+1.000 UL
+LTb
+4230 3903 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 50) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4095 M
+2732 0 V
+1.000 UL
+LTb
+4230 4095 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 60) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4288 M
+2732 0 V
+1.000 UL
+LTb
+4230 4288 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 70) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4480 M
+2732 0 V
+1.000 UL
+LTb
+4230 4480 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 80) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 2940 M
+0 1540 V
+1.000 UL
+LTb
+4230 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 0) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4620 2940 M
+0 1540 V
+1.000 UL
+LTb
+4620 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5011 2940 M
+0 1540 V
+1.000 UL
+LTb
+5011 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 2e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5401 2940 M
+0 1540 V
+1.000 UL
+LTb
+5401 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 3e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5791 2940 M
+0 1540 V
+1.000 UL
+LTb
+5791 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 4e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6181 2940 M
+0 1540 V
+1.000 UL
+LTb
+6181 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 5e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6572 2940 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+6572 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 6e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6962 2940 M
+0 1540 V
+1.000 UL
+LTb
+6962 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 7e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+4230 2940 M
+2732 0 V
+0 1540 V
+-2732 0 V
+0 -1540 V
+LTb
+3740 3710 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(seconds) Cshow
+grestore
+grestore
+LTb
+5596 2590 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+5596 4830 M
+gsave 0 setgray
+(Ping2173 one-way time between) Cshow
+grestore
+5596 4690 M
+gsave 0 setgray
+(hypercat01.atc.ugr.es-hypercat02.atc.ugr.es-) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 1 V
+0 3 V
+0 4 V
+0 9 V
+0 17 V
+0 12 V
+0 69 V
+0 82 V
+0 136 V
+0 167 V
+1 212 V
+0 214 V
+2 116 V
+2 45 V
+5 130 V
+10 98 V
+21 45 V
+41 30 V
+82 17 V
+163 11 V
+328 5 V
+655 3 V
+1309 2 V
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2942 Box
+4230 2945 Box
+4230 2949 Box
+4230 2958 Box
+4230 2975 Box
+4230 2987 Box
+4230 3056 Box
+4230 3138 Box
+4230 3274 Box
+4230 3441 Box
+4231 3653 Box
+4231 3867 Box
+4233 3983 Box
+4235 4028 Box
+4240 4158 Box
+4250 4256 Box
+4271 4301 Box
+4312 4331 Box
+4394 4348 Box
+4557 4359 Box
+4885 4364 Box
+5540 4367 Box
+6849 4369 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 2 V
+0 5 V
+0 9 V
+0 18 V
+0 34 V
+0 53 V
+0 81 V
+0 139 V
+0 170 V
+1 199 V
+0 159 V
+2 36 V
+2 32 V
+5 55 V
+10 24 V
+21 33 V
+41 22 V
+82 15 V
+163 -12 V
+328 5 V
+655 0 V
+1309 11 V
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2945 Box
+4230 2950 Box
+4230 2959 Box
+4230 2977 Box
+4230 3011 Box
+4230 3064 Box
+4230 3145 Box
+4230 3284 Box
+4230 3454 Box
+4231 3653 Box
+4231 3812 Box
+4233 3848 Box
+4235 3880 Box
+4240 3935 Box
+4250 3959 Box
+4271 3992 Box
+4312 4014 Box
+4394 4029 Box
+4557 4017 Box
+4885 4022 Box
+5540 4022 Box
+6849 4033 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 2 V
+0 5 V
+0 9 V
+0 19 V
+0 34 V
+0 51 V
+0 89 V
+0 109 V
+1 -21 V
+0 109 V
+2 98 V
+2 62 V
+5 26 V
+10 2 V
+21 6 V
+41 -1 V
+82 5 V
+163 -3 V
+328 1 V
+655 19 V
+1309 11 V
+4230 2940 Box
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2945 Box
+4230 2950 Box
+4230 2959 Box
+4230 2978 Box
+4230 3012 Box
+4230 3063 Box
+4230 3152 Box
+4230 3261 Box
+4231 3240 Box
+4231 3349 Box
+4233 3447 Box
+4235 3509 Box
+4240 3535 Box
+4250 3537 Box
+4271 3543 Box
+4312 3542 Box
+4394 3547 Box
+4557 3544 Box
+4885 3545 Box
+5540 3564 Box
+6849 3575 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 3 V
+0 5 V
+0 10 V
+0 20 V
+0 33 V
+0 50 V
+0 86 V
+0 92 V
+1 -8 V
+0 89 V
+2 77 V
+2 53 V
+5 10 V
+10 -5 V
+21 1 V
+41 6 V
+82 2 V
+163 3 V
+328 0 V
+655 22 V
+1309 13 V
+4230 2940 Box
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2946 Box
+4230 2951 Box
+4230 2961 Box
+4230 2981 Box
+4230 3014 Box
+4230 3064 Box
+4230 3150 Box
+4230 3242 Box
+4231 3234 Box
+4231 3323 Box
+4233 3400 Box
+4235 3453 Box
+4240 3463 Box
+4250 3458 Box
+4271 3459 Box
+4312 3465 Box
+4394 3467 Box
+4557 3470 Box
+4885 3470 Box
+5540 3492 Box
+6849 3505 Box
+1.000 UL
+LTb
+4230 2940 M
+2732 0 V
+0 1540 V
+-2732 0 V
+0 -1540 V
+1.000 UP
+stroke
+3600 2520 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 2940 M
+2732 0 V
+1.000 UL
+LTb
+4230 2940 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 0) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3133 M
+2732 0 V
+1.000 UL
+LTb
+4230 3133 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3325 M
+2732 0 V
+1.000 UL
+LTb
+4230 3325 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 20) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3518 M
+2732 0 V
+1.000 UL
+LTb
+4230 3518 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 30) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3710 M
+2732 0 V
+1.000 UL
+LTb
+4230 3710 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 40) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3903 M
+2732 0 V
+1.000 UL
+LTb
+4230 3903 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 50) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4095 M
+2732 0 V
+1.000 UL
+LTb
+4230 4095 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 60) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4288 M
+2732 0 V
+1.000 UL
+LTb
+4230 4288 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 70) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4480 M
+2732 0 V
+1.000 UL
+LTb
+4230 4480 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 80) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 2940 M
+0 1540 V
+1.000 UL
+LTb
+4230 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 0) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4620 2940 M
+0 1540 V
+1.000 UL
+LTb
+4620 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5011 2940 M
+0 1540 V
+1.000 UL
+LTb
+5011 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 2e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5401 2940 M
+0 1540 V
+1.000 UL
+LTb
+5401 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 3e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5791 2940 M
+0 1540 V
+1.000 UL
+LTb
+5791 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 4e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6181 2940 M
+0 1540 V
+1.000 UL
+LTb
+6181 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 5e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6572 2940 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+6572 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 6e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6962 2940 M
+0 1540 V
+1.000 UL
+LTb
+6962 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 7e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+4230 2940 M
+2732 0 V
+0 1540 V
+-2732 0 V
+0 -1540 V
+LTb
+3740 3710 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(seconds) Cshow
+grestore
+grestore
+LTb
+5596 2590 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+5596 4830 M
+gsave 0 setgray
+(Ping2173 bandwidth between) Cshow
+grestore
+5596 4690 M
+gsave 0 setgray
+(hypercat01.atc.ugr.es-hypercat02.atc.ugr.es-) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 1 V
+0 3 V
+0 4 V
+0 9 V
+0 17 V
+0 12 V
+0 69 V
+0 82 V
+0 136 V
+0 167 V
+1 212 V
+0 214 V
+2 116 V
+2 45 V
+5 130 V
+10 98 V
+21 45 V
+41 30 V
+82 17 V
+163 11 V
+328 5 V
+655 3 V
+1309 2 V
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2942 Box
+4230 2945 Box
+4230 2949 Box
+4230 2958 Box
+4230 2975 Box
+4230 2987 Box
+4230 3056 Box
+4230 3138 Box
+4230 3274 Box
+4230 3441 Box
+4231 3653 Box
+4231 3867 Box
+4233 3983 Box
+4235 4028 Box
+4240 4158 Box
+4250 4256 Box
+4271 4301 Box
+4312 4331 Box
+4394 4348 Box
+4557 4359 Box
+4885 4364 Box
+5540 4367 Box
+6849 4369 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 2 V
+0 5 V
+0 9 V
+0 18 V
+0 34 V
+0 53 V
+0 81 V
+0 139 V
+0 170 V
+1 199 V
+0 159 V
+2 36 V
+2 32 V
+5 55 V
+10 24 V
+21 33 V
+41 22 V
+82 15 V
+163 -12 V
+328 5 V
+655 0 V
+1309 11 V
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2945 Box
+4230 2950 Box
+4230 2959 Box
+4230 2977 Box
+4230 3011 Box
+4230 3064 Box
+4230 3145 Box
+4230 3284 Box
+4230 3454 Box
+4231 3653 Box
+4231 3812 Box
+4233 3848 Box
+4235 3880 Box
+4240 3935 Box
+4250 3959 Box
+4271 3992 Box
+4312 4014 Box
+4394 4029 Box
+4557 4017 Box
+4885 4022 Box
+5540 4022 Box
+6849 4033 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 2 V
+0 5 V
+0 9 V
+0 19 V
+0 34 V
+0 51 V
+0 89 V
+0 109 V
+1 -21 V
+0 109 V
+2 98 V
+2 62 V
+5 26 V
+10 2 V
+21 6 V
+41 -1 V
+82 5 V
+163 -3 V
+328 1 V
+655 19 V
+1309 11 V
+4230 2940 Box
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2945 Box
+4230 2950 Box
+4230 2959 Box
+4230 2978 Box
+4230 3012 Box
+4230 3063 Box
+4230 3152 Box
+4230 3261 Box
+4231 3240 Box
+4231 3349 Box
+4233 3447 Box
+4235 3509 Box
+4240 3535 Box
+4250 3537 Box
+4271 3543 Box
+4312 3542 Box
+4394 3547 Box
+4557 3544 Box
+4885 3545 Box
+5540 3564 Box
+6849 3575 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 3 V
+0 5 V
+0 10 V
+0 20 V
+0 33 V
+0 50 V
+0 86 V
+0 92 V
+1 -8 V
+0 89 V
+2 77 V
+2 53 V
+5 10 V
+10 -5 V
+21 1 V
+41 6 V
+82 2 V
+163 3 V
+328 0 V
+655 22 V
+1309 13 V
+4230 2940 Box
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2946 Box
+4230 2951 Box
+4230 2961 Box
+4230 2981 Box
+4230 3014 Box
+4230 3064 Box
+4230 3150 Box
+4230 3242 Box
+4231 3234 Box
+4231 3323 Box
+4233 3400 Box
+4235 3453 Box
+4240 3463 Box
+4250 3458 Box
+4271 3459 Box
+4312 3465 Box
+4394 3467 Box
+4557 3470 Box
+4885 3470 Box
+5540 3492 Box
+6849 3505 Box
+1.000 UL
+LTb
+4230 2940 M
+2732 0 V
+0 1540 V
+-2732 0 V
+0 -1540 V
+1.000 UP
+stroke
+3600 2520 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 2940 M
+2732 0 V
+1.000 UL
+LTb
+4230 2940 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 0) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3133 M
+2732 0 V
+1.000 UL
+LTb
+4230 3133 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3325 M
+2732 0 V
+1.000 UL
+LTb
+4230 3325 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 20) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3518 M
+2732 0 V
+1.000 UL
+LTb
+4230 3518 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 30) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3710 M
+2732 0 V
+1.000 UL
+LTb
+4230 3710 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 40) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3903 M
+2732 0 V
+1.000 UL
+LTb
+4230 3903 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 50) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4095 M
+2732 0 V
+1.000 UL
+LTb
+4230 4095 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 60) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4288 M
+2732 0 V
+1.000 UL
+LTb
+4230 4288 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 70) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4480 M
+2732 0 V
+1.000 UL
+LTb
+4230 4480 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 80) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 2940 M
+0 1540 V
+1.000 UL
+LTb
+4230 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 0) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4620 2940 M
+0 1540 V
+1.000 UL
+LTb
+4620 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5011 2940 M
+0 1540 V
+1.000 UL
+LTb
+5011 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 2e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5401 2940 M
+0 1540 V
+1.000 UL
+LTb
+5401 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 3e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5791 2940 M
+0 1540 V
+1.000 UL
+LTb
+5791 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 4e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6181 2940 M
+0 1540 V
+1.000 UL
+LTb
+6181 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 5e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6572 2940 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+6572 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 6e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6962 2940 M
+0 1540 V
+1.000 UL
+LTb
+6962 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 7e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+4230 2940 M
+2732 0 V
+0 1540 V
+-2732 0 V
+0 -1540 V
+LTb
+3740 3710 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(seconds) Cshow
+grestore
+grestore
+LTb
+5596 2590 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+5596 4830 M
+gsave 0 setgray
+(Ping2173 bandwidth between) Cshow
+grestore
+5596 4690 M
+gsave 0 setgray
+(hypercat01.atc.ugr.es-hypercat02.atc.ugr.es-) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 1 V
+0 3 V
+0 4 V
+0 9 V
+0 17 V
+0 12 V
+0 69 V
+0 82 V
+0 136 V
+0 167 V
+1 212 V
+0 214 V
+2 116 V
+2 45 V
+5 130 V
+10 98 V
+21 45 V
+41 30 V
+82 17 V
+163 11 V
+328 5 V
+655 3 V
+1309 2 V
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2942 Box
+4230 2945 Box
+4230 2949 Box
+4230 2958 Box
+4230 2975 Box
+4230 2987 Box
+4230 3056 Box
+4230 3138 Box
+4230 3274 Box
+4230 3441 Box
+4231 3653 Box
+4231 3867 Box
+4233 3983 Box
+4235 4028 Box
+4240 4158 Box
+4250 4256 Box
+4271 4301 Box
+4312 4331 Box
+4394 4348 Box
+4557 4359 Box
+4885 4364 Box
+5540 4367 Box
+6849 4369 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 2 V
+0 5 V
+0 9 V
+0 18 V
+0 34 V
+0 53 V
+0 81 V
+0 139 V
+0 170 V
+1 199 V
+0 159 V
+2 36 V
+2 32 V
+5 55 V
+10 24 V
+21 33 V
+41 22 V
+82 15 V
+163 -12 V
+328 5 V
+655 0 V
+1309 11 V
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2945 Box
+4230 2950 Box
+4230 2959 Box
+4230 2977 Box
+4230 3011 Box
+4230 3064 Box
+4230 3145 Box
+4230 3284 Box
+4230 3454 Box
+4231 3653 Box
+4231 3812 Box
+4233 3848 Box
+4235 3880 Box
+4240 3935 Box
+4250 3959 Box
+4271 3992 Box
+4312 4014 Box
+4394 4029 Box
+4557 4017 Box
+4885 4022 Box
+5540 4022 Box
+6849 4033 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 2 V
+0 5 V
+0 9 V
+0 19 V
+0 34 V
+0 51 V
+0 89 V
+0 109 V
+1 -21 V
+0 109 V
+2 98 V
+2 62 V
+5 26 V
+10 2 V
+21 6 V
+41 -1 V
+82 5 V
+163 -3 V
+328 1 V
+655 19 V
+1309 11 V
+4230 2940 Box
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2945 Box
+4230 2950 Box
+4230 2959 Box
+4230 2978 Box
+4230 3012 Box
+4230 3063 Box
+4230 3152 Box
+4230 3261 Box
+4231 3240 Box
+4231 3349 Box
+4233 3447 Box
+4235 3509 Box
+4240 3535 Box
+4250 3537 Box
+4271 3543 Box
+4312 3542 Box
+4394 3547 Box
+4557 3544 Box
+4885 3545 Box
+5540 3564 Box
+6849 3575 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 3 V
+0 5 V
+0 10 V
+0 20 V
+0 33 V
+0 50 V
+0 86 V
+0 92 V
+1 -8 V
+0 89 V
+2 77 V
+2 53 V
+5 10 V
+10 -5 V
+21 1 V
+41 6 V
+82 2 V
+163 3 V
+328 0 V
+655 22 V
+1309 13 V
+4230 2940 Box
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2946 Box
+4230 2951 Box
+4230 2961 Box
+4230 2981 Box
+4230 3014 Box
+4230 3064 Box
+4230 3150 Box
+4230 3242 Box
+4231 3234 Box
+4231 3323 Box
+4233 3400 Box
+4235 3453 Box
+4240 3463 Box
+4250 3458 Box
+4271 3459 Box
+4312 3465 Box
+4394 3467 Box
+4557 3470 Box
+4885 3470 Box
+5540 3492 Box
+6849 3505 Box
+1.000 UL
+LTb
+4230 2940 M
+2732 0 V
+0 1540 V
+-2732 0 V
+0 -1540 V
+1.000 UP
+stroke
+3600 2520 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 2940 M
+2732 0 V
+1.000 UL
+LTb
+4230 2940 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 0) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3133 M
+2732 0 V
+1.000 UL
+LTb
+4230 3133 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3325 M
+2732 0 V
+1.000 UL
+LTb
+4230 3325 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 20) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3518 M
+2732 0 V
+1.000 UL
+LTb
+4230 3518 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 30) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3710 M
+2732 0 V
+1.000 UL
+LTb
+4230 3710 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 40) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 3903 M
+2732 0 V
+1.000 UL
+LTb
+4230 3903 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 50) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4095 M
+2732 0 V
+1.000 UL
+LTb
+4230 4095 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 60) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4288 M
+2732 0 V
+1.000 UL
+LTb
+4230 4288 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 70) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 4480 M
+2732 0 V
+1.000 UL
+LTb
+4230 4480 M
+63 0 V
+2669 0 R
+-63 0 V
+-2753 0 R
+gsave 0 setgray
+( 80) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4230 2940 M
+0 1540 V
+1.000 UL
+LTb
+4230 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 0) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4620 2940 M
+0 1540 V
+1.000 UL
+LTb
+4620 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5011 2940 M
+0 1540 V
+1.000 UL
+LTb
+5011 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 2e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5401 2940 M
+0 1540 V
+1.000 UL
+LTb
+5401 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 3e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+5791 2940 M
+0 1540 V
+1.000 UL
+LTb
+5791 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 4e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6181 2940 M
+0 1540 V
+1.000 UL
+LTb
+6181 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 5e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6572 2940 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+6572 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 6e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+6962 2940 M
+0 1540 V
+1.000 UL
+LTb
+6962 2940 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 7e+07) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+4230 2940 M
+2732 0 V
+0 1540 V
+-2732 0 V
+0 -1540 V
+LTb
+3740 3710 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(MB/s) Cshow
+grestore
+grestore
+LTb
+5596 2590 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+5596 4830 M
+gsave 0 setgray
+(Ping2173 bandwidth between) Cshow
+grestore
+5596 4690 M
+gsave 0 setgray
+(hypercat01.atc.ugr.es-hypercat02.atc.ugr.es-) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 1 V
+0 3 V
+0 4 V
+0 9 V
+0 17 V
+0 12 V
+0 69 V
+0 82 V
+0 136 V
+0 167 V
+1 212 V
+0 214 V
+2 116 V
+2 45 V
+5 130 V
+10 98 V
+21 45 V
+41 30 V
+82 17 V
+163 11 V
+328 5 V
+655 3 V
+1309 2 V
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2942 Box
+4230 2945 Box
+4230 2949 Box
+4230 2958 Box
+4230 2975 Box
+4230 2987 Box
+4230 3056 Box
+4230 3138 Box
+4230 3274 Box
+4230 3441 Box
+4231 3653 Box
+4231 3867 Box
+4233 3983 Box
+4235 4028 Box
+4240 4158 Box
+4250 4256 Box
+4271 4301 Box
+4312 4331 Box
+4394 4348 Box
+4557 4359 Box
+4885 4364 Box
+5540 4367 Box
+6849 4369 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 2 V
+0 5 V
+0 9 V
+0 18 V
+0 34 V
+0 53 V
+0 81 V
+0 139 V
+0 170 V
+1 199 V
+0 159 V
+2 36 V
+2 32 V
+5 55 V
+10 24 V
+21 33 V
+41 22 V
+82 15 V
+163 -12 V
+328 5 V
+655 0 V
+1309 11 V
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2945 Box
+4230 2950 Box
+4230 2959 Box
+4230 2977 Box
+4230 3011 Box
+4230 3064 Box
+4230 3145 Box
+4230 3284 Box
+4230 3454 Box
+4231 3653 Box
+4231 3812 Box
+4233 3848 Box
+4235 3880 Box
+4240 3935 Box
+4250 3959 Box
+4271 3992 Box
+4312 4014 Box
+4394 4029 Box
+4557 4017 Box
+4885 4022 Box
+5540 4022 Box
+6849 4033 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 2 V
+0 5 V
+0 9 V
+0 19 V
+0 34 V
+0 51 V
+0 89 V
+0 109 V
+1 -21 V
+0 109 V
+2 98 V
+2 62 V
+5 26 V
+10 2 V
+21 6 V
+41 -1 V
+82 5 V
+163 -3 V
+328 1 V
+655 19 V
+1309 11 V
+4230 2940 Box
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2945 Box
+4230 2950 Box
+4230 2959 Box
+4230 2978 Box
+4230 3012 Box
+4230 3063 Box
+4230 3152 Box
+4230 3261 Box
+4231 3240 Box
+4231 3349 Box
+4233 3447 Box
+4235 3509 Box
+4240 3535 Box
+4250 3537 Box
+4271 3543 Box
+4312 3542 Box
+4394 3547 Box
+4557 3544 Box
+4885 3545 Box
+5540 3564 Box
+6849 3575 Box
+1.000 UP
+1.000 UL
+LT0
+4230 2940 M
+0 1 V
+0 2 V
+0 3 V
+0 5 V
+0 10 V
+0 20 V
+0 33 V
+0 50 V
+0 86 V
+0 92 V
+1 -8 V
+0 89 V
+2 77 V
+2 53 V
+5 10 V
+10 -5 V
+21 1 V
+41 6 V
+82 2 V
+163 3 V
+328 0 V
+655 22 V
+1309 13 V
+4230 2940 Box
+4230 2940 Box
+4230 2940 Box
+4230 2941 Box
+4230 2941 Box
+4230 2943 Box
+4230 2946 Box
+4230 2951 Box
+4230 2961 Box
+4230 2981 Box
+4230 3014 Box
+4230 3064 Box
+4230 3150 Box
+4230 3242 Box
+4231 3234 Box
+4231 3323 Box
+4233 3400 Box
+4235 3453 Box
+4240 3463 Box
+4250 3458 Box
+4271 3459 Box
+4312 3465 Box
+4394 3467 Box
+4557 3470 Box
+4885 3470 Box
+5540 3492 Box
+6849 3505 Box
+1.000 UL
+LTb
+4230 2940 M
+2732 0 V
+0 1540 V
+-2732 0 V
+0 -1540 V
+1.000 UP
+1.000 UL
+LTb
+1.000 UL
+LTa
+882 420 M
+2480 0 V
+1.000 UL
+LTb
+882 420 M
+63 0 V
+2417 0 R
+-63 0 V
+798 420 M
+gsave 0 setgray
+( 1e-04) Rshow
+grestore
+1.000 UL
+LTb
+882 513 M
+31 0 V
+2449 0 R
+-31 0 V
+882 635 M
+31 0 V
+2449 0 R
+-31 0 V
+882 698 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 728 M
+2480 0 V
+1.000 UL
+LTb
+882 728 M
+63 0 V
+2417 0 R
+-63 0 V
+798 728 M
+gsave 0 setgray
+( 0.001) Rshow
+grestore
+1.000 UL
+LTb
+882 821 M
+31 0 V
+2449 0 R
+-31 0 V
+882 943 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1006 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1036 M
+2480 0 V
+1.000 UL
+LTb
+882 1036 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.01) Rshow
+grestore
+1.000 UL
+LTb
+882 1129 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1251 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1314 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1344 M
+2480 0 V
+1.000 UL
+LTb
+882 1344 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.1) Rshow
+grestore
+1.000 UL
+LTb
+882 1437 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1559 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1622 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1652 M
+2480 0 V
+1.000 UL
+LTb
+882 1652 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+882 1745 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1867 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1930 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1960 M
+2480 0 V
+1.000 UL
+LTb
+882 1960 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+882 420 M
+0 1540 V
+1.000 UL
+LTb
+882 420 M
+0 63 V
+0 1477 R
+0 -63 V
+882 280 M
+gsave 0 setgray
+( 1) Cshow
+grestore
+1.000 UL
+LTb
+975 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1099 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1162 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+1192 420 M
+0 1540 V
+1.000 UL
+LTb
+1192 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 10) Cshow
+grestore
+1.000 UL
+LTb
+1285 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1409 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1472 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+1502 420 M
+0 1540 V
+1.000 UL
+LTb
+1502 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 100) Cshow
+grestore
+1.000 UL
+LTb
+1595 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1719 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1782 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+1812 420 M
+0 1540 V
+1.000 UL
+LTb
+1812 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1000) Cshow
+grestore
+1.000 UL
+LTb
+1905 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2029 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2092 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+2122 420 M
+0 1540 V
+1.000 UL
+LTb
+2122 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 10000) Cshow
+grestore
+1.000 UL
+LTb
+2215 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2339 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2402 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+2432 420 M
+0 1540 V
+1.000 UL
+LTb
+2432 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 100000) Cshow
+grestore
+1.000 UL
+LTb
+2525 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2649 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2712 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+2742 420 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+2742 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+06) Cshow
+grestore
+1.000 UL
+LTb
+2835 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2959 420 M
+0 31 V
+0 1509 R
+0 -31 V
+3022 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+3052 420 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+3052 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+3145 420 M
+0 31 V
+0 1509 R
+0 -31 V
+3269 420 M
+0 31 V
+0 1509 R
+0 -31 V
+3332 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+3362 420 M
+0 1540 V
+1.000 UL
+LTb
+3362 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+08) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+882 420 M
+2480 0 V
+0 1540 V
+-2480 0 V
+882 420 L
+LTb
+140 1190 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(MB/s) Cshow
+grestore
+grestore
+LTb
+2122 70 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+2122 2310 M
+gsave 0 setgray
+(Ping2173 bandwidth between) Cshow
+grestore
+2122 2170 M
+gsave 0 setgray
+(hypercat01.atc.ugr.es-hypercat02.atc.ugr.es-) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+882 669 M
+975 463 L
+94 -6 V
+93 1 V
+93 -1 V
+94 2 V
+93 5 V
+93 -2 V
+94 6 V
+93 50 V
+93 -28 V
+94 22 V
+93 23 V
+93 38 V
+93 46 V
+94 57 V
+93 77 V
+93 88 V
+94 77 V
+93 82 V
+93 89 V
+94 90 V
+93 91 V
+93 91 V
+94 93 V
+93 92 V
+93 93 V
+882 669 Box
+975 463 Box
+1069 457 Box
+1162 458 Box
+1255 457 Box
+1349 459 Box
+1442 464 Box
+1535 462 Box
+1629 468 Box
+1722 518 Box
+1815 490 Box
+1909 512 Box
+2002 535 Box
+2095 573 Box
+2188 619 Box
+2282 676 Box
+2375 753 Box
+2468 841 Box
+2562 918 Box
+2655 1000 Box
+2748 1089 Box
+2842 1179 Box
+2935 1270 Box
+3028 1361 Box
+3122 1454 Box
+3215 1546 Box
+3308 1639 Box
+1.000 UP
+1.000 UL
+LT0
+882 730 M
+975 449 L
+94 -4 V
+93 -1 V
+93 1 V
+94 2 V
+93 -2 V
+93 7 V
+94 5 V
+93 8 V
+93 17 V
+94 26 V
+93 23 V
+93 39 V
+93 49 V
+94 66 V
+93 87 V
+93 88 V
+94 85 V
+93 90 V
+93 88 V
+94 90 V
+93 91 V
+93 94 V
+94 92 V
+93 93 V
+93 91 V
+882 730 Box
+975 449 Box
+1069 445 Box
+1162 444 Box
+1255 445 Box
+1349 447 Box
+1442 445 Box
+1535 452 Box
+1629 457 Box
+1722 465 Box
+1815 482 Box
+1909 508 Box
+2002 531 Box
+2095 570 Box
+2188 619 Box
+2282 685 Box
+2375 772 Box
+2468 860 Box
+2562 945 Box
+2655 1035 Box
+2748 1123 Box
+2842 1213 Box
+2935 1304 Box
+3028 1398 Box
+3122 1490 Box
+3215 1583 Box
+3308 1674 Box
+1.000 UP
+1.000 UL
+LT0
+882 680 M
+975 536 L
+94 1 V
+93 -7 V
+93 3 V
+94 1 V
+93 -1 V
+93 2 V
+94 9 V
+93 2 V
+93 10 V
+94 20 V
+93 20 V
+93 37 V
+93 102 V
+94 51 V
+93 64 V
+93 77 V
+94 87 V
+93 92 V
+93 92 V
+94 92 V
+93 92 V
+93 94 V
+94 92 V
+93 89 V
+93 90 V
+882 680 Box
+975 536 Box
+1069 537 Box
+1162 530 Box
+1255 533 Box
+1349 534 Box
+1442 533 Box
+1535 535 Box
+1629 544 Box
+1722 546 Box
+1815 556 Box
+1909 576 Box
+2002 596 Box
+2095 633 Box
+2188 735 Box
+2282 786 Box
+2375 850 Box
+2468 927 Box
+2562 1014 Box
+2655 1106 Box
+2748 1198 Box
+2842 1290 Box
+2935 1382 Box
+3028 1476 Box
+3122 1568 Box
+3215 1657 Box
+3308 1747 Box
+1.000 UP
+1.000 UL
+LT0
+882 648 M
+975 527 L
+94 -5 V
+93 0 V
+93 2 V
+94 -2 V
+93 1 V
+93 4 V
+94 7 V
+93 4 V
+93 14 V
+94 23 V
+93 22 V
+93 44 V
+93 96 V
+94 58 V
+93 68 V
+93 78 V
+94 90 V
+93 94 V
+93 93 V
+94 91 V
+93 92 V
+93 92 V
+94 93 V
+93 87 V
+93 90 V
+882 648 Box
+975 527 Box
+1069 522 Box
+1162 522 Box
+1255 524 Box
+1349 522 Box
+1442 523 Box
+1535 527 Box
+1629 534 Box
+1722 538 Box
+1815 552 Box
+1909 575 Box
+2002 597 Box
+2095 641 Box
+2188 737 Box
+2282 795 Box
+2375 863 Box
+2468 941 Box
+2562 1031 Box
+2655 1125 Box
+2748 1218 Box
+2842 1309 Box
+2935 1401 Box
+3028 1493 Box
+3122 1586 Box
+3215 1673 Box
+3308 1763 Box
+1.000 UL
+LTb
+882 420 M
+2480 0 V
+0 1540 V
+-2480 0 V
+882 420 L
+1.000 UP
+stroke
+0 0 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+882 420 M
+2480 0 V
+1.000 UL
+LTb
+882 420 M
+63 0 V
+2417 0 R
+-63 0 V
+798 420 M
+gsave 0 setgray
+( 1e-04) Rshow
+grestore
+1.000 UL
+LTb
+882 513 M
+31 0 V
+2449 0 R
+-31 0 V
+882 635 M
+31 0 V
+2449 0 R
+-31 0 V
+882 698 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 728 M
+2480 0 V
+1.000 UL
+LTb
+882 728 M
+63 0 V
+2417 0 R
+-63 0 V
+798 728 M
+gsave 0 setgray
+( 0.001) Rshow
+grestore
+1.000 UL
+LTb
+882 821 M
+31 0 V
+2449 0 R
+-31 0 V
+882 943 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1006 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1036 M
+2480 0 V
+1.000 UL
+LTb
+882 1036 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.01) Rshow
+grestore
+1.000 UL
+LTb
+882 1129 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1251 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1314 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1344 M
+2480 0 V
+1.000 UL
+LTb
+882 1344 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.1) Rshow
+grestore
+1.000 UL
+LTb
+882 1437 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1559 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1622 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1652 M
+2480 0 V
+1.000 UL
+LTb
+882 1652 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+882 1745 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1867 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1930 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1960 M
+2480 0 V
+1.000 UL
+LTb
+882 1960 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+882 420 M
+0 1540 V
+1.000 UL
+LTb
+882 420 M
+0 63 V
+0 1477 R
+0 -63 V
+882 280 M
+gsave 0 setgray
+( 1) Cshow
+grestore
+1.000 UL
+LTb
+975 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1099 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1162 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+1192 420 M
+0 1540 V
+1.000 UL
+LTb
+1192 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 10) Cshow
+grestore
+1.000 UL
+LTb
+1285 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1409 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1472 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+1502 420 M
+0 1540 V
+1.000 UL
+LTb
+1502 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 100) Cshow
+grestore
+1.000 UL
+LTb
+1595 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1719 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1782 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+1812 420 M
+0 1540 V
+1.000 UL
+LTb
+1812 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1000) Cshow
+grestore
+1.000 UL
+LTb
+1905 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2029 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2092 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+2122 420 M
+0 1540 V
+1.000 UL
+LTb
+2122 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 10000) Cshow
+grestore
+1.000 UL
+LTb
+2215 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2339 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2402 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+2432 420 M
+0 1540 V
+1.000 UL
+LTb
+2432 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 100000) Cshow
+grestore
+1.000 UL
+LTb
+2525 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2649 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2712 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+2742 420 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+2742 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+06) Cshow
+grestore
+1.000 UL
+LTb
+2835 420 M
+0 31 V
+0 1509 R
+0 -31 V
+2959 420 M
+0 31 V
+0 1509 R
+0 -31 V
+3022 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+3052 420 M
+0 1477 V
+0 63 V
+1.000 UL
+LTb
+3052 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+3145 420 M
+0 31 V
+0 1509 R
+0 -31 V
+3269 420 M
+0 31 V
+0 1509 R
+0 -31 V
+3332 420 M
+0 31 V
+0 1509 R
+0 -31 V
+1.000 UL
+LTa
+3362 420 M
+0 1540 V
+1.000 UL
+LTb
+3362 420 M
+0 63 V
+0 1477 R
+0 -63 V
+0 -1617 R
+gsave 0 setgray
+( 1e+08) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+882 420 M
+2480 0 V
+0 1540 V
+-2480 0 V
+882 420 L
+LTb
+140 1190 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(MB/s) Cshow
+grestore
+grestore
+LTb
+2122 70 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+2122 2310 M
+gsave 0 setgray
+(Ping2173 bandwidth between) Cshow
+grestore
+2122 2170 M
+gsave 0 setgray
+(hypercat01.atc.ugr.es-hypercat02.atc.ugr.es-) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+882 669 M
+975 463 L
+94 -6 V
+93 1 V
+93 -1 V
+94 2 V
+93 5 V
+93 -2 V
+94 6 V
+93 50 V
+93 -28 V
+94 22 V
+93 23 V
+93 38 V
+93 46 V
+94 57 V
+93 77 V
+93 88 V
+94 77 V
+93 82 V
+93 89 V
+94 90 V
+93 91 V
+93 91 V
+94 93 V
+93 92 V
+93 93 V
+882 669 Box
+975 463 Box
+1069 457 Box
+1162 458 Box
+1255 457 Box
+1349 459 Box
+1442 464 Box
+1535 462 Box
+1629 468 Box
+1722 518 Box
+1815 490 Box
+1909 512 Box
+2002 535 Box
+2095 573 Box
+2188 619 Box
+2282 676 Box
+2375 753 Box
+2468 841 Box
+2562 918 Box
+2655 1000 Box
+2748 1089 Box
+2842 1179 Box
+2935 1270 Box
+3028 1361 Box
+3122 1454 Box
+3215 1546 Box
+3308 1639 Box
+1.000 UP
+1.000 UL
+LT0
+882 730 M
+975 449 L
+94 -4 V
+93 -1 V
+93 1 V
+94 2 V
+93 -2 V
+93 7 V
+94 5 V
+93 8 V
+93 17 V
+94 26 V
+93 23 V
+93 39 V
+93 49 V
+94 66 V
+93 87 V
+93 88 V
+94 85 V
+93 90 V
+93 88 V
+94 90 V
+93 91 V
+93 94 V
+94 92 V
+93 93 V
+93 91 V
+882 730 Box
+975 449 Box
+1069 445 Box
+1162 444 Box
+1255 445 Box
+1349 447 Box
+1442 445 Box
+1535 452 Box
+1629 457 Box
+1722 465 Box
+1815 482 Box
+1909 508 Box
+2002 531 Box
+2095 570 Box
+2188 619 Box
+2282 685 Box
+2375 772 Box
+2468 860 Box
+2562 945 Box
+2655 1035 Box
+2748 1123 Box
+2842 1213 Box
+2935 1304 Box
+3028 1398 Box
+3122 1490 Box
+3215 1583 Box
+3308 1674 Box
+1.000 UP
+1.000 UL
+LT0
+882 680 M
+975 536 L
+94 1 V
+93 -7 V
+93 3 V
+94 1 V
+93 -1 V
+93 2 V
+94 9 V
+93 2 V
+93 10 V
+94 20 V
+93 20 V
+93 37 V
+93 102 V
+94 51 V
+93 64 V
+93 77 V
+94 87 V
+93 92 V
+93 92 V
+94 92 V
+93 92 V
+93 94 V
+94 92 V
+93 89 V
+93 90 V
+882 680 Box
+975 536 Box
+1069 537 Box
+1162 530 Box
+1255 533 Box
+1349 534 Box
+1442 533 Box
+1535 535 Box
+1629 544 Box
+1722 546 Box
+1815 556 Box
+1909 576 Box
+2002 596 Box
+2095 633 Box
+2188 735 Box
+2282 786 Box
+2375 850 Box
+2468 927 Box
+2562 1014 Box
+2655 1106 Box
+2748 1198 Box
+2842 1290 Box
+2935 1382 Box
+3028 1476 Box
+3122 1568 Box
+3215 1657 Box
+3308 1747 Box
+1.000 UP
+1.000 UL
+LT0
+882 648 M
+975 527 L
+94 -5 V
+93 0 V
+93 2 V
+94 -2 V
+93 1 V
+93 4 V
+94 7 V
+93 4 V
+93 14 V
+94 23 V
+93 22 V
+93 44 V
+93 96 V
+94 58 V
+93 68 V
+93 78 V
+94 90 V
+93 94 V
+93 93 V
+94 91 V
+93 92 V
+93 92 V
+94 93 V
+93 87 V
+93 90 V
+882 648 Box
+975 527 Box
+1069 522 Box
+1162 522 Box
+1255 524 Box
+1349 522 Box
+1442 523 Box
+1535 527 Box
+1629 534 Box
+1722 538 Box
+1815 552 Box
+1909 575 Box
+2002 597 Box
+2095 641 Box
+2188 737 Box
+2282 795 Box
+2375 863 Box
+2468 941 Box
+2562 1031 Box
+2655 1125 Box
+2748 1218 Box
+2842 1309 Box
+2935 1401 Box
+3028 1493 Box
+3122 1586 Box
+3215 1673 Box
+3308 1763 Box
+1.000 UL
+LTb
+882 420 M
+2480 0 V
+0 1540 V
+-2480 0 V
+882 420 L
+1.000 UP
+stroke
+0 0 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+882 420 M
+2480 0 V
+1.000 UL
+LTb
+882 420 M
+63 0 V
+2417 0 R
+-63 0 V
+798 420 M
+gsave 0 setgray
+( 1e-04) Rshow
+grestore
+1.000 UL
+LTb
+882 521 M
+31 0 V
+2449 0 R
+-31 0 V
+882 655 M
+31 0 V
+2449 0 R
+-31 0 V
+882 723 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 756 M
+2480 0 V
+1.000 UL
+LTb
+882 756 M
+63 0 V
+2417 0 R
+-63 0 V
+798 756 M
+gsave 0 setgray
+( 0.001) Rshow
+grestore
+1.000 UL
+LTb
+882 857 M
+31 0 V
+2449 0 R
+-31 0 V
+882 991 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1059 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1092 M
+2480 0 V
+1.000 UL
+LTb
+882 1092 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.01) Rshow
+grestore
+1.000 UL
+LTb
+882 1193 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1327 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1395 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1428 M
+2480 0 V
+1.000 UL
+LTb
+882 1428 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.1) Rshow
+grestore
+1.000 UL
+LTb
+882 1529 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1663 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1731 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1764 M
+2480 0 V
+1.000 UL
+LTb
+882 1764 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+882 1865 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1999 M
+31 0 V
+2449 0 R
+-31 0 V
+882 2067 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 2100 M
+2480 0 V
+1.000 UL
+LTb
+882 2100 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+882 420 M
+0 1680 V
+1.000 UL
+LTb
+882 420 M
+0 63 V
+0 1617 R
+0 -63 V
+882 280 M
+gsave 0 setgray
+( 1) Cshow
+grestore
+1.000 UL
+LTb
+975 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1099 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1162 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+1192 420 M
+0 1680 V
+1.000 UL
+LTb
+1192 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10) Cshow
+grestore
+1.000 UL
+LTb
+1285 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1409 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1472 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+1502 420 M
+0 1680 V
+1.000 UL
+LTb
+1502 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100) Cshow
+grestore
+1.000 UL
+LTb
+1595 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1719 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1782 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+1812 420 M
+0 1680 V
+1.000 UL
+LTb
+1812 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1000) Cshow
+grestore
+1.000 UL
+LTb
+1905 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2029 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2092 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+2122 420 M
+0 1680 V
+1.000 UL
+LTb
+2122 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10000) Cshow
+grestore
+1.000 UL
+LTb
+2215 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2339 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2402 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+2432 420 M
+0 1680 V
+1.000 UL
+LTb
+2432 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100000) Cshow
+grestore
+1.000 UL
+LTb
+2525 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2649 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2712 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+2742 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+2742 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+06) Cshow
+grestore
+1.000 UL
+LTb
+2835 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2959 420 M
+0 31 V
+0 1649 R
+0 -31 V
+3022 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+3052 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+3052 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+3145 420 M
+0 31 V
+0 1649 R
+0 -31 V
+3269 420 M
+0 31 V
+0 1649 R
+0 -31 V
+3332 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+3362 420 M
+0 1680 V
+1.000 UL
+LTb
+3362 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+08) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+882 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+882 420 L
+LTb
+140 1260 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(MB/s) Cshow
+grestore
+grestore
+LTb
+2122 70 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+2122 2310 M
+gsave 0 setgray
+(one-way time, logarithmic) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+882 692 M
+975 467 L
+94 -6 V
+93 1 V
+93 -1 V
+94 2 V
+93 5 V
+93 -2 V
+94 6 V
+93 55 V
+93 -30 V
+94 23 V
+93 25 V
+93 42 V
+93 50 V
+94 63 V
+93 84 V
+93 95 V
+94 84 V
+93 90 V
+93 97 V
+94 97 V
+93 100 V
+93 100 V
+94 100 V
+93 101 V
+93 101 V
+882 692 Box
+975 467 Box
+1069 461 Box
+1162 462 Box
+1255 461 Box
+1349 463 Box
+1442 468 Box
+1535 466 Box
+1629 472 Box
+1722 527 Box
+1815 497 Box
+1909 520 Box
+2002 545 Box
+2095 587 Box
+2188 637 Box
+2282 700 Box
+2375 784 Box
+2468 879 Box
+2562 963 Box
+2655 1053 Box
+2748 1150 Box
+2842 1247 Box
+2935 1347 Box
+3028 1447 Box
+3122 1547 Box
+3215 1648 Box
+3308 1749 Box
+1.000 UP
+1.000 UL
+LT0
+882 758 M
+975 451 L
+94 -3 V
+93 -1 V
+93 1 V
+94 1 V
+93 -1 V
+93 7 V
+94 6 V
+93 8 V
+93 19 V
+94 28 V
+93 25 V
+93 43 V
+93 53 V
+94 72 V
+93 95 V
+93 96 V
+94 93 V
+93 98 V
+93 96 V
+94 98 V
+93 99 V
+93 103 V
+94 101 V
+93 101 V
+93 99 V
+882 758 Box
+975 451 Box
+1069 448 Box
+1162 447 Box
+1255 448 Box
+1349 449 Box
+1442 448 Box
+1535 455 Box
+1629 461 Box
+1722 469 Box
+1815 488 Box
+1909 516 Box
+2002 541 Box
+2095 584 Box
+2188 637 Box
+2282 709 Box
+2375 804 Box
+2468 900 Box
+2562 993 Box
+2655 1091 Box
+2748 1187 Box
+2842 1285 Box
+2935 1384 Box
+3028 1487 Box
+3122 1588 Box
+3215 1689 Box
+3308 1788 Box
+1.000 UP
+1.000 UL
+LT0
+882 703 M
+975 547 L
+94 0 V
+93 -7 V
+93 3 V
+94 1 V
+93 -1 V
+93 3 V
+94 9 V
+93 3 V
+93 10 V
+94 22 V
+93 22 V
+93 41 V
+93 110 V
+94 56 V
+93 70 V
+93 84 V
+94 95 V
+93 101 V
+93 99 V
+94 102 V
+93 100 V
+93 102 V
+94 100 V
+93 97 V
+93 99 V
+882 703 Box
+975 547 Box
+1069 547 Box
+1162 540 Box
+1255 543 Box
+1349 544 Box
+1442 543 Box
+1535 546 Box
+1629 555 Box
+1722 558 Box
+1815 568 Box
+1909 590 Box
+2002 612 Box
+2095 653 Box
+2188 763 Box
+2282 819 Box
+2375 889 Box
+2468 973 Box
+2562 1068 Box
+2655 1169 Box
+2748 1268 Box
+2842 1370 Box
+2935 1470 Box
+3028 1572 Box
+3122 1672 Box
+3215 1769 Box
+3308 1868 Box
+1.000 UP
+1.000 UL
+LT0
+882 668 M
+975 536 L
+94 -4 V
+93 0 V
+93 1 V
+94 -1 V
+93 0 V
+93 4 V
+94 8 V
+93 5 V
+93 15 V
+94 25 V
+93 24 V
+93 48 V
+93 105 V
+94 63 V
+93 74 V
+93 86 V
+94 98 V
+93 102 V
+93 101 V
+94 100 V
+93 100 V
+93 101 V
+94 101 V
+93 95 V
+93 98 V
+882 668 Box
+975 536 Box
+1069 532 Box
+1162 532 Box
+1255 533 Box
+1349 532 Box
+1442 532 Box
+1535 536 Box
+1629 544 Box
+1722 549 Box
+1815 564 Box
+1909 589 Box
+2002 613 Box
+2095 661 Box
+2188 766 Box
+2282 829 Box
+2375 903 Box
+2468 989 Box
+2562 1087 Box
+2655 1189 Box
+2748 1290 Box
+2842 1390 Box
+2935 1490 Box
+3028 1591 Box
+3122 1692 Box
+3215 1787 Box
+3308 1885 Box
+1.000 UL
+LTb
+882 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+882 420 L
+1.000 UP
+stroke
+0 0 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+882 420 M
+2480 0 V
+1.000 UL
+LTb
+882 420 M
+63 0 V
+2417 0 R
+-63 0 V
+798 420 M
+gsave 0 setgray
+( 1e-04) Rshow
+grestore
+1.000 UL
+LTb
+882 521 M
+31 0 V
+2449 0 R
+-31 0 V
+882 655 M
+31 0 V
+2449 0 R
+-31 0 V
+882 723 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 756 M
+2480 0 V
+1.000 UL
+LTb
+882 756 M
+63 0 V
+2417 0 R
+-63 0 V
+798 756 M
+gsave 0 setgray
+( 0.001) Rshow
+grestore
+1.000 UL
+LTb
+882 857 M
+31 0 V
+2449 0 R
+-31 0 V
+882 991 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1059 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1092 M
+2480 0 V
+1.000 UL
+LTb
+882 1092 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.01) Rshow
+grestore
+1.000 UL
+LTb
+882 1193 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1327 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1395 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1428 M
+2480 0 V
+1.000 UL
+LTb
+882 1428 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.1) Rshow
+grestore
+1.000 UL
+LTb
+882 1529 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1663 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1731 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1764 M
+2480 0 V
+1.000 UL
+LTb
+882 1764 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+882 1865 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1999 M
+31 0 V
+2449 0 R
+-31 0 V
+882 2067 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 2100 M
+2480 0 V
+1.000 UL
+LTb
+882 2100 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+882 420 M
+0 1680 V
+1.000 UL
+LTb
+882 420 M
+0 63 V
+0 1617 R
+0 -63 V
+882 280 M
+gsave 0 setgray
+( 1) Cshow
+grestore
+1.000 UL
+LTb
+975 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1099 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1162 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+1192 420 M
+0 1680 V
+1.000 UL
+LTb
+1192 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10) Cshow
+grestore
+1.000 UL
+LTb
+1285 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1409 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1472 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+1502 420 M
+0 1680 V
+1.000 UL
+LTb
+1502 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100) Cshow
+grestore
+1.000 UL
+LTb
+1595 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1719 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1782 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+1812 420 M
+0 1680 V
+1.000 UL
+LTb
+1812 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1000) Cshow
+grestore
+1.000 UL
+LTb
+1905 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2029 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2092 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+2122 420 M
+0 1680 V
+1.000 UL
+LTb
+2122 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10000) Cshow
+grestore
+1.000 UL
+LTb
+2215 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2339 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2402 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+2432 420 M
+0 1680 V
+1.000 UL
+LTb
+2432 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100000) Cshow
+grestore
+1.000 UL
+LTb
+2525 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2649 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2712 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+2742 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+2742 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+06) Cshow
+grestore
+1.000 UL
+LTb
+2835 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2959 420 M
+0 31 V
+0 1649 R
+0 -31 V
+3022 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+3052 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+3052 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+3145 420 M
+0 31 V
+0 1649 R
+0 -31 V
+3269 420 M
+0 31 V
+0 1649 R
+0 -31 V
+3332 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+3362 420 M
+0 1680 V
+1.000 UL
+LTb
+3362 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+08) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+882 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+882 420 L
+LTb
+140 1260 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(MB/s) Cshow
+grestore
+grestore
+LTb
+2122 70 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+2122 2310 M
+gsave 0 setgray
+(one-way time, logarithmic) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+882 692 M
+975 467 L
+94 -6 V
+93 1 V
+93 -1 V
+94 2 V
+93 5 V
+93 -2 V
+94 6 V
+93 55 V
+93 -30 V
+94 23 V
+93 25 V
+93 42 V
+93 50 V
+94 63 V
+93 84 V
+93 95 V
+94 84 V
+93 90 V
+93 97 V
+94 97 V
+93 100 V
+93 100 V
+94 100 V
+93 101 V
+93 101 V
+882 692 Box
+975 467 Box
+1069 461 Box
+1162 462 Box
+1255 461 Box
+1349 463 Box
+1442 468 Box
+1535 466 Box
+1629 472 Box
+1722 527 Box
+1815 497 Box
+1909 520 Box
+2002 545 Box
+2095 587 Box
+2188 637 Box
+2282 700 Box
+2375 784 Box
+2468 879 Box
+2562 963 Box
+2655 1053 Box
+2748 1150 Box
+2842 1247 Box
+2935 1347 Box
+3028 1447 Box
+3122 1547 Box
+3215 1648 Box
+3308 1749 Box
+1.000 UP
+1.000 UL
+LT0
+882 758 M
+975 451 L
+94 -3 V
+93 -1 V
+93 1 V
+94 1 V
+93 -1 V
+93 7 V
+94 6 V
+93 8 V
+93 19 V
+94 28 V
+93 25 V
+93 43 V
+93 53 V
+94 72 V
+93 95 V
+93 96 V
+94 93 V
+93 98 V
+93 96 V
+94 98 V
+93 99 V
+93 103 V
+94 101 V
+93 101 V
+93 99 V
+882 758 Box
+975 451 Box
+1069 448 Box
+1162 447 Box
+1255 448 Box
+1349 449 Box
+1442 448 Box
+1535 455 Box
+1629 461 Box
+1722 469 Box
+1815 488 Box
+1909 516 Box
+2002 541 Box
+2095 584 Box
+2188 637 Box
+2282 709 Box
+2375 804 Box
+2468 900 Box
+2562 993 Box
+2655 1091 Box
+2748 1187 Box
+2842 1285 Box
+2935 1384 Box
+3028 1487 Box
+3122 1588 Box
+3215 1689 Box
+3308 1788 Box
+1.000 UP
+1.000 UL
+LT0
+882 703 M
+975 547 L
+94 0 V
+93 -7 V
+93 3 V
+94 1 V
+93 -1 V
+93 3 V
+94 9 V
+93 3 V
+93 10 V
+94 22 V
+93 22 V
+93 41 V
+93 110 V
+94 56 V
+93 70 V
+93 84 V
+94 95 V
+93 101 V
+93 99 V
+94 102 V
+93 100 V
+93 102 V
+94 100 V
+93 97 V
+93 99 V
+882 703 Box
+975 547 Box
+1069 547 Box
+1162 540 Box
+1255 543 Box
+1349 544 Box
+1442 543 Box
+1535 546 Box
+1629 555 Box
+1722 558 Box
+1815 568 Box
+1909 590 Box
+2002 612 Box
+2095 653 Box
+2188 763 Box
+2282 819 Box
+2375 889 Box
+2468 973 Box
+2562 1068 Box
+2655 1169 Box
+2748 1268 Box
+2842 1370 Box
+2935 1470 Box
+3028 1572 Box
+3122 1672 Box
+3215 1769 Box
+3308 1868 Box
+1.000 UP
+1.000 UL
+LT0
+882 668 M
+975 536 L
+94 -4 V
+93 0 V
+93 1 V
+94 -1 V
+93 0 V
+93 4 V
+94 8 V
+93 5 V
+93 15 V
+94 25 V
+93 24 V
+93 48 V
+93 105 V
+94 63 V
+93 74 V
+93 86 V
+94 98 V
+93 102 V
+93 101 V
+94 100 V
+93 100 V
+93 101 V
+94 101 V
+93 95 V
+93 98 V
+882 668 Box
+975 536 Box
+1069 532 Box
+1162 532 Box
+1255 533 Box
+1349 532 Box
+1442 532 Box
+1535 536 Box
+1629 544 Box
+1722 549 Box
+1815 564 Box
+1909 589 Box
+2002 613 Box
+2095 661 Box
+2188 766 Box
+2282 829 Box
+2375 903 Box
+2468 989 Box
+2562 1087 Box
+2655 1189 Box
+2748 1290 Box
+2842 1390 Box
+2935 1490 Box
+3028 1591 Box
+3122 1692 Box
+3215 1787 Box
+3308 1885 Box
+1.000 UL
+LTb
+882 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+882 420 L
+1.000 UP
+stroke
+0 0 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+882 420 M
+2480 0 V
+1.000 UL
+LTb
+882 420 M
+63 0 V
+2417 0 R
+-63 0 V
+798 420 M
+gsave 0 setgray
+( 1e-04) Rshow
+grestore
+1.000 UL
+LTb
+882 521 M
+31 0 V
+2449 0 R
+-31 0 V
+882 655 M
+31 0 V
+2449 0 R
+-31 0 V
+882 723 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 756 M
+2480 0 V
+1.000 UL
+LTb
+882 756 M
+63 0 V
+2417 0 R
+-63 0 V
+798 756 M
+gsave 0 setgray
+( 0.001) Rshow
+grestore
+1.000 UL
+LTb
+882 857 M
+31 0 V
+2449 0 R
+-31 0 V
+882 991 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1059 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1092 M
+2480 0 V
+1.000 UL
+LTb
+882 1092 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.01) Rshow
+grestore
+1.000 UL
+LTb
+882 1193 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1327 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1395 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1428 M
+2480 0 V
+1.000 UL
+LTb
+882 1428 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.1) Rshow
+grestore
+1.000 UL
+LTb
+882 1529 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1663 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1731 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 1764 M
+2480 0 V
+1.000 UL
+LTb
+882 1764 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+882 1865 M
+31 0 V
+2449 0 R
+-31 0 V
+882 1999 M
+31 0 V
+2449 0 R
+-31 0 V
+882 2067 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+882 2100 M
+2480 0 V
+1.000 UL
+LTb
+882 2100 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+882 420 M
+0 1680 V
+1.000 UL
+LTb
+882 420 M
+0 63 V
+0 1617 R
+0 -63 V
+882 280 M
+gsave 0 setgray
+( 1) Cshow
+grestore
+1.000 UL
+LTb
+975 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1099 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1162 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+1192 420 M
+0 1680 V
+1.000 UL
+LTb
+1192 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10) Cshow
+grestore
+1.000 UL
+LTb
+1285 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1409 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1472 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+1502 420 M
+0 1680 V
+1.000 UL
+LTb
+1502 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100) Cshow
+grestore
+1.000 UL
+LTb
+1595 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1719 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1782 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+1812 420 M
+0 1680 V
+1.000 UL
+LTb
+1812 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1000) Cshow
+grestore
+1.000 UL
+LTb
+1905 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2029 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2092 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+2122 420 M
+0 1680 V
+1.000 UL
+LTb
+2122 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10000) Cshow
+grestore
+1.000 UL
+LTb
+2215 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2339 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2402 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+2432 420 M
+0 1680 V
+1.000 UL
+LTb
+2432 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100000) Cshow
+grestore
+1.000 UL
+LTb
+2525 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2649 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2712 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+2742 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+2742 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+06) Cshow
+grestore
+1.000 UL
+LTb
+2835 420 M
+0 31 V
+0 1649 R
+0 -31 V
+2959 420 M
+0 31 V
+0 1649 R
+0 -31 V
+3022 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+3052 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+3052 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+3145 420 M
+0 31 V
+0 1649 R
+0 -31 V
+3269 420 M
+0 31 V
+0 1649 R
+0 -31 V
+3332 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+3362 420 M
+0 1680 V
+1.000 UL
+LTb
+3362 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+08) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+882 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+882 420 L
+LTb
+140 1260 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(seconds) Cshow
+grestore
+grestore
+LTb
+2122 70 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+2122 2310 M
+gsave 0 setgray
+(one-way time, logarithmic) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+882 692 M
+975 467 L
+94 -6 V
+93 1 V
+93 -1 V
+94 2 V
+93 5 V
+93 -2 V
+94 6 V
+93 55 V
+93 -30 V
+94 23 V
+93 25 V
+93 42 V
+93 50 V
+94 63 V
+93 84 V
+93 95 V
+94 84 V
+93 90 V
+93 97 V
+94 97 V
+93 100 V
+93 100 V
+94 100 V
+93 101 V
+93 101 V
+882 692 Box
+975 467 Box
+1069 461 Box
+1162 462 Box
+1255 461 Box
+1349 463 Box
+1442 468 Box
+1535 466 Box
+1629 472 Box
+1722 527 Box
+1815 497 Box
+1909 520 Box
+2002 545 Box
+2095 587 Box
+2188 637 Box
+2282 700 Box
+2375 784 Box
+2468 879 Box
+2562 963 Box
+2655 1053 Box
+2748 1150 Box
+2842 1247 Box
+2935 1347 Box
+3028 1447 Box
+3122 1547 Box
+3215 1648 Box
+3308 1749 Box
+1.000 UP
+1.000 UL
+LT0
+882 758 M
+975 451 L
+94 -3 V
+93 -1 V
+93 1 V
+94 1 V
+93 -1 V
+93 7 V
+94 6 V
+93 8 V
+93 19 V
+94 28 V
+93 25 V
+93 43 V
+93 53 V
+94 72 V
+93 95 V
+93 96 V
+94 93 V
+93 98 V
+93 96 V
+94 98 V
+93 99 V
+93 103 V
+94 101 V
+93 101 V
+93 99 V
+882 758 Box
+975 451 Box
+1069 448 Box
+1162 447 Box
+1255 448 Box
+1349 449 Box
+1442 448 Box
+1535 455 Box
+1629 461 Box
+1722 469 Box
+1815 488 Box
+1909 516 Box
+2002 541 Box
+2095 584 Box
+2188 637 Box
+2282 709 Box
+2375 804 Box
+2468 900 Box
+2562 993 Box
+2655 1091 Box
+2748 1187 Box
+2842 1285 Box
+2935 1384 Box
+3028 1487 Box
+3122 1588 Box
+3215 1689 Box
+3308 1788 Box
+1.000 UP
+1.000 UL
+LT0
+882 703 M
+975 547 L
+94 0 V
+93 -7 V
+93 3 V
+94 1 V
+93 -1 V
+93 3 V
+94 9 V
+93 3 V
+93 10 V
+94 22 V
+93 22 V
+93 41 V
+93 110 V
+94 56 V
+93 70 V
+93 84 V
+94 95 V
+93 101 V
+93 99 V
+94 102 V
+93 100 V
+93 102 V
+94 100 V
+93 97 V
+93 99 V
+882 703 Box
+975 547 Box
+1069 547 Box
+1162 540 Box
+1255 543 Box
+1349 544 Box
+1442 543 Box
+1535 546 Box
+1629 555 Box
+1722 558 Box
+1815 568 Box
+1909 590 Box
+2002 612 Box
+2095 653 Box
+2188 763 Box
+2282 819 Box
+2375 889 Box
+2468 973 Box
+2562 1068 Box
+2655 1169 Box
+2748 1268 Box
+2842 1370 Box
+2935 1470 Box
+3028 1572 Box
+3122 1672 Box
+3215 1769 Box
+3308 1868 Box
+1.000 UP
+1.000 UL
+LT0
+882 668 M
+975 536 L
+94 -4 V
+93 0 V
+93 1 V
+94 -1 V
+93 0 V
+93 4 V
+94 8 V
+93 5 V
+93 15 V
+94 25 V
+93 24 V
+93 48 V
+93 105 V
+94 63 V
+93 74 V
+93 86 V
+94 98 V
+93 102 V
+93 101 V
+94 100 V
+93 100 V
+93 101 V
+94 101 V
+93 95 V
+93 98 V
+882 668 Box
+975 536 Box
+1069 532 Box
+1162 532 Box
+1255 533 Box
+1349 532 Box
+1442 532 Box
+1535 536 Box
+1629 544 Box
+1722 549 Box
+1815 564 Box
+1909 589 Box
+2002 613 Box
+2095 661 Box
+2188 766 Box
+2282 829 Box
+2375 903 Box
+2468 989 Box
+2562 1087 Box
+2655 1189 Box
+2748 1290 Box
+2842 1390 Box
+2935 1490 Box
+3028 1591 Box
+3122 1692 Box
+3215 1787 Box
+3308 1885 Box
+1.000 UL
+LTb
+882 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+882 420 L
+1.000 UP
+1.000 UL
+LTb
+1.000 UL
+LTa
+4482 420 M
+2480 0 V
+1.000 UL
+LTb
+4482 420 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1e-04) Rshow
+grestore
+1.000 UL
+LTb
+4482 504 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 616 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 673 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 700 M
+2480 0 V
+1.000 UL
+LTb
+4482 700 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.001) Rshow
+grestore
+1.000 UL
+LTb
+4482 784 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 896 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 953 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 980 M
+2480 0 V
+1.000 UL
+LTb
+4482 980 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.01) Rshow
+grestore
+1.000 UL
+LTb
+4482 1064 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1176 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1260 M
+2480 0 V
+1.000 UL
+LTb
+4482 1260 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.1) Rshow
+grestore
+1.000 UL
+LTb
+4482 1344 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1456 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1540 M
+2480 0 V
+1.000 UL
+LTb
+4482 1540 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+4482 1624 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1736 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1820 M
+2480 0 V
+1.000 UL
+LTb
+4482 1820 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+4482 1904 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 2016 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 2100 M
+2480 0 V
+1.000 UL
+LTb
+4482 2100 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 100) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4482 420 M
+0 1680 V
+1.000 UL
+LTb
+4482 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1) Cshow
+grestore
+1.000 UL
+LTb
+4575 420 M
+0 31 V
+0 1649 R
+0 -31 V
+4699 420 M
+0 31 V
+0 1649 R
+0 -31 V
+4762 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+4792 420 M
+0 1680 V
+1.000 UL
+LTb
+4792 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10) Cshow
+grestore
+1.000 UL
+LTb
+4885 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5009 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5072 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5102 420 M
+0 1680 V
+1.000 UL
+LTb
+5102 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100) Cshow
+grestore
+1.000 UL
+LTb
+5195 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5319 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5382 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5412 420 M
+0 1680 V
+1.000 UL
+LTb
+5412 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1000) Cshow
+grestore
+1.000 UL
+LTb
+5505 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5629 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5692 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5722 420 M
+0 1680 V
+1.000 UL
+LTb
+5722 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10000) Cshow
+grestore
+1.000 UL
+LTb
+5815 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5939 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6002 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6032 420 M
+0 1680 V
+1.000 UL
+LTb
+6032 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100000) Cshow
+grestore
+1.000 UL
+LTb
+6125 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6249 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6312 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6342 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+6342 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+06) Cshow
+grestore
+1.000 UL
+LTb
+6435 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6559 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6622 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6652 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+6652 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+6745 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6869 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6932 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6962 420 M
+0 1680 V
+1.000 UL
+LTb
+6962 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+08) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+4482 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+0 -1680 V
+LTb
+3740 1260 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(seconds) Cshow
+grestore
+grestore
+LTb
+5722 70 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+5722 2310 M
+gsave 0 setgray
+(one-way time, logarithmic) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+4482 753 M
+93 272 V
+94 90 V
+93 83 V
+93 85 V
+94 83 V
+93 80 V
+93 86 V
+94 79 V
+93 39 V
+93 109 V
+94 65 V
+93 63 V
+93 49 V
+93 43 V
+94 32 V
+93 14 V
+93 6 V
+94 13 V
+93 10 V
+93 4 V
+94 2 V
+93 2 V
+93 1 V
+94 0 V
+93 1 V
+93 0 V
+4482 753 Box
+4575 1025 Box
+4669 1115 Box
+4762 1198 Box
+4855 1283 Box
+4949 1366 Box
+5042 1446 Box
+5135 1532 Box
+5229 1611 Box
+5322 1650 Box
+5415 1759 Box
+5509 1824 Box
+5602 1887 Box
+5695 1936 Box
+5788 1979 Box
+5882 2011 Box
+5975 2025 Box
+6068 2031 Box
+6162 2044 Box
+6255 2054 Box
+6348 2058 Box
+6442 2060 Box
+6535 2062 Box
+6628 2063 Box
+6722 2063 Box
+6815 2064 Box
+6908 2064 Box
+1.000 UP
+1.000 UL
+LT0
+4482 698 M
+93 340 V
+94 88 V
+93 85 V
+93 83 V
+94 84 V
+93 85 V
+93 78 V
+94 80 V
+93 77 V
+93 69 V
+94 60 V
+93 64 V
+93 49 V
+93 39 V
+94 25 V
+93 5 V
+93 4 V
+94 7 V
+93 3 V
+93 4 V
+94 2 V
+93 2 V
+93 -2 V
+94 1 V
+93 0 V
+93 1 V
+4482 698 Box
+4575 1038 Box
+4669 1126 Box
+4762 1211 Box
+4855 1294 Box
+4949 1378 Box
+5042 1463 Box
+5135 1541 Box
+5229 1621 Box
+5322 1698 Box
+5415 1767 Box
+5509 1827 Box
+5602 1891 Box
+5695 1940 Box
+5788 1979 Box
+5882 2004 Box
+5975 2009 Box
+6068 2013 Box
+6162 2020 Box
+6255 2023 Box
+6348 2027 Box
+6442 2029 Box
+6535 2031 Box
+6628 2029 Box
+6722 2030 Box
+6815 2030 Box
+6908 2031 Box
+1.000 UP
+1.000 UL
+LT0
+4482 744 M
+93 215 V
+94 83 V
+93 91 V
+93 82 V
+94 83 V
+93 85 V
+93 82 V
+94 76 V
+93 83 V
+93 76 V
+94 66 V
+93 66 V
+93 50 V
+93 -8 V
+94 38 V
+93 26 V
+93 14 V
+94 5 V
+93 1 V
+93 1 V
+94 0 V
+93 1 V
+93 -1 V
+94 0 V
+93 4 V
+93 2 V
+4482 744 Box
+4575 959 Box
+4669 1042 Box
+4762 1133 Box
+4855 1215 Box
+4949 1298 Box
+5042 1383 Box
+5135 1465 Box
+5229 1541 Box
+5322 1624 Box
+5415 1700 Box
+5509 1766 Box
+5602 1832 Box
+5695 1882 Box
+5788 1874 Box
+5882 1912 Box
+5975 1938 Box
+6068 1952 Box
+6162 1957 Box
+6255 1958 Box
+6348 1959 Box
+6442 1959 Box
+6535 1960 Box
+6628 1959 Box
+6722 1959 Box
+6815 1963 Box
+6908 1965 Box
+1.000 UP
+1.000 UL
+LT0
+4482 773 M
+93 194 V
+94 89 V
+93 84 V
+93 83 V
+94 86 V
+93 83 V
+93 81 V
+94 78 V
+93 80 V
+93 72 V
+94 63 V
+93 65 V
+93 44 V
+93 -3 V
+94 32 V
+93 22 V
+93 13 V
+94 3 V
+93 -2 V
+93 1 V
+94 1 V
+93 0 V
+93 1 V
+94 0 V
+93 5 V
+93 3 V
+4482 773 Box
+4575 967 Box
+4669 1056 Box
+4762 1140 Box
+4855 1223 Box
+4949 1309 Box
+5042 1392 Box
+5135 1473 Box
+5229 1551 Box
+5322 1631 Box
+5415 1703 Box
+5509 1766 Box
+5602 1831 Box
+5695 1875 Box
+5788 1872 Box
+5882 1904 Box
+5975 1926 Box
+6068 1939 Box
+6162 1942 Box
+6255 1940 Box
+6348 1941 Box
+6442 1942 Box
+6535 1942 Box
+6628 1943 Box
+6722 1943 Box
+6815 1948 Box
+6908 1951 Box
+1.000 UL
+LTb
+4482 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+0 -1680 V
+1.000 UP
+stroke
+3600 0 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+4482 420 M
+2480 0 V
+1.000 UL
+LTb
+4482 420 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1e-04) Rshow
+grestore
+1.000 UL
+LTb
+4482 504 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 616 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 673 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 700 M
+2480 0 V
+1.000 UL
+LTb
+4482 700 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.001) Rshow
+grestore
+1.000 UL
+LTb
+4482 784 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 896 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 953 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 980 M
+2480 0 V
+1.000 UL
+LTb
+4482 980 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.01) Rshow
+grestore
+1.000 UL
+LTb
+4482 1064 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1176 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1260 M
+2480 0 V
+1.000 UL
+LTb
+4482 1260 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.1) Rshow
+grestore
+1.000 UL
+LTb
+4482 1344 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1456 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1540 M
+2480 0 V
+1.000 UL
+LTb
+4482 1540 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+4482 1624 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1736 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1820 M
+2480 0 V
+1.000 UL
+LTb
+4482 1820 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+4482 1904 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 2016 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 2100 M
+2480 0 V
+1.000 UL
+LTb
+4482 2100 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 100) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4482 420 M
+0 1680 V
+1.000 UL
+LTb
+4482 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1) Cshow
+grestore
+1.000 UL
+LTb
+4575 420 M
+0 31 V
+0 1649 R
+0 -31 V
+4699 420 M
+0 31 V
+0 1649 R
+0 -31 V
+4762 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+4792 420 M
+0 1680 V
+1.000 UL
+LTb
+4792 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10) Cshow
+grestore
+1.000 UL
+LTb
+4885 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5009 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5072 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5102 420 M
+0 1680 V
+1.000 UL
+LTb
+5102 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100) Cshow
+grestore
+1.000 UL
+LTb
+5195 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5319 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5382 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5412 420 M
+0 1680 V
+1.000 UL
+LTb
+5412 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1000) Cshow
+grestore
+1.000 UL
+LTb
+5505 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5629 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5692 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5722 420 M
+0 1680 V
+1.000 UL
+LTb
+5722 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10000) Cshow
+grestore
+1.000 UL
+LTb
+5815 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5939 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6002 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6032 420 M
+0 1680 V
+1.000 UL
+LTb
+6032 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100000) Cshow
+grestore
+1.000 UL
+LTb
+6125 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6249 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6312 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6342 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+6342 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+06) Cshow
+grestore
+1.000 UL
+LTb
+6435 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6559 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6622 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6652 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+6652 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+6745 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6869 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6932 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6962 420 M
+0 1680 V
+1.000 UL
+LTb
+6962 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+08) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+4482 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+0 -1680 V
+LTb
+3740 1260 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(seconds) Cshow
+grestore
+grestore
+LTb
+5722 70 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+5722 2310 M
+gsave 0 setgray
+(one-way time, logarithmic) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+4482 753 M
+93 272 V
+94 90 V
+93 83 V
+93 85 V
+94 83 V
+93 80 V
+93 86 V
+94 79 V
+93 39 V
+93 109 V
+94 65 V
+93 63 V
+93 49 V
+93 43 V
+94 32 V
+93 14 V
+93 6 V
+94 13 V
+93 10 V
+93 4 V
+94 2 V
+93 2 V
+93 1 V
+94 0 V
+93 1 V
+93 0 V
+4482 753 Box
+4575 1025 Box
+4669 1115 Box
+4762 1198 Box
+4855 1283 Box
+4949 1366 Box
+5042 1446 Box
+5135 1532 Box
+5229 1611 Box
+5322 1650 Box
+5415 1759 Box
+5509 1824 Box
+5602 1887 Box
+5695 1936 Box
+5788 1979 Box
+5882 2011 Box
+5975 2025 Box
+6068 2031 Box
+6162 2044 Box
+6255 2054 Box
+6348 2058 Box
+6442 2060 Box
+6535 2062 Box
+6628 2063 Box
+6722 2063 Box
+6815 2064 Box
+6908 2064 Box
+1.000 UP
+1.000 UL
+LT0
+4482 698 M
+93 340 V
+94 88 V
+93 85 V
+93 83 V
+94 84 V
+93 85 V
+93 78 V
+94 80 V
+93 77 V
+93 69 V
+94 60 V
+93 64 V
+93 49 V
+93 39 V
+94 25 V
+93 5 V
+93 4 V
+94 7 V
+93 3 V
+93 4 V
+94 2 V
+93 2 V
+93 -2 V
+94 1 V
+93 0 V
+93 1 V
+4482 698 Box
+4575 1038 Box
+4669 1126 Box
+4762 1211 Box
+4855 1294 Box
+4949 1378 Box
+5042 1463 Box
+5135 1541 Box
+5229 1621 Box
+5322 1698 Box
+5415 1767 Box
+5509 1827 Box
+5602 1891 Box
+5695 1940 Box
+5788 1979 Box
+5882 2004 Box
+5975 2009 Box
+6068 2013 Box
+6162 2020 Box
+6255 2023 Box
+6348 2027 Box
+6442 2029 Box
+6535 2031 Box
+6628 2029 Box
+6722 2030 Box
+6815 2030 Box
+6908 2031 Box
+1.000 UP
+1.000 UL
+LT0
+4482 744 M
+93 215 V
+94 83 V
+93 91 V
+93 82 V
+94 83 V
+93 85 V
+93 82 V
+94 76 V
+93 83 V
+93 76 V
+94 66 V
+93 66 V
+93 50 V
+93 -8 V
+94 38 V
+93 26 V
+93 14 V
+94 5 V
+93 1 V
+93 1 V
+94 0 V
+93 1 V
+93 -1 V
+94 0 V
+93 4 V
+93 2 V
+4482 744 Box
+4575 959 Box
+4669 1042 Box
+4762 1133 Box
+4855 1215 Box
+4949 1298 Box
+5042 1383 Box
+5135 1465 Box
+5229 1541 Box
+5322 1624 Box
+5415 1700 Box
+5509 1766 Box
+5602 1832 Box
+5695 1882 Box
+5788 1874 Box
+5882 1912 Box
+5975 1938 Box
+6068 1952 Box
+6162 1957 Box
+6255 1958 Box
+6348 1959 Box
+6442 1959 Box
+6535 1960 Box
+6628 1959 Box
+6722 1959 Box
+6815 1963 Box
+6908 1965 Box
+1.000 UP
+1.000 UL
+LT0
+4482 773 M
+93 194 V
+94 89 V
+93 84 V
+93 83 V
+94 86 V
+93 83 V
+93 81 V
+94 78 V
+93 80 V
+93 72 V
+94 63 V
+93 65 V
+93 44 V
+93 -3 V
+94 32 V
+93 22 V
+93 13 V
+94 3 V
+93 -2 V
+93 1 V
+94 1 V
+93 0 V
+93 1 V
+94 0 V
+93 5 V
+93 3 V
+4482 773 Box
+4575 967 Box
+4669 1056 Box
+4762 1140 Box
+4855 1223 Box
+4949 1309 Box
+5042 1392 Box
+5135 1473 Box
+5229 1551 Box
+5322 1631 Box
+5415 1703 Box
+5509 1766 Box
+5602 1831 Box
+5695 1875 Box
+5788 1872 Box
+5882 1904 Box
+5975 1926 Box
+6068 1939 Box
+6162 1942 Box
+6255 1940 Box
+6348 1941 Box
+6442 1942 Box
+6535 1942 Box
+6628 1943 Box
+6722 1943 Box
+6815 1948 Box
+6908 1951 Box
+1.000 UL
+LTb
+4482 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+0 -1680 V
+1.000 UP
+stroke
+3600 0 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+4482 420 M
+2480 0 V
+1.000 UL
+LTb
+4482 420 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1e-04) Rshow
+grestore
+1.000 UL
+LTb
+4482 504 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 616 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 673 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 700 M
+2480 0 V
+1.000 UL
+LTb
+4482 700 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.001) Rshow
+grestore
+1.000 UL
+LTb
+4482 784 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 896 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 953 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 980 M
+2480 0 V
+1.000 UL
+LTb
+4482 980 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.01) Rshow
+grestore
+1.000 UL
+LTb
+4482 1064 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1176 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1260 M
+2480 0 V
+1.000 UL
+LTb
+4482 1260 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.1) Rshow
+grestore
+1.000 UL
+LTb
+4482 1344 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1456 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1540 M
+2480 0 V
+1.000 UL
+LTb
+4482 1540 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+4482 1624 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1736 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1820 M
+2480 0 V
+1.000 UL
+LTb
+4482 1820 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+4482 1904 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 2016 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 2100 M
+2480 0 V
+1.000 UL
+LTb
+4482 2100 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 100) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4482 420 M
+0 1680 V
+1.000 UL
+LTb
+4482 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1) Cshow
+grestore
+1.000 UL
+LTb
+4575 420 M
+0 31 V
+0 1649 R
+0 -31 V
+4699 420 M
+0 31 V
+0 1649 R
+0 -31 V
+4762 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+4792 420 M
+0 1680 V
+1.000 UL
+LTb
+4792 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10) Cshow
+grestore
+1.000 UL
+LTb
+4885 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5009 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5072 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5102 420 M
+0 1680 V
+1.000 UL
+LTb
+5102 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100) Cshow
+grestore
+1.000 UL
+LTb
+5195 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5319 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5382 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5412 420 M
+0 1680 V
+1.000 UL
+LTb
+5412 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1000) Cshow
+grestore
+1.000 UL
+LTb
+5505 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5629 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5692 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5722 420 M
+0 1680 V
+1.000 UL
+LTb
+5722 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10000) Cshow
+grestore
+1.000 UL
+LTb
+5815 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5939 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6002 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6032 420 M
+0 1680 V
+1.000 UL
+LTb
+6032 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100000) Cshow
+grestore
+1.000 UL
+LTb
+6125 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6249 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6312 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6342 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+6342 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+06) Cshow
+grestore
+1.000 UL
+LTb
+6435 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6559 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6622 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6652 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+6652 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+6745 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6869 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6932 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6962 420 M
+0 1680 V
+1.000 UL
+LTb
+6962 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+08) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+4482 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+0 -1680 V
+LTb
+3740 1260 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(seconds) Cshow
+grestore
+grestore
+LTb
+5722 70 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+5722 2310 M
+gsave 0 setgray
+(bandwidth, logarithmic) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+4482 753 M
+93 272 V
+94 90 V
+93 83 V
+93 85 V
+94 83 V
+93 80 V
+93 86 V
+94 79 V
+93 39 V
+93 109 V
+94 65 V
+93 63 V
+93 49 V
+93 43 V
+94 32 V
+93 14 V
+93 6 V
+94 13 V
+93 10 V
+93 4 V
+94 2 V
+93 2 V
+93 1 V
+94 0 V
+93 1 V
+93 0 V
+4482 753 Box
+4575 1025 Box
+4669 1115 Box
+4762 1198 Box
+4855 1283 Box
+4949 1366 Box
+5042 1446 Box
+5135 1532 Box
+5229 1611 Box
+5322 1650 Box
+5415 1759 Box
+5509 1824 Box
+5602 1887 Box
+5695 1936 Box
+5788 1979 Box
+5882 2011 Box
+5975 2025 Box
+6068 2031 Box
+6162 2044 Box
+6255 2054 Box
+6348 2058 Box
+6442 2060 Box
+6535 2062 Box
+6628 2063 Box
+6722 2063 Box
+6815 2064 Box
+6908 2064 Box
+1.000 UP
+1.000 UL
+LT0
+4482 698 M
+93 340 V
+94 88 V
+93 85 V
+93 83 V
+94 84 V
+93 85 V
+93 78 V
+94 80 V
+93 77 V
+93 69 V
+94 60 V
+93 64 V
+93 49 V
+93 39 V
+94 25 V
+93 5 V
+93 4 V
+94 7 V
+93 3 V
+93 4 V
+94 2 V
+93 2 V
+93 -2 V
+94 1 V
+93 0 V
+93 1 V
+4482 698 Box
+4575 1038 Box
+4669 1126 Box
+4762 1211 Box
+4855 1294 Box
+4949 1378 Box
+5042 1463 Box
+5135 1541 Box
+5229 1621 Box
+5322 1698 Box
+5415 1767 Box
+5509 1827 Box
+5602 1891 Box
+5695 1940 Box
+5788 1979 Box
+5882 2004 Box
+5975 2009 Box
+6068 2013 Box
+6162 2020 Box
+6255 2023 Box
+6348 2027 Box
+6442 2029 Box
+6535 2031 Box
+6628 2029 Box
+6722 2030 Box
+6815 2030 Box
+6908 2031 Box
+1.000 UP
+1.000 UL
+LT0
+4482 744 M
+93 215 V
+94 83 V
+93 91 V
+93 82 V
+94 83 V
+93 85 V
+93 82 V
+94 76 V
+93 83 V
+93 76 V
+94 66 V
+93 66 V
+93 50 V
+93 -8 V
+94 38 V
+93 26 V
+93 14 V
+94 5 V
+93 1 V
+93 1 V
+94 0 V
+93 1 V
+93 -1 V
+94 0 V
+93 4 V
+93 2 V
+4482 744 Box
+4575 959 Box
+4669 1042 Box
+4762 1133 Box
+4855 1215 Box
+4949 1298 Box
+5042 1383 Box
+5135 1465 Box
+5229 1541 Box
+5322 1624 Box
+5415 1700 Box
+5509 1766 Box
+5602 1832 Box
+5695 1882 Box
+5788 1874 Box
+5882 1912 Box
+5975 1938 Box
+6068 1952 Box
+6162 1957 Box
+6255 1958 Box
+6348 1959 Box
+6442 1959 Box
+6535 1960 Box
+6628 1959 Box
+6722 1959 Box
+6815 1963 Box
+6908 1965 Box
+1.000 UP
+1.000 UL
+LT0
+4482 773 M
+93 194 V
+94 89 V
+93 84 V
+93 83 V
+94 86 V
+93 83 V
+93 81 V
+94 78 V
+93 80 V
+93 72 V
+94 63 V
+93 65 V
+93 44 V
+93 -3 V
+94 32 V
+93 22 V
+93 13 V
+94 3 V
+93 -2 V
+93 1 V
+94 1 V
+93 0 V
+93 1 V
+94 0 V
+93 5 V
+93 3 V
+4482 773 Box
+4575 967 Box
+4669 1056 Box
+4762 1140 Box
+4855 1223 Box
+4949 1309 Box
+5042 1392 Box
+5135 1473 Box
+5229 1551 Box
+5322 1631 Box
+5415 1703 Box
+5509 1766 Box
+5602 1831 Box
+5695 1875 Box
+5788 1872 Box
+5882 1904 Box
+5975 1926 Box
+6068 1939 Box
+6162 1942 Box
+6255 1940 Box
+6348 1941 Box
+6442 1942 Box
+6535 1942 Box
+6628 1943 Box
+6722 1943 Box
+6815 1948 Box
+6908 1951 Box
+1.000 UL
+LTb
+4482 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+0 -1680 V
+1.000 UP
+stroke
+3600 0 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+4482 420 M
+2480 0 V
+1.000 UL
+LTb
+4482 420 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1e-04) Rshow
+grestore
+1.000 UL
+LTb
+4482 504 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 616 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 673 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 700 M
+2480 0 V
+1.000 UL
+LTb
+4482 700 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.001) Rshow
+grestore
+1.000 UL
+LTb
+4482 784 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 896 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 953 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 980 M
+2480 0 V
+1.000 UL
+LTb
+4482 980 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.01) Rshow
+grestore
+1.000 UL
+LTb
+4482 1064 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1176 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1260 M
+2480 0 V
+1.000 UL
+LTb
+4482 1260 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.1) Rshow
+grestore
+1.000 UL
+LTb
+4482 1344 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1456 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1540 M
+2480 0 V
+1.000 UL
+LTb
+4482 1540 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+4482 1624 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1736 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1820 M
+2480 0 V
+1.000 UL
+LTb
+4482 1820 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+4482 1904 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 2016 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 2100 M
+2480 0 V
+1.000 UL
+LTb
+4482 2100 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 100) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4482 420 M
+0 1680 V
+1.000 UL
+LTb
+4482 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1) Cshow
+grestore
+1.000 UL
+LTb
+4575 420 M
+0 31 V
+0 1649 R
+0 -31 V
+4699 420 M
+0 31 V
+0 1649 R
+0 -31 V
+4762 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+4792 420 M
+0 1680 V
+1.000 UL
+LTb
+4792 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10) Cshow
+grestore
+1.000 UL
+LTb
+4885 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5009 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5072 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5102 420 M
+0 1680 V
+1.000 UL
+LTb
+5102 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100) Cshow
+grestore
+1.000 UL
+LTb
+5195 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5319 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5382 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5412 420 M
+0 1680 V
+1.000 UL
+LTb
+5412 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1000) Cshow
+grestore
+1.000 UL
+LTb
+5505 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5629 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5692 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5722 420 M
+0 1680 V
+1.000 UL
+LTb
+5722 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10000) Cshow
+grestore
+1.000 UL
+LTb
+5815 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5939 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6002 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6032 420 M
+0 1680 V
+1.000 UL
+LTb
+6032 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100000) Cshow
+grestore
+1.000 UL
+LTb
+6125 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6249 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6312 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6342 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+6342 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+06) Cshow
+grestore
+1.000 UL
+LTb
+6435 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6559 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6622 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6652 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+6652 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+6745 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6869 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6932 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6962 420 M
+0 1680 V
+1.000 UL
+LTb
+6962 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+08) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+4482 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+0 -1680 V
+LTb
+3740 1260 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(seconds) Cshow
+grestore
+grestore
+LTb
+5722 70 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+5722 2310 M
+gsave 0 setgray
+(bandwidth, logarithmic) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+4482 753 M
+93 272 V
+94 90 V
+93 83 V
+93 85 V
+94 83 V
+93 80 V
+93 86 V
+94 79 V
+93 39 V
+93 109 V
+94 65 V
+93 63 V
+93 49 V
+93 43 V
+94 32 V
+93 14 V
+93 6 V
+94 13 V
+93 10 V
+93 4 V
+94 2 V
+93 2 V
+93 1 V
+94 0 V
+93 1 V
+93 0 V
+4482 753 Box
+4575 1025 Box
+4669 1115 Box
+4762 1198 Box
+4855 1283 Box
+4949 1366 Box
+5042 1446 Box
+5135 1532 Box
+5229 1611 Box
+5322 1650 Box
+5415 1759 Box
+5509 1824 Box
+5602 1887 Box
+5695 1936 Box
+5788 1979 Box
+5882 2011 Box
+5975 2025 Box
+6068 2031 Box
+6162 2044 Box
+6255 2054 Box
+6348 2058 Box
+6442 2060 Box
+6535 2062 Box
+6628 2063 Box
+6722 2063 Box
+6815 2064 Box
+6908 2064 Box
+1.000 UP
+1.000 UL
+LT0
+4482 698 M
+93 340 V
+94 88 V
+93 85 V
+93 83 V
+94 84 V
+93 85 V
+93 78 V
+94 80 V
+93 77 V
+93 69 V
+94 60 V
+93 64 V
+93 49 V
+93 39 V
+94 25 V
+93 5 V
+93 4 V
+94 7 V
+93 3 V
+93 4 V
+94 2 V
+93 2 V
+93 -2 V
+94 1 V
+93 0 V
+93 1 V
+4482 698 Box
+4575 1038 Box
+4669 1126 Box
+4762 1211 Box
+4855 1294 Box
+4949 1378 Box
+5042 1463 Box
+5135 1541 Box
+5229 1621 Box
+5322 1698 Box
+5415 1767 Box
+5509 1827 Box
+5602 1891 Box
+5695 1940 Box
+5788 1979 Box
+5882 2004 Box
+5975 2009 Box
+6068 2013 Box
+6162 2020 Box
+6255 2023 Box
+6348 2027 Box
+6442 2029 Box
+6535 2031 Box
+6628 2029 Box
+6722 2030 Box
+6815 2030 Box
+6908 2031 Box
+1.000 UP
+1.000 UL
+LT0
+4482 744 M
+93 215 V
+94 83 V
+93 91 V
+93 82 V
+94 83 V
+93 85 V
+93 82 V
+94 76 V
+93 83 V
+93 76 V
+94 66 V
+93 66 V
+93 50 V
+93 -8 V
+94 38 V
+93 26 V
+93 14 V
+94 5 V
+93 1 V
+93 1 V
+94 0 V
+93 1 V
+93 -1 V
+94 0 V
+93 4 V
+93 2 V
+4482 744 Box
+4575 959 Box
+4669 1042 Box
+4762 1133 Box
+4855 1215 Box
+4949 1298 Box
+5042 1383 Box
+5135 1465 Box
+5229 1541 Box
+5322 1624 Box
+5415 1700 Box
+5509 1766 Box
+5602 1832 Box
+5695 1882 Box
+5788 1874 Box
+5882 1912 Box
+5975 1938 Box
+6068 1952 Box
+6162 1957 Box
+6255 1958 Box
+6348 1959 Box
+6442 1959 Box
+6535 1960 Box
+6628 1959 Box
+6722 1959 Box
+6815 1963 Box
+6908 1965 Box
+1.000 UP
+1.000 UL
+LT0
+4482 773 M
+93 194 V
+94 89 V
+93 84 V
+93 83 V
+94 86 V
+93 83 V
+93 81 V
+94 78 V
+93 80 V
+93 72 V
+94 63 V
+93 65 V
+93 44 V
+93 -3 V
+94 32 V
+93 22 V
+93 13 V
+94 3 V
+93 -2 V
+93 1 V
+94 1 V
+93 0 V
+93 1 V
+94 0 V
+93 5 V
+93 3 V
+4482 773 Box
+4575 967 Box
+4669 1056 Box
+4762 1140 Box
+4855 1223 Box
+4949 1309 Box
+5042 1392 Box
+5135 1473 Box
+5229 1551 Box
+5322 1631 Box
+5415 1703 Box
+5509 1766 Box
+5602 1831 Box
+5695 1875 Box
+5788 1872 Box
+5882 1904 Box
+5975 1926 Box
+6068 1939 Box
+6162 1942 Box
+6255 1940 Box
+6348 1941 Box
+6442 1942 Box
+6535 1942 Box
+6628 1943 Box
+6722 1943 Box
+6815 1948 Box
+6908 1951 Box
+1.000 UL
+LTb
+4482 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+0 -1680 V
+1.000 UP
+stroke
+3600 0 3600 2520 BoxFill
+1.000 UL
+LTb
+1.000 UL
+LTa
+4482 420 M
+2480 0 V
+1.000 UL
+LTb
+4482 420 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1e-04) Rshow
+grestore
+1.000 UL
+LTb
+4482 504 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 616 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 673 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 700 M
+2480 0 V
+1.000 UL
+LTb
+4482 700 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.001) Rshow
+grestore
+1.000 UL
+LTb
+4482 784 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 896 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 953 M
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 980 M
+2480 0 V
+1.000 UL
+LTb
+4482 980 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.01) Rshow
+grestore
+1.000 UL
+LTb
+4482 1064 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1176 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1260 M
+2480 0 V
+1.000 UL
+LTb
+4482 1260 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 0.1) Rshow
+grestore
+1.000 UL
+LTb
+4482 1344 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1456 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1540 M
+2480 0 V
+1.000 UL
+LTb
+4482 1540 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 1) Rshow
+grestore
+1.000 UL
+LTb
+4482 1624 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 1736 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 1820 M
+2480 0 V
+1.000 UL
+LTb
+4482 1820 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 10) Rshow
+grestore
+1.000 UL
+LTb
+4482 1904 M
+31 0 V
+2449 0 R
+-31 0 V
+4482 2016 M
+31 0 V
+2449 0 R
+-31 0 V
+-2449 57 R
+31 0 V
+2449 0 R
+-31 0 V
+1.000 UL
+LTa
+4482 2100 M
+2480 0 V
+1.000 UL
+LTb
+4482 2100 M
+63 0 V
+2417 0 R
+-63 0 V
+-2501 0 R
+gsave 0 setgray
+( 100) Rshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTa
+4482 420 M
+0 1680 V
+1.000 UL
+LTb
+4482 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1) Cshow
+grestore
+1.000 UL
+LTb
+4575 420 M
+0 31 V
+0 1649 R
+0 -31 V
+4699 420 M
+0 31 V
+0 1649 R
+0 -31 V
+4762 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+4792 420 M
+0 1680 V
+1.000 UL
+LTb
+4792 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10) Cshow
+grestore
+1.000 UL
+LTb
+4885 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5009 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5072 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5102 420 M
+0 1680 V
+1.000 UL
+LTb
+5102 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100) Cshow
+grestore
+1.000 UL
+LTb
+5195 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5319 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5382 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5412 420 M
+0 1680 V
+1.000 UL
+LTb
+5412 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1000) Cshow
+grestore
+1.000 UL
+LTb
+5505 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5629 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5692 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+5722 420 M
+0 1680 V
+1.000 UL
+LTb
+5722 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 10000) Cshow
+grestore
+1.000 UL
+LTb
+5815 420 M
+0 31 V
+0 1649 R
+0 -31 V
+5939 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6002 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6032 420 M
+0 1680 V
+1.000 UL
+LTb
+6032 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 100000) Cshow
+grestore
+1.000 UL
+LTb
+6125 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6249 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6312 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6342 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+6342 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+06) Cshow
+grestore
+1.000 UL
+LTb
+6435 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6559 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6622 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6652 420 M
+0 1617 V
+0 63 V
+1.000 UL
+LTb
+6652 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+07) Cshow
+grestore
+1.000 UL
+LTb
+6745 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6869 420 M
+0 31 V
+0 1649 R
+0 -31 V
+6932 420 M
+0 31 V
+0 1649 R
+0 -31 V
+1.000 UL
+LTa
+6962 420 M
+0 1680 V
+1.000 UL
+LTb
+6962 420 M
+0 63 V
+0 1617 R
+0 -63 V
+0 -1757 R
+gsave 0 setgray
+( 1e+08) Cshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+4482 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+0 -1680 V
+LTb
+3740 1260 M
+gsave 0 setgray
+currentpoint gsave translate 90 rotate 0 0 M
+(MB/s) Cshow
+grestore
+grestore
+LTb
+5722 70 M
+gsave 0 setgray
+(msg size\(bytes\)) Cshow
+grestore
+LTb
+5722 2310 M
+gsave 0 setgray
+(bandwidth, logarithmic) Cshow
+grestore
+1.000 UP
+1.000 UP
+1.000 UL
+LT0
+4482 753 M
+93 272 V
+94 90 V
+93 83 V
+93 85 V
+94 83 V
+93 80 V
+93 86 V
+94 79 V
+93 39 V
+93 109 V
+94 65 V
+93 63 V
+93 49 V
+93 43 V
+94 32 V
+93 14 V
+93 6 V
+94 13 V
+93 10 V
+93 4 V
+94 2 V
+93 2 V
+93 1 V
+94 0 V
+93 1 V
+93 0 V
+4482 753 Box
+4575 1025 Box
+4669 1115 Box
+4762 1198 Box
+4855 1283 Box
+4949 1366 Box
+5042 1446 Box
+5135 1532 Box
+5229 1611 Box
+5322 1650 Box
+5415 1759 Box
+5509 1824 Box
+5602 1887 Box
+5695 1936 Box
+5788 1979 Box
+5882 2011 Box
+5975 2025 Box
+6068 2031 Box
+6162 2044 Box
+6255 2054 Box
+6348 2058 Box
+6442 2060 Box
+6535 2062 Box
+6628 2063 Box
+6722 2063 Box
+6815 2064 Box
+6908 2064 Box
+1.000 UP
+1.000 UL
+LT0
+4482 698 M
+93 340 V
+94 88 V
+93 85 V
+93 83 V
+94 84 V
+93 85 V
+93 78 V
+94 80 V
+93 77 V
+93 69 V
+94 60 V
+93 64 V
+93 49 V
+93 39 V
+94 25 V
+93 5 V
+93 4 V
+94 7 V
+93 3 V
+93 4 V
+94 2 V
+93 2 V
+93 -2 V
+94 1 V
+93 0 V
+93 1 V
+4482 698 Box
+4575 1038 Box
+4669 1126 Box
+4762 1211 Box
+4855 1294 Box
+4949 1378 Box
+5042 1463 Box
+5135 1541 Box
+5229 1621 Box
+5322 1698 Box
+5415 1767 Box
+5509 1827 Box
+5602 1891 Box
+5695 1940 Box
+5788 1979 Box
+5882 2004 Box
+5975 2009 Box
+6068 2013 Box
+6162 2020 Box
+6255 2023 Box
+6348 2027 Box
+6442 2029 Box
+6535 2031 Box
+6628 2029 Box
+6722 2030 Box
+6815 2030 Box
+6908 2031 Box
+1.000 UP
+1.000 UL
+LT0
+4482 744 M
+93 215 V
+94 83 V
+93 91 V
+93 82 V
+94 83 V
+93 85 V
+93 82 V
+94 76 V
+93 83 V
+93 76 V
+94 66 V
+93 66 V
+93 50 V
+93 -8 V
+94 38 V
+93 26 V
+93 14 V
+94 5 V
+93 1 V
+93 1 V
+94 0 V
+93 1 V
+93 -1 V
+94 0 V
+93 4 V
+93 2 V
+4482 744 Box
+4575 959 Box
+4669 1042 Box
+4762 1133 Box
+4855 1215 Box
+4949 1298 Box
+5042 1383 Box
+5135 1465 Box
+5229 1541 Box
+5322 1624 Box
+5415 1700 Box
+5509 1766 Box
+5602 1832 Box
+5695 1882 Box
+5788 1874 Box
+5882 1912 Box
+5975 1938 Box
+6068 1952 Box
+6162 1957 Box
+6255 1958 Box
+6348 1959 Box
+6442 1959 Box
+6535 1960 Box
+6628 1959 Box
+6722 1959 Box
+6815 1963 Box
+6908 1965 Box
+1.000 UP
+1.000 UL
+LT0
+4482 773 M
+93 194 V
+94 89 V
+93 84 V
+93 83 V
+94 86 V
+93 83 V
+93 81 V
+94 78 V
+93 80 V
+93 72 V
+94 63 V
+93 65 V
+93 44 V
+93 -3 V
+94 32 V
+93 22 V
+93 13 V
+94 3 V
+93 -2 V
+93 1 V
+94 1 V
+93 0 V
+93 1 V
+94 0 V
+93 5 V
+93 3 V
+4482 773 Box
+4575 967 Box
+4669 1056 Box
+4762 1140 Box
+4855 1223 Box
+4949 1309 Box
+5042 1392 Box
+5135 1473 Box
+5229 1551 Box
+5322 1631 Box
+5415 1703 Box
+5509 1766 Box
+5602 1831 Box
+5695 1875 Box
+5788 1872 Box
+5882 1904 Box
+5975 1926 Box
+6068 1939 Box
+6162 1942 Box
+6255 1940 Box
+6348 1941 Box
+6442 1942 Box
+6535 1942 Box
+6628 1943 Box
+6722 1943 Box
+6815 1948 Box
+6908 1951 Box
+1.000 UL
+LTb
+4482 420 M
+2480 0 V
+0 1680 V
+-2480 0 V
+0 -1680 V
+1.000 UP
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica
+%%Pages: 1

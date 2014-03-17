@@ -1,0 +1,505 @@
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking how to run the C preprocessor... gcc -E
+checking for egrep... grep -E
+checking for AIX... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking for library containing strerror... none required
+defining man1dir to be $(mandir)/man1
+defining man1ext to be .1
+defining infofile to be $(infodir)/octave.info
+defining octincludedir to be $(includedir)/octave-$(version)
+defining fcnfiledir to be $(datadir)/octave/$(version)/m
+defining localfcnfiledir to be $(datadir)/octave/site/m
+defining localapifcnfiledir to be $(datadir)/octave/site/$(apiversion)/m
+defining localverfcnfiledir to be $(datadir)/octave/$(version)/site/m
+defining localfcnfilepath to be $(localverfcnfiledir)//:$(localapifcnfiledir)//:$(localfcnfiledir)//
+defining octlibdir to be $(libdir)/octave-$(version)
+defining archlibdir to be $(libexecdir)/octave/$(version)/exec/$(canonical_host_type)
+defining localarchlibdir to be $(libexecdir)/octave/site/exec/$(canonical_host_type)
+defining localverarchlibdir to be $(libexecdir)/octave/$(version)/site/exec/$(canonical_host_type)
+defining octfiledir to be $(libexecdir)/octave/$(version)/oct/$(canonical_host_type)
+defining localoctfiledir to be $(libexecdir)/octave/site/oct/$(canonical_host_type)
+defining localapioctfiledir to be $(libexecdir)/octave/site/oct/$(apiversion)/$(canonical_host_type)
+defining localveroctfiledir to be $(libexecdir)/octave/$(version)/site/oct/$(canonical_host_type)
+defining localoctfilepath to be $(localveroctfiledir)//:$(localapioctfiledir)//:$(localoctfiledir)//
+defining fcnfilepath to be .:$(localoctfilepath):$(localfcnfilepath):$(octfiledir)//:$(fcnfiledir)//
+defining imagedir to be $(datadir)/octave/$(version)/imagelib
+defining imagepath to be .:$(imagedir)//
+defining __NO_MATH_INLINES avoids buggy GNU libc exp function
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for C++ support for new friend template declaration... yes
+checking if C++ library is ISO compliant... yes
+checking for nm... nm
+checking C++ ABI version used by g++... gnu_v3
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ANSI C... (cached) none needed
+checking how to run the C preprocessor... gcc -E
+checking whether gcc needs -traditional... no
+checking whether gcc accepts -mieee-fp... yes
+adding -mieee-fp to XTRA_CFLAGS
+checking whether g++ accepts -mieee-fp... yes
+adding -mieee-fp to XTRA_CXXFLAGS
+checking whether g++ prepends an underscore to external names... no
+checking for sin in -lm... yes
+checking for H5Pcreate in -lhdf5... no
+checking fftw3.h usability... no
+checking fftw3.h presence... no
+checking for fftw3.h... no
+checking for MPI_Init in -lmpi... no
+checking for IEEE 754 data format... yes
+checking for ranlib... ranlib
+checking for g77... no
+checking for f77... no
+checking for xlf... no
+checking for frt... no
+checking for pgf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for f90... no
+checking for xlf90... no
+checking for pgf90... no
+checking for epcf90... no
+checking for f95... f95
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether f95 accepts -g... yes
+checking how to get verbose linking output from f95... -v
+checking for Fortran libraries of f95...  -L/usr/lib/gcc/i386-redhat-linux/4.1.1 -L/usr/lib/gcc/i386-redhat-linux/4.1.1/../../.. -lgfortranbegin -lgfortran -lm -lgcc_s
+checking for dummy main to link with Fortran libraries... none
+checking for Fortran name-mangling scheme... lower case, underscore, no extra underscore
+checking whether f95 accepts -mieee-fp... yes
+adding -mieee-fp to FFLAGS
+defining FFLAGS to be -O -mieee-fp
+checking for sgemm_... no
+checking for ATL_xerbla in -latlas... no
+checking for sgemm_ in -framework vecLib... no
+checking for sgemm_ in -lblas... yes
+checking for dgemm_ in -ldgemm... no
+checking for sgemm_ in -lcxml... no
+checking for sgemm_ in -ldxml... no
+checking for sgemm_ in -lscs... no
+checking for sgemm_ in -lcomplib.sgimath... no
+checking for sgemm_ in -lblas... (cached) yes
+checking for sgemm_ in -lessl... no
+checking for sgemm_ in -lblas... (cached) yes
+checking for cheev_... no
+checking for cheev_ in -llapack... no
+checking for cheev_ in -llapack_rs6k... no
+defining FPICFLAG to be -fPIC
+defining CPICFLAG to be -fPIC
+defining CXXPICFLAG to be -fPIC
+defining SHLEXT to be so
+defining SHLLIB to be $(SHLEXT)
+defining SHLBIN to be 
+defining SHLEXT_VER to be $(SHLEXT).$(version)
+defining SHLLIB_VER to be $(SHLLIB).$(version)
+defining SHLBIN_VER to be $(SHLBIN).$(version)
+defining SHLLINKEXT to be 
+defining DLFCN_DIR to be 
+defining SH_LD to be $(CXX)
+defining SH_LDFLAGS to be -shared
+defining DL_LD to be $(SH_LD)
+defining DL_LDFLAGS to be $(SH_LDFLAGS)
+defining MKOCTFILE_DL_LDFLAGS to be -shared -Wl,-Bsymbolic
+defining SONAME_FLAGS to be -Wl,-soname -Wl,$@
+defining NO_OCT_FILE_STRIP to be false
+defining RLD_FLAG to be -Wl,-rpath -Wl,$(octlibdir)
+defining TEMPLATE_AR to be $(AR)
+defining TEMPLATE_ARFLAGS to be rc
+defining library_path_var to be LD_LIBRARY_PATH
+checking for gethostname... yes
+checking for getpwnam... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking for dev_t... yes
+checking for ino_t... yes
+checking for nlink_t... yes
+checking for nlink_t... (cached) yes
+checking for long long int... yes
+checking for unsigned long long int... yes
+checking for sigset_t... yes
+checking for sig_atomic_t... yes
+checking for short... yes
+checking size of short... 2
+checking for int... yes
+checking size of int... 4
+checking for long... yes
+checking size of long... 4
+checking for long long... yes
+checking size of long long... 8
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for an ANSI C-conforming const... yes
+checking whether including <string> defines NPOS... no
+checking whether <new> defines placement delete operator... yes
+checking whether C++ supports dynamic auto arrays... yes
+checking for ANSI C header files... (cached) yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking whether time.h and sys/time.h may both be included... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking assert.h usability... yes
+checking assert.h presence... yes
+checking for assert.h... yes
+checking curses.h usability... yes
+checking curses.h presence... yes
+checking for curses.h... yes
+checking direct.h usability... no
+checking direct.h presence... no
+checking for direct.h... no
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking floatingpoint.h usability... no
+checking floatingpoint.h presence... no
+checking for floatingpoint.h... no
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for memory.h... (cached) yes
+checking nan.h usability... no
+checking nan.h presence... no
+checking for nan.h... no
+checking ncurses.h usability... yes
+checking ncurses.h presence... yes
+checking for ncurses.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking termcap.h usability... yes
+checking termcap.h presence... yes
+checking for termcap.h... yes
+checking for unistd.h... (cached) yes
+checking varargs.h usability... no
+checking varargs.h presence... no
+checking for varargs.h... no
+checking sstream usability... yes
+checking sstream presence... yes
+checking for sstream... yes
+checking termio.h usability... yes
+checking termio.h presence... yes
+checking for termio.h... yes
+checking sgtty.h usability... yes
+checking sgtty.h presence... yes
+checking for sgtty.h... yes
+checking conio.h usability... no
+checking conio.h presence... no
+checking for conio.h... no
+checking for atexit... yes
+checking for basename... yes
+checking for bcopy... yes
+checking for bzero... yes
+checking for canonicalize_file_name... yes
+checking for dup2... yes
+checking for endgrent... yes
+checking for endpwent... yes
+checking for execvp... yes
+checking for fcntl... yes
+checking for fork... yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getgrent... yes
+checking for getgrgid... yes
+checking for getgrnam... yes
+checking for getpgrp... yes
+checking for getpid... yes
+checking for getppid... yes
+checking for getpwent... yes
+checking for getpwuid... yes
+checking for gettimeofday... yes
+checking for getuid... yes
+checking for getwd... yes
+checking for _kbhit... no
+checking for kill... yes
+checking for link... yes
+checking for localtime_r... yes
+checking for lstat... yes
+checking for memmove... yes
+checking for mkdir... yes
+checking for mkfifo... yes
+checking for mkstemp... yes
+checking for on_exit... yes
+checking for pipe... yes
+checking for poll... yes
+checking for putenv... yes
+checking for raise... yes
+checking for readlink... yes
+checking for rename... yes
+checking for resolvepath... no
+checking for rindex... yes
+checking for rmdir... yes
+checking for round... yes
+checking for select... yes
+checking for setgrent... yes
+checking for setpwent... yes
+checking for setvbuf... yes
+checking for sigaction... yes
+checking for siglongjmp... yes
+checking for sigpending... yes
+checking for sigprocmask... yes
+checking for sigsuspend... yes
+checking for stat... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for stricmp... no
+checking for strncasecmp... yes
+checking for strnicmp... no
+checking for strptime... yes
+checking for symlink... yes
+checking for tempnam... yes
+checking for umask... yes
+checking for unlink... yes
+checking for usleep... yes
+checking for vfprintf... yes
+checking for vsprintf... yes
+checking for vsnprintf... yes
+checking for waitpid... yes
+checking whether putenv uses malloc... no
+checking mach-o/dyld.h usability... no
+checking mach-o/dyld.h presence... no
+checking for mach-o/dyld.h... no
+checking for shl_load in -ldld... no
+checking for shl_load... no
+checking for shl_findsym... no
+checking for LoadLibrary in -lwsock32... no
+checking for LoadLibrary... no
+checking for dlopen in -ldl... yes
+checking for dlopen... yes
+checking for dlsym... yes
+checking for dlerror... yes
+checking for dlclose... yes
+checking whether g++ accepts -rdynamic... yes
+checking for struct timeval... yes
+checking whether gettimeofday can't accept two arguments... no
+checking for finite... yes
+checking for isnan... yes
+checking for isinf... yes
+checking for copysign... yes
+checking for signbit... no
+checking whether signbit is declared... yes
+checking for acosh... yes
+checking for asinh... yes
+checking for atanh... yes
+checking for erf... yes
+checking for erfc... yes
+checking for struct stat.st_blksize... yes
+checking for struct stat.st_blocks... yes
+checking for struct stat.st_rdev... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking whether closedir returns void... no
+checking for struct group.gr_passwd... no
+checking if mkdir takes one argument... no
+checking for tputs in -lncurses... yes
+checking for rl_set_keyboard_input_timeout in -lreadline... yes
+checking for struct exception in math.h... yes
+checking return type of signal handlers... void
+checking whether sys_siglist is declared... yes
+checking for sys_siglist variable... yes
+checking for type of signal functions... posix
+checking if signal handlers must be reinstalled when invoked... no
+checking for getrusage... yes
+checking for times... yes
+checking for gawk... gawk
+checking for a sed that does not truncate output... /bin/sed
+checking for flex... flex
+checking for yywrap in -lfl... yes
+checking lex output file root... lex.yy
+checking whether yytext is a pointer... yes
+defining LFLAGS to be -t -I
+checking for bison... bison -y
+checking whether ln -s works... yes
+checking for nm... (cached) nm
+checking for runtest... runtest
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for gnuplot... gnuplot
+checking to see if your gnuplot supports multiplot... yes
+checking to see if your gnuplot supports multiple plot windows... yes
+checking for less... less
+checking for gperf... gperf
+defining UGLY_DEFS to be -DPACKAGE_NAME=\\\\\"\\\\\" -DPACKAGE_TARNAME=\\\\\"\\\\\" -DPACKAGE_VERSION=\\\\\"\\\\\" -DPACKAGE_STRING=\\\\\"\\\\\" -DPACKAGE_BUGREPORT=\\\\\"\\\\\" -DOCTAVE_SOURCE=1 -D_GNU_SOURCE=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSEPCHAR=1 -DSEPCHAR_STR=\\\\\":\\\\\" -D__NO_MATH_INLINES=1 -DCXX_NEW_FRIEND_TEMPLATE_DECL=1 -DCXX_ISO_COMPLIANT_LIBRARY=1 -DCXX_ABI=gnu_v3 -DHAVE_LIBM=1 -DHAVE_IEEE754_DATA_FORMAT=1 -DF77_FUNC\(name,NAME\)=name\ \#\#\ _ -DF77_FUNC_\(name,NAME\)=name\ \#\#\ _ -DHAVE_BLAS=1 -DHAVE_GETHOSTNAME=1 -DHAVE_GETPWNAM=1 -DHAVE_DEV_T=1 -DHAVE_INO_T=1 -DHAVE_NLINK_T=1 -DHAVE_NLINK_T=1 -DHAVE_LONG_LONG_INT=1 -DHAVE_UNSIGNED_LONG_LONG_INT=1 -DHAVE_SIGSET_T=1 -DHAVE_SIG_ATOMIC_T=1 -DSIZEOF_SHORT=2 -DSIZEOF_INT=4 -DSIZEOF_LONG=4 -DSIZEOF_LONG_LONG=8 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DNPOS=std::string::npos -DHAVE_PLACEMENT_DELETE=1 -DHAVE_DYNAMIC_AUTO_ARRAYS=1 -DSTDC_HEADERS=1 -DHAVE_DIRENT_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_SYS_WAIT_H=1 -DHAVE_ASSERT_H=1 -DHAVE_CURSES_H=1 -DHAVE_DLFCN_H=1 -DHAVE_FCNTL_H=1 -DHAVE_FLOAT_H=1 -DHAVE_GRP_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MEMORY_H=1 -DHAVE_NCURSES_H=1 -DHAVE_POLL_H=1 -DHAVE_PWD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_IOCTL_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_SYS_POLL_H=1 -DHAVE_SYS_RESOURCE_H=1 -DHAVE_SYS_SELECT_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_SYS_TIMES_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_UTSNAME_H=1 -DHAVE_TERMCAP_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SSTREAM=1 -DHAVE_TERMIO_H=1 -DHAVE_SGTTY_H=1 -DHAVE_ATEXIT=1 -DHAVE_BASENAME=1 -DHAVE_BCOPY=1 -DHAVE_BZERO=1 -DHAVE_CANONICALIZE_FILE_NAME=1 -DHAVE_DUP2=1 -DHAVE_ENDGRENT=1 -DHAVE_ENDPWENT=1 -DHAVE_EXECVP=1 -DHAVE_FCNTL=1 -DHAVE_FORK=1 -DHAVE_GETCWD=1 -DHAVE_GETEGID=1 -DHAVE_GETEUID=1 -DHAVE_GETGID=1 -DHAVE_GETGRENT=1 -DHAVE_GETGRGID=1 -DHAVE_GETGRNAM=1 -DHAVE_GETPGRP=1 -DHAVE_GETPID=1 -DHAVE_GETPPID=1 -DHAVE_GETPWENT=1 -DHAVE_GETPWUID=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_GETUID=1 -DHAVE_GETWD=1 -DHAVE_KILL=1 -DHAVE_LINK=1 -DHAVE_LOCALTIME_R=1 -DHAVE_LSTAT=1 -DHAVE_MEMMOVE=1 -DHAVE_MKDIR=1 -DHAVE_MKFIFO=1 -DHAVE_MKSTEMP=1 -DHAVE_ON_EXIT=1 -DHAVE_PIPE=1 -DHAVE_POLL=1 -DHAVE_PUTENV=1 -DHAVE_RAISE=1 -DHAVE_READLINK=1 -DHAVE_RENAME=1 -DHAVE_RINDEX=1 -DHAVE_RMDIR=1 -DHAVE_ROUND=1 -DHAVE_SELECT=1 -DHAVE_SETGRENT=1 -DHAVE_SETPWENT=1 -DHAVE_SETVBUF=1 -DHAVE_SIGACTION=1 -DHAVE_SIGLONGJMP=1 -DHAVE_SIGPENDING=1 -DHAVE_SIGPROCMASK=1 -DHAVE_SIGSUSPEND=1 -DHAVE_STAT=1 -DHAVE_STRCASECMP=1 -DHAVE_STRDUP=1 -DHAVE_STRERROR=1 -DHAVE_STRFTIME=1 -DHAVE_STRNCASECMP=1 -DHAVE_STRPTIME=1 -DHAVE_SYMLINK=1 -DHAVE_TEMPNAM=1 -DHAVE_UMASK=1 -DHAVE_UNLINK=1 -DHAVE_USLEEP=1 -DHAVE_VFPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_WAITPID=1 -DHAVE_LIBDL=1 -DHAVE_DLOPEN=1 -DHAVE_DLSYM=1 -DHAVE_DLERROR=1 -DHAVE_DLCLOSE=1 -DHAVE_DLOPEN_API=1 -DENABLE_DYNAMIC_LINKING=1 -DHAVE_TIMEVAL=1 -DHAVE_FINITE=1 -DHAVE_ISNAN=1 -DHAVE_ISINF=1 -DHAVE_COPYSIGN=1 -DHAVE_DECL_SIGNBIT=1 -DHAVE_ACOSH=1 -DHAVE_ASINH=1 -DHAVE_ATANH=1 -DHAVE_ERF=1 -DHAVE_ERFC=1 -DHAVE_STRUCT_STAT_ST_BLKSIZE=1 -DHAVE_STRUCT_STAT_ST_BLOCKS=1 -DHAVE_STRUCT_STAT_ST_RDEV=1 -DHAVE_STRUCT_TM_TM_ZONE=1 -DHAVE_TM_ZONE=1 -DUSE_READLINE=1 -DEXCEPTION_IN_MATH=1 -DRETSIGTYPE=void -DSYS_SIGLIST_DECLARED=1 -DHAVE_SYS_SIGLIST=1 -DHAVE_POSIX_SIGNALS=1 -DHAVE_GETRUSAGE=1 -DHAVE_TIMES=1 -DYYTEXT_POINTER=1 -DGNUPLOT_BINARY=\\\\\"gnuplot\\\\\" -DGNUPLOT_HAS_FRAMES=1
+checking whether gcc accepts -Wall... yes
+adding -Wall to WARN_CFLAGS
+checking whether gcc accepts -W... yes
+adding -W to WARN_CFLAGS
+checking whether gcc accepts -Wshadow... yes
+adding -Wshadow to WARN_CFLAGS
+checking whether g++ accepts -Wall... yes
+adding -Wall to WARN_CXXFLAGS
+checking whether g++ accepts -W... yes
+adding -W to WARN_CXXFLAGS
+checking whether g++ accepts -Wshadow... yes
+adding -Wshadow to WARN_CXXFLAGS
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating octMakefile
+config.status: creating Makeconf
+config.status: creating install-octave
+config.status: creating test/Makefile
+config.status: creating dlfcn/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/faq/Makefile
+config.status: creating doc/interpreter/Makefile
+config.status: creating doc/liboctave/Makefile
+config.status: creating doc/refcard/Makefile
+config.status: creating emacs/Makefile
+config.status: creating examples/Makefile
+config.status: creating liboctave/Makefile
+config.status: creating src/Makefile
+config.status: creating libcruft/Makefile
+config.status: creating libcruft/Makerules
+config.status: creating libcruft/amos/Makefile
+config.status: creating libcruft/blas/Makefile
+config.status: creating libcruft/daspk/Makefile
+config.status: creating libcruft/dasrt/Makefile
+config.status: creating libcruft/dassl/Makefile
+config.status: creating libcruft/fftpack/Makefile
+config.status: creating libcruft/lapack/Makefile
+config.status: creating libcruft/minpack/Makefile
+config.status: creating libcruft/misc/Makefile
+config.status: creating libcruft/odepack/Makefile
+config.status: creating libcruft/ordered-qz/Makefile
+config.status: creating libcruft/quadpack/Makefile
+config.status: creating libcruft/ranlib/Makefile
+config.status: creating libcruft/slatec-fn/Makefile
+config.status: creating libcruft/slatec-err/Makefile
+config.status: creating libcruft/villad/Makefile
+config.status: creating libcruft/blas-xtra/Makefile
+config.status: creating libcruft/lapack-xtra/Makefile
+config.status: creating config.h
+configure: configuring in scripts
+configure: running /bin/sh './configure' --prefix=/home/javier/octave-2.1.73  '--prefix=/home/javier/octave-2.1.73' '--enable-shared' '--disable-static' 'CFLAGS=-O2' 'CXXFLAGS=-O2' --cache-file=/dev/null --srcdir=.
+checking for a BSD-compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating audio/Makefile
+config.status: creating control/Makefile
+config.status: creating control/base/Makefile
+config.status: creating control/hinf/Makefile
+config.status: creating control/obsolete/Makefile
+config.status: creating control/system/Makefile
+config.status: creating control/util/Makefile
+config.status: creating deprecated/Makefile
+config.status: creating elfun/Makefile
+config.status: creating finance/Makefile
+config.status: creating general/Makefile
+config.status: creating image/Makefile
+config.status: creating io/Makefile
+config.status: creating linear-algebra/Makefile
+config.status: creating miscellaneous/Makefile
+config.status: creating plot/Makefile
+config.status: creating polynomial/Makefile
+config.status: creating quaternion/Makefile
+config.status: creating set/Makefile
+config.status: creating signal/Makefile
+config.status: creating specfun/Makefile
+config.status: creating special-matrix/Makefile
+config.status: creating startup/Makefile
+config.status: creating statistics/Makefile
+config.status: creating statistics/base/Makefile
+config.status: creating statistics/distributions/Makefile
+config.status: creating statistics/models/Makefile
+config.status: creating statistics/tests/Makefile
+config.status: creating strings/Makefile
+config.status: creating time/Makefile
+
+
+Octave is now configured for i686-pc-linux-gnu
+
+  Source directory:     .
+  Installation prefix:  /home/javier/octave-2.1.73
+  C compiler:           gcc  -mieee-fp  -Wall -W -Wshadow -O2
+  C++ compiler:         g++  -mieee-fp  -Wall -W -Wshadow -O2
+  Fortran compiler:     f95 -O -mieee-fp
+  Fortran libraries:     -L/usr/lib/gcc/i386-redhat-linux/4.1.1 -L/usr/lib/gcc/i386-redhat-linux/4.1.1/../../.. -lgfortranbegin -lgfortran -lm -lgcc_s
+  BLAS libraries:       -lblas
+  FFTW libraries:       
+  HDF5 libraries:       
+  MPI libraries:        
+  LIBS:                 -lreadline  -lncurses -ldl -lm 
+  Default pager:        less
+  gnuplot:              gnuplot
+
+  Do internal array bounds checking:  false
+  Build static libraries:             false
+  Build shared libraries:             true
+  Dynamic Linking:                    true (dlopen)
+  Include support for GNU readline:   true
+

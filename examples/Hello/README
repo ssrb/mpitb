@@ -1,0 +1,69 @@
+## Copyright (C) 2007 Javier Fernández Baldomero, Mancia Anguita López
+##
+## This program is free software
+                                                                                
+**************
+* Hello demo *
+**************
+                                                                                
+Classical "Hello, World!" snippet.
+
+This is by and far the easiest MPITB demo we have been able to think of.
+It introduces 4 of the "basic 6" MPI routines:
+- MPI_Init	you should not use any MPI routine before this one
+		(except perhaps MPI_Wtick/_Wtime)
+- MPI_Finalize	you must finish with MPI before exiting from your program
+
+- MPI_Send/Recv	not used here - really really simple example
+
+- MPI_Comm_size	size of the communicator. That is,
+		number of MPI processes started together via mpirun
+		All them are collectively referred to as "MPI_COMM_WORLD",
+		the default communicator
+- MPI_Comm_rank	"order" or "number" of the process in the communicator
+		starting out from 0, ie, "mpirun -c 2 octave -q --eval hello"
+		launches a world of size 2 comprising ranks 0 & 1
+
+------------------------------------------------------------------
+| References for the interested reader:
+| 
+| http://www.google.com/search?hl=en&q=MPI+hello+world&btnG=Google+Search
+| http://www.math.hmc.edu/computing/amber/software/tutorials/lam-mpi/
+| http://www-unix.mcs.anl.gov/mpi/tutorial/mpiexmpl/src/hellow/C/main.html
+| http://www.dartmouth.edu/~rc/classes/intro_mpi/hello_world_ex.html
+------------------------------------------------------------------
+
+************
+* Contents *
+************
+
+- Hello.m		Hello world MPITB version
+- startup_MPITB.m	MPITB .octaverc startup file
+
+- lam-bhost.def		default bhost file to be used by lamboot
+			...can also be used as Open-MPI hostfile
+- README		This file
+
+- .Hello_2_1_73.m	corresponding app&startup files from 2.1.73 version,
+- .s2.1.73_MPITB.m	both hidden
+
+
+***************
+* Suggestions *
+***************
+                                                                                
+You could:
+- edit lam-bhost.def to reflect your cluster node names
+- for  LAM/MPI: run lamboot / lamnodes to start LAM out
+- for Open-MPI: bhost can be used with the rsh/ssh starter (-hostfile switch)
+
+- see comments in Hello.m to learn howto run it from command line
+- BTW, study it all since this README is longer than the code
+- try it out: you should obtain something similar to amber's messages above
+- for instance, from command line:
+    mpirun -c 2				octave -q --eval Hello	# for LAM
+    mpirun -c 2 -H h1,h2		octave -q --eval Hello	# for Open-MPI
+    mpirun -c 2 -hostfile lam-bhost.def octave -q --eval Hello	# OMPI/hostfile
+
+- proceed on to more difficult examples: Pi, PingPong, NPB/EP, Mandelbrot...
+

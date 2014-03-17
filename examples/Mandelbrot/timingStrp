@@ -1,0 +1,28 @@
+#!/bin/bash
+	SOFT=octave
+	CMD="$SOFT -q --eval"
+	PROG=mandelStrp
+echo --------------------------------------
+echo List of currently booted nodes in LAM
+echo --------------------------------------
+if ! lamnodes; then
+	exit $PIPESTATUS
+else
+	NC=`lamnodes | awk -F : 'BEGIN{NC=0};{NC+=$2};END{print NC}'`
+	echo --------------------------------------
+	echo $NC CPUs available for scalability test
+	echo test will oversubscribe up to $((2*NC)) CPUs
+	echo --------------------------------------
+
+	for (( C=1; C<=2*NC; C++ )); do
+	  for (( T=1; T<=3; T++ )); do
+		echo ___ $C Processes ___ turn $T ____
+		mpirun -c $C $CMD $PROG
+		sleep 1
+	  done
+	done | tee -a $$
+
+	mv $$ $PROG.$SOFT.log
+#	grep "elapsed" $$ > $PROG.$SOFT.log
+#	rm $$
+fi

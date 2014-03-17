@@ -1,0 +1,77 @@
+## Copyright (C) 2004-2007 Javier Fernández Baldomero, Mancia Anguita López
+##
+## This program is free software
+
+**************
+* Spawn demo * the slaves-mergeParent variant
+**************
+
+Just a couple of examples to help prospective users to understand
+howto MPI_Comm_spawn/Octave_spawn can be used to launch (from Octave)
+additional slave octave processes, even make them run arbitrary commands...
+
+...and help them understand that those are running in _other_ computers :-)
+
+Uses the previously introduced (in Spawn_slv_nostartup):
+	MPI command	MPI_Comm_spawn
+	MPITB utility	LAM_Init
+	MPITB utility	LAM_Clean
+	MPITB startup	startup_MPITB
+Introduces to:
+	MPITB startup	startup_mergeParent
+	MPI command	MPI_Intercomm_merge
+	MPITB utility	Octave_spawn
+	MPI command	MPI_Bcast, _Send, _Recv
+
+Notice that the startup_MPITB.m file has 1 uncommented line in the else
+branch in the final "if isempty(geten('LAMPARENT')) ... else ... end"
+The line is "startup_mergeParent", thus the variant name. The slave octaves
+might be instructed to perform any arbitrarily long series of commands
+in the mentioned slave startup script (read it in the startups subdir).
+
+startup_mergeParent basically performs MPI_Init and MPI_Intercomm_merge.
+
+
+************
+* Contents *
+************
+
+- Spawn_oct_man.m	Demo for manually spawning and merging slave octaves
+- Spawn_oct_auto.m	Same demo, using automated script Octave_Spawn
+- Spawn_oct_bcast.m	Similar demo, adding cmd-bcast-eval and w/out LAM_Clean
+- startup_MPITB.m	MPITB .octaverc startup file
+
+- lam-bhost.def		default bhost file to be used by lamboot
+
+- README		This file
+
+***************
+* Suggestions *
+***************
+
+You could:
+- edit lam-bhost.def to reflect your cluster node names, or...
+- ...alternatively, edit HOSTS cell in these Spawn* M-files or in LAM_Init
+- run lamboot / lamnodes to start LAM out (or let LAM_Init do the job)
+- make sure the lamd process in cluster nodes has inherited a working $DISPLAY
+	(that might be tricky and require local sysadmin advice) (*)
+- run octave
+- try Spawn_oct_man(2), Spawn_oct_auto, and Spawn_oct_bcast(3)
+- play with octaves launched from Spawn_oct_bcast (it does not LAM_Clean)
+
+
+**************
+* DISCLAIMER *
+**************
+
+Sorry if it doesn't work. Either ask for local help, or give up :-)
+
+Do notice that:
+- mpirun'nable demos were designed because most users get stalled at (*)
+	we are no longer recommending users to MPI_Comm_spawn at all
+- debugging your remote cluster configuration from here is a very hard task
+- just due to your not understanding why it gets blocked, that's why
+	you won't be able to provide useful information for us to debug it
+- if your cluster is so configured, it's because your sysadmin wants it so:
+	paranoid iptables settings, localhost names in DISPLAY, etc
+

@@ -1,0 +1,75 @@
+## Copyright (C) 2005-2007 Javier Fernández Baldomero, Mancia Anguita López
+##
+## This program is free software
+
+***************
+* NPB/EP demo *
+***************
+
+NAS Parallel Benchmarks' Embarrassingly Parallel (EP) demo
+
+A wealth of random numbers are generated using a linear congruential
+generator. This can be trivially parallelized with the powers trick:
+it lets us deduce which will be the 2^N random number starting out
+from a given seed. So we can compute the starting point for several
+slaves (as if the sequence started by the master was continued by
+slave 1 after 2^N randoms, and by slave 2 after another 2^N randoms,
+and so on), and let each of them produce 2^N randoms.
+
+The compound sequence (if it was effectively joined by concatenating
+master and slaves sequences) is expected to be identical to sequential.
+Correctness is verified converting randoms to pairs (points in the
+plane) and tallying how many of them fall into square annuli of
+increasing size. Tally counters are reduced in the master and compared
+to a precompiled validation list.
+
+------------------------------------------------------------------
+| References for the interested reader:
+| · Kernel EP: An Embarassingly Parallel benchmark.
+|	From "The NAS Parallel Benchmarks", Sect.2.2.1, pp.14--16
+|	Technical Report RNR-94-007, March 1994.
+|	http://www.nas.nasa.gov/Software/NPB/
+|
+| · Benjamin Buss MSc Thesis, Ohio State University, 2004
+|	http://www.ece.osu.edu/~bussb/research/ (broken, 2005)
+------------------------------------------------------------------
+
+************
+* Contents *
+************
+
+- ep.m			NPB/EP benchmark, MPITB version
+
+- lam-bhost.def		cluster description f/ [lamboot / orterun -hostfile]
+- ep8.sh		shell script to produce the .log & .eps files
+
+- README                This file
+
+- detect.m		Detect whether running under MATLAB or Octave
+- startup_MPITB_MAT.m	MPITB  Matlab startup.m file
+- startup_MPITB_Oct.m	MPITB .octaverc startup file
+
+- randlc.m
+- randtest.m
+
+- vranlc.m
+- vrantest1.m
+- vrantest2.m
+- vrantest3.m
+- vrantest4.m
+
+***************
+* Suggestions *
+***************
+
+You could:
+- edit lam-bhost.def to reflect your cluster node names
+- for  LAM/MPI: run lamboot / lamnodes to start LAM out
+- for Open-MPI: bhost can be used with the rsh/ssh starter (-hostfile switch)
+
+- see comments in ep.m to learn howto run it from command line
+- try it out: beware that classes above 'S' require long runtimes
+
+- see the results obtained by us (*.sxc, *.pdf) using the ep.sh script
+- optionally, study and run the script:  ./ep8.sh
+

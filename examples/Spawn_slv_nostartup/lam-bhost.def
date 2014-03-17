@@ -1,0 +1,21 @@
+# -------------------------------------
+# For multi-node LAM, localhost is not a valid hostname.
+# Edit below to reflect your LAM node-names
+# mpirun will use them round-robin by default
+# See man bhost(5) for additional information
+# -------------------------------------
+# For using utilities in MPITB_HOME/utils such as LAM_Init
+# an appropriately reversed list (master node last in list)
+# should be provided, so spawned processes won't
+# oversubscribe master node where the interactive Octave
+# is running
+# -------------------------------------
+h8
+#h7
+#h6
+h5
+h4
+#h3
+h2
+h1
+

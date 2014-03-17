@@ -1,0 +1,69 @@
+## Copyright (C) 2004-2007 Javier Fernández Baldomero, Mancia Anguita López
+##
+## This program is free software
+
+**************
+* Spawn demo * the slaves-without-startup-control variant
+**************
+
+Just a couple of examples to help prospective users to understand
+howto MPI_Comm_spawn can be used to launch (from Octave) other binaries
+such as xterms or even additional octaves...
+
+...and help them understand that those are running in _other_ computers :-)
+
+Introduces to:
+	MPI command	MPI_Comm_spawn
+	MPITB utility	LAM_Init
+	MPITB utility	LAM_Clean
+	MPITB startup	startup_MPITB
+
+Notice that the startup_MPITB.m file has the normal, empty else branch
+in the final "if isempty(geten('LAMPARENT')) ... else ... end"
+That's what we mean by without-startup-control. The slave octaves
+will just run the commands prescribed in their spawn command-line
+(hopefully one of them is MPI_Init)
+
+
+************
+* Contents *
+************
+
+- Spawn_xterms.m	Demo for launching slave xterms
+- Spawn_octaves.m	Demo for launching slave octaves
+- startup_MPITB.m	MPITB .octaverc startup file
+
+- lam-bhost.def		default bhost file to be used by lamboot
+- MPI_Init		link to stdlone program to ./MPI_Init from slv xterms
+- MPI_Init.c		corresponding source file
+
+- README		This file
+
+***************
+* Suggestions *
+***************
+
+You could:
+- edit lam-bhost.def to reflect your cluster node names
+- run lamboot / lamnodes to start LAM out
+- make sure the lamd process in cluster nodes has inherited a working $DISPLAY
+	(that might be tricky and require local sysadmin advice) (*)
+- run octave
+- try Spawn_xterms(2) and Spawn_octaves(2)
+- play with Spawn_octaves(2,'ls') to see how all is blocked until MPI_Init
+
+**************
+* DISCLAIMER *
+**************
+
+Sorry if it doesn't work. Either ask for local help, or give up :-)
+
+Do notice that:
+- mpirun'nable demos were designed because most users get stalled at (*)
+	we are no longer recommending users to MPI_Comm_spawn at all
+- debugging your remote cluster configuration from here is a very hard task
+- just due to your not understanding why it gets blocked, that's why
+	you won't be able to provide useful information for us to debug it
+- if your cluster is so configured, it's because your sysadmin wants it so:
+	paranoid iptables settings, localhost names in DISPLAY, etc
+

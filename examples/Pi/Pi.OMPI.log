@@ -1,0 +1,120 @@
+___ 1 processes ___ turn 1 ____
+results =
+{
+  pi =  3.1416
+  err = -6.4837e-14
+  time =  2.9655
+}
+
+___ 1 processes ___ turn 2 ____
+results =
+{
+  pi =  3.1416
+  err = -6.4837e-14
+  time =  2.9369
+}
+
+___ 1 processes ___ turn 3 ____
+results =
+{
+  pi =  3.1416
+  err = -6.4837e-14
+  time =  2.9649
+}
+
+___ 2 processes ___ turn 1 ____
+results =
+{
+  pi =  3.1416
+  err =  1.8874e-13
+  time =  1.8494
+}
+
+___ 2 processes ___ turn 2 ____
+results =
+{
+  pi =  3.1416
+  err =  1.8874e-13
+  time =  1.6280
+}
+
+___ 2 processes ___ turn 3 ____
+results =
+{
+  pi =  3.1416
+  err =  1.8874e-13
+  time =  1.6215
+}
+
+___ 3 processes ___ turn 1 ____
+results =
+{
+  pi =  3.1416
+  err =  1.1280e-13
+  time =  1.3810
+}
+
+___ 3 processes ___ turn 2 ____
+results =
+{
+  pi =  3.1416
+  err =  1.1280e-13
+  time =  1.1609
+}
+
+___ 3 processes ___ turn 3 ____
+results =
+{
+  pi =  3.1416
+  err =  1.1280e-13
+  time =  1.1632
+}
+
+___ 4 processes ___ turn 1 ____
+results =
+{
+  pi =  3.1416
+  err = -1.0925e-13
+  time =  1.1273
+}
+
+___ 4 processes ___ turn 2 ____
+results =
+{
+  pi =  3.1416
+  err = -1.0925e-13
+  time =  0.92968
+}
+
+___ 4 processes ___ turn 3 ____
+results =
+{
+  pi =  3.1416
+  err = -1.0925e-13
+  time =  0.93405
+}
+
+___ 5 processes ___ turn 1 ____
+results =
+{
+  pi =  3.1416
+  err = -8.3489e-14
+  time =  1.0220
+}
+
+___ 5 processes ___ turn 2 ____
+results =
+{
+  pi =  3.1416
+  err = -8.3489e-14
+  time =  0.79797
+}
+
+___ 5 processes ___ turn 3 ____
+results =
+{
+  pi =  3.1416
+  err = -8.3489e-14
+  time =  0.79988
+}
+

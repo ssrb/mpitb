@@ -1,0 +1,54 @@
+Recompile these stand-alone MPI applications using mpicc. For instance:
+
+mpicc -o Pi Pi.c
+
+********** BW.c Pi.c
+* Files: * BW   Pi  
+**********
+Pi and BW can be run in parallel with mpirun. Thus:
+
+_____________________________________________________________________
+$ mpirun -c 2 BW
+_____________________________________
+LAMKENYAPID=8474
+LAMRANK=0
+LAMPARENT=0
+LAMJOBID=4:21055
+LAMWORLD=2
+_____________________________________
+Sending 1MB...  ...done
+Message time:    0.450 s
+BandWidth   :   71.077 MB/s
+Elapsed time:    0.481 s
+_____________________________________________________________________
+
+$ mpirun -c 5 Pi
+Estimation of pi is 3.141593 after 100000000 iterations
+PCs     Time (s)        Error
+ 5       0.315476        -1.505462E-13
+_____________________________________________________________________
+
+
+********** Speedup.sh
+* Files: * Speedup.dat
+********** Speedup.eps
+A shell script ./Speedup.sh has been developed to make a scalability test.
+Try it out after lambooting a LAM, it should generate data and graph files.
+
+
+********** MPI_Init.c MPI_Finalize.c
+* Files: * MPI_Init   MPI_Finalize
+**********
+MPI_Init is used to unblock some MPI_Comm_spawn(xterm) commands used
+(previously in the TUTORIAL and now) in the Spawn_no_slv_str demo.
+
+MPI_Finalize should trigger an error, you can't do that.
+
+
+********** lamprep proxy
+* Files: *
+**********
+Scripts formerly used to overcome the std (nowadays) X-traffic blocking.
+Can't cope with that anymore. I give up. Let's use mpirun and forget
+about interactive, dynamically spawned xterms sent back :-)
+

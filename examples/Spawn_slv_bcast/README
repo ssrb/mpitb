@@ -1,0 +1,79 @@
+## Copyright (C) 2004-2007 Javier Fernández Baldomero, Mancia Anguita López
+##
+## This program is free software
+
+**************
+* Spawn demo * the slaves-broadcast variant
+**************
+
+Just a couple of examples to help prospective users to understand
+howto use Octave_spawn to launch (from within this Octave) additional
+slave octave processes, and howto make them run arbitrary commands,
+which are decided at runtime and broadcast to all them...
+
+...and help them understand that those are running in _other_ computers :-)
+
+Uses the previously introduced (in Spawn_slv_nostartup):
+	MPITB utility	LAM_Init
+	MPITB utility	MPITB_Clean
+	MPITB startup	startup_MPITB
+Uses the previously introduced (in Spawn_slv_merge):
+	MPITB utility	Octave_spawn
+	MPI command	MPI_Bcast
+Introduces to:
+	MPITB startup	startup_bcastSlv
+
+Notice that the startup_MPITB.m file has 1 uncommented line in the else
+branch in the final "if isempty(geten('LAMPARENT')) ... else ... end"
+The line is "startup_bcastSlv", thus the variant name. The slave octaves
+might be instructed to perform any arbitrarily long series of commands
+in the mentioned slave startup script (read it in the startups subdir).
+
+startup_bcastSlv basically performs MPI_Init and MPI_Intercomm_merge
+(just like the previously studied startup_mergeParent) and additionally
+MPI_Bcast(cmd) and eval(cmd). The MPI_Finalize and quit commands
+have been removed in this local version of startup_bcastSlv.
+
+
+************
+* Contents *
+************
+
+- Spawn_bcast.m		Demo using MPI_Bcast the normal way
+- Spawn_staggrd.m	Difficult staggering exercise solved using bcast proto
+- startup_MPITB.m	MPITB .octaverc startup file
+- startup_bcastSlv.m	MPITB slave-bc  startup file modified so as not to quit
+
+- lam-bhost.def		default bhost file to be used by lamboot
+
+- README		This file
+
+***************
+* Suggestions *
+***************
+
+You could:
+- edit lam-bhost.def to reflect your cluster node names, or...
+- ...alternatively, edit HOSTS cell in these Spawn* M-files or in LAM_Init
+- run lamboot / lamnodes to start LAM out (or let LAM_Init do the job)
+- make sure the lamd process in cluster nodes has inherited a working $DISPLAY
+	(that might be tricky and require local sysadmin advice) (*)
+- run octave
+- try Spawn_bcast(2) and Spawn_staggrd(3)
+
+
+**************
+* DISCLAIMER *
+**************
+
+Sorry if it doesn't work. Either ask for local help, or give up :-)
+
+Do notice that:
+- mpirun'nable demos were designed because most users get stalled at (*)
+	we are no longer recommending users to MPI_Comm_spawn at all
+- debugging your remote cluster configuration from here is a very hard task
+- just due to your not understanding why it gets blocked, that's why
+	you won't be able to provide useful information for us to debug it
+- if your cluster is so configured, it's because your sysadmin wants it so:
+	paranoid iptables settings, localhost names in DISPLAY, etc
+
