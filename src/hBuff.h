@@ -121,12 +121,12 @@ void* get_MPI_Buff(symbol_table::symbol_record &varsym, int &SIZ, bool inbytes,
 				MPI_Datatype &TYPE, bool mk_uniq=false){
 /*----------------------------------------------------------------*/
   void * dummy ;				// data() sideffect in CASE_SPR
-  octave_value ov = varsym.varval();		// fast return for invalid t_id
+  octave_value &ov = varsym.varref();		// fast return for invalid t_id
            int t_id = ov.type_id();		// see hType.h
 
-//switch (t_id){				// currently easier with if()
+	//switch (t_id){				// currently easier with if()
   if (  t_id<=ov_MIN_SUPP			// base==0, cell==1==MIN_SUPP
-//  ||	t_id==ov_range				// ov_range==6... range too?
+	//  ||	t_id==ov_range				// ov_range==6... range too?
 						// MPITB_ST_offset due to range
     ||	t_id>=ov_MAX_SUPP			//        struc==31==MAX_SUPP
 	){				// list==32, ...strmoff==41==MAX_TYPE
@@ -147,73 +147,77 @@ void* get_MPI_Buff(symbol_table::symbol_record &varsym, int &SIZ, bool inbytes,
    int ov_count = ov.get_count();
 
    if (ov_count > OV_LIMIT){
-     if(mk_uniq){ ov.make_unique();
-	warning_with_id("MPITB:getBuff-mk-unique",
-	STRNGFY(NAME) "(%s...) -> %s.make_unique(): %d -> %d copies\n",
-		varsym.name().c_str(),
-		varsym.name().c_str(),	ov_count, ov.get_count() );
+     if(mk_uniq){
 
-	switch (t_id){
-	CASE_UNIQUE_MAT(ov_sc_mat,       NDArray,           array_value)
-	CASE_UNIQUE_MAT(ov_cx_mat, ComplexNDArray,  complex_array_value)
-	CASE_UNIQUE_MAT(ov_bl_mat,    boolNDArray,     bool_array_value)
-	CASE_UNIQUE_MAT(ov_ch_mat,    charNDArray,     char_array_value)
-		case    ov_string:{   charNDArray a=ov.char_array_value();
-			a(0)=a(0);  varsym.varref() = octave_value(a,true);}
-		break;
-		case    ov_sq_str:{   charNDArray a=ov.char_array_value();
-			a(0)=a(0); varsym.varref() = octave_value(a,true,'\'');}
-		break;
+     	ov.make_unique();
 
-	CASE_UNIQUE_MAT( ov_i8_mat,   int8NDArray,     int8_array_value)
-	CASE_UNIQUE_MAT(ov_i16_mat,  int16NDArray,    int16_array_value)
-	CASE_UNIQUE_MAT(ov_i32_mat,  int32NDArray,    int32_array_value)
-	CASE_UNIQUE_MAT(ov_i64_mat,  int64NDArray,    int64_array_value)
-	CASE_UNIQUE_MAT( ov_u8_mat,  uint8NDArray,    uint8_array_value)
-	CASE_UNIQUE_MAT(ov_u16_mat, uint16NDArray,   uint16_array_value)
-	CASE_UNIQUE_MAT(ov_u32_mat, uint32NDArray,   uint32_array_value)
-	CASE_UNIQUE_MAT(ov_u64_mat, uint64NDArray,   uint64_array_value)
+		warning_with_id("MPITB:getBuff-mk-unique",
+			STRNGFY(NAME) "(%s...) -> %s.make_unique(): %d -> %d copies\n",
+				varsym.name().c_str(),
+				varsym.name().c_str(),	ov_count, ov.get_count());
 
-   CASE_UNIQUE_SPR(ov_bl_spr,    SparseBoolMatrix,    sparse_bool_matrix_value)
-   CASE_UNIQUE_SPR(ov_sc_spr,        SparseMatrix,         sparse_matrix_value)
-   CASE_UNIQUE_SPR(ov_cx_spr, SparseComplexMatrix, sparse_complex_matrix_value)
+		switch (t_id){
+			CASE_UNIQUE_MAT(ov_sc_mat,       NDArray,           array_value)
+			CASE_UNIQUE_MAT(ov_cx_mat, ComplexNDArray,  complex_array_value)
+			CASE_UNIQUE_MAT(ov_bl_mat,    boolNDArray,     bool_array_value)
+			CASE_UNIQUE_MAT(ov_ch_mat,    charNDArray,     char_array_value)
+				case    ov_string:{   charNDArray a=ov.char_array_value();
+					a(0)=a(0);  varsym.varref() = octave_value(a,true);}
+				break;
+				case    ov_sq_str:{   charNDArray a=ov.char_array_value();
+					a(0)=a(0); varsym.varref() = octave_value(a,true,'\'');}
+				break;
+
+			CASE_UNIQUE_MAT(ov_i8_mat,   int8NDArray,     int8_array_value)
+			CASE_UNIQUE_MAT(ov_i16_mat,  int16NDArray,    int16_array_value)
+			CASE_UNIQUE_MAT(ov_i32_mat,  int32NDArray,    int32_array_value)
+			CASE_UNIQUE_MAT(ov_i64_mat,  int64NDArray,    int64_array_value)
+			CASE_UNIQUE_MAT( ov_u8_mat,  uint8NDArray,    uint8_array_value)
+			CASE_UNIQUE_MAT(ov_u16_mat, uint16NDArray,   uint16_array_value)
+			CASE_UNIQUE_MAT(ov_u32_mat, uint32NDArray,   uint32_array_value)
+			CASE_UNIQUE_MAT(ov_u64_mat, uint64NDArray,   uint64_array_value)
+
+		   CASE_UNIQUE_SPR(ov_bl_spr,    SparseBoolMatrix,    sparse_bool_matrix_value)
+		   CASE_UNIQUE_SPR(ov_sc_spr,        SparseMatrix,         sparse_matrix_value)
+		   CASE_UNIQUE_SPR(ov_cx_spr, SparseComplexMatrix, sparse_complex_matrix_value)
+		}
+
+     } else {
+		warning_with_id("MPITB:getBuff-above-cnt",
+			STRNGFY(NAME) "(%s...) -> there are %d copies of %s right now (much)",
+				varsym.name().c_str(),	ov_count,
+				varsym.name().c_str());
+     }
+
+  } else {
+		//	message_with_id("name","MPITB:id",fmt...);	// m-filename ?!?
+	   if (ov_count == OV_LIMIT){
+			warning_with_id("MPITB:getBuff-normalcnt",
+				STRNGFY(NAME) "(%s...) -> there are exactly %d copies of %s (fine)",
+					varsym.name().c_str(), OV_LIMIT,
+					varsym.name().c_str());
+		} else if (ov_count < OV_LIMIT){				// should not happen
+			warning_with_id("MPITB:getBuff-below-cnt",
+				STRNGFY(NAME) "(%s...) -> there are %d copies of %s right now (few)\n"
+				"\t This should never happen, at least copied as function(argument)",
+					varsym.name().c_str(),	ov_count, varsym.name().c_str());
+		}
 	}
 
-     }else{
-	warning_with_id("MPITB:getBuff-above-cnt",
-	STRNGFY(NAME) "(%s...) -> there are %d copies of %s right now (much)",
-		varsym.name().c_str(),	ov_count,
-		varsym.name().c_str() );
-     }
-  }else
-//	message_with_id("name","MPITB:id",fmt...);	// m-filename ?!?
-   if (ov_count== OV_LIMIT){
-	warning_with_id("MPITB:getBuff-normalcnt",
-	STRNGFY(NAME) "(%s...) -> there are exactly %d copies of %s (fine)",
-		varsym.name().c_str(), OV_LIMIT,
-		varsym.name().c_str());
-  }else
-   if (ov_count < OV_LIMIT){				// should not happen
-	warning_with_id("MPITB:getBuff-below-cnt",
-	STRNGFY(NAME) "(%s...) -> there are %d copies of %s right now (few)\n"
-	"\t This should never happen, at least copied as function(argument)",
-		varsym.name().c_str(),	ov_count, varsym.name().c_str());
-  }
+  switch (t_id) {
+	//case		   ov_unknown-> default: error(); return(NIL); break;
+	//case		   ov_cell   -> default:
 
-  switch (t_id){
-//case		   ov_unknown-> default: error(); return(NIL); break;
-//case		   ov_cell   -> default:
+	CASE_SCALAR_BUFF(ov_scalar )
+	CASE_SCALAR_BUFF(ov_complex)
 
-  CASE_SCALAR_BUFF(ov_scalar )
-  CASE_SCALAR_BUFF(ov_complex)
-
-  CASE_MATRIX_BUFF(ov_sc_mat )
-  CASE_MATRIX_BUFF(ov_cx_mat )
+	CASE_MATRIX_BUFF(ov_sc_mat )
+	CASE_MATRIX_BUFF(ov_cx_mat )
 
 
-  case ov_range:TYPE=get_MPI_Type(ov);
-		SIZ = ( inbytes ? ov.byte_size() : 3 );
-		return //(ov.mex_get_data());	// Ouch! not implemented
+	  case ov_range:TYPE=get_MPI_Type(ov);
+			SIZ = ( inbytes ? ov.byte_size() : 3 );
+			return //(ov.mex_get_data());	// Ouch! not implemented
 /*C-style cast!*/ (void*) & ( ((double*)ov.internal_rep()) [MPITB_ST_offset] );
 /* - should be ----------------------------------------------------
 	return static_cast<void*>( & (
@@ -233,35 +237,37 @@ void* get_MPI_Buff(symbol_table::symbol_record &varsym, int &SIZ, bool inbytes,
  * ---------------------------------------------------------------- */
 
 
-  CASE_SCALAR_BUFF(ov_bool  )
-  CASE_MATRIX_BUFF(ov_bl_mat)
+	CASE_SCALAR_BUFF(ov_bool  )
+	CASE_MATRIX_BUFF(ov_bl_mat)
 
-  case ov_string:
-  case ov_sq_str:
-  CASE_MATRIX_BUFF(ov_ch_mat)		// Works? all three?
+	case ov_string:
+	case ov_sq_str:
+	CASE_MATRIX_BUFF(ov_ch_mat)		// Works? all three?
 
-  CASE_SCALAR_BUFF(ov_i8 )	CASE_MATRIX_BUFF(ov_i8_mat )
-  CASE_SCALAR_BUFF(ov_i16)	CASE_MATRIX_BUFF(ov_i16_mat)
-  CASE_SCALAR_BUFF(ov_i32)	CASE_MATRIX_BUFF(ov_i32_mat)
-  CASE_SCALAR_BUFF(ov_i64)	CASE_MATRIX_BUFF(ov_i64_mat)
-  CASE_SCALAR_BUFF(ov_u8 )	CASE_MATRIX_BUFF(ov_u8_mat )
-  CASE_SCALAR_BUFF(ov_u16)	CASE_MATRIX_BUFF(ov_u16_mat)
-  CASE_SCALAR_BUFF(ov_u32)	CASE_MATRIX_BUFF(ov_u32_mat)
-  CASE_SCALAR_BUFF(ov_u64)	CASE_MATRIX_BUFF(ov_u64_mat)
+	CASE_SCALAR_BUFF(ov_i8 )	CASE_MATRIX_BUFF(ov_i8_mat )
+	CASE_SCALAR_BUFF(ov_i16)	CASE_MATRIX_BUFF(ov_i16_mat)
+	CASE_SCALAR_BUFF(ov_i32)	CASE_MATRIX_BUFF(ov_i32_mat)
+	CASE_SCALAR_BUFF(ov_i64)	CASE_MATRIX_BUFF(ov_i64_mat)
+	CASE_SCALAR_BUFF(ov_u8 )	CASE_MATRIX_BUFF(ov_u8_mat )
+	CASE_SCALAR_BUFF(ov_u16)	CASE_MATRIX_BUFF(ov_u16_mat)
+	CASE_SCALAR_BUFF(ov_u32)	CASE_MATRIX_BUFF(ov_u32_mat)
+	CASE_SCALAR_BUFF(ov_u64)	CASE_MATRIX_BUFF(ov_u64_mat)
 
-  CASE_SPARSE_BUFF(ov_bl_spr)
-  CASE_SPARSE_BUFF(ov_sc_spr)
-  CASE_SPARSE_BUFF(ov_cx_spr)
+	CASE_SPARSE_BUFF(ov_bl_spr)
+	CASE_SPARSE_BUFF(ov_sc_spr)
+	CASE_SPARSE_BUFF(ov_cx_spr)
 
 //case		ov_struct -> default: error(); return(NIL); break;
 //case		ov_list,	ov_cs_list, 
 //case		ov_magic_colon, ov_builtin, ov_mapper, ov_user_func,
 //case		ov_dld_func, ov_fcn_handle, ov_fcn_inline, ov_streamoff,
 //default:	return (0);	// unreached below?
-  }
+	}
+
 	error("get_MPI_Buff: internal error datatype:[%s], class:[%s]",
 		ov.type_name ().c_str(),	// both type & class?
 		ov.class_name().c_str());	// does c_str() work?
+
 	return (0);				// NULL ptr
 }
 

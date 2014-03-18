@@ -123,7 +123,7 @@ P##NM[i] = static_cast<int>( P##NM##data [i] );
 	BLCK_NULSYM(PNAME,ARGN,P)	/* get symbol, no NULL check */	\
 	int	P##CNT  =		args(ARGN).length();		\
 MPI_Datatype	P##TYPE = get_MPI_Type (args(ARGN));			\
-	void *	P##BUF  = !P##sym.name().empty() ?					\
+	void *	P##BUF  = P##sym.is_defined() ?					\
 			get_MPI_Buff(P##sym,				\
 				     P##CNT,false,/*CNT NOT in bytes */	\
 				     P##TYPE,MKUNIQ)			\
