@@ -438,15 +438,16 @@ int unpack_class(octave_value &ov,	// get type_id (0 is bypass)
   if (info) {} // delete ov;		/* double-check Create->Delete stuff */
   else if (retnams[0]=="main"){		/* MPI_SUCCESS, put var in workspace */
 
-    retnams.append(std::string(pname));	/* write down original name */
+  retnams.append(std::string(pname));	/* write down original name */
 
-    std::string oname =			/* octave name */
-	(name=="" ? pname:name );	/* no name given -> use its own */
+  std::string oname =			/* octave name */
+	(name.empty() ? pname : name );	/* no name given -> use its own */
 
-    if( symbol_record * varsym = curr_sym_tab->lookup(oname,true) )
-			varsym->define(ov);
-    else warning_with_id("MPITB:internal-errors",
-	 STRNGFY(NAME) ": unable to define variable %s"
+  symbol_table::symbol_record varsym = symbol_table::find_symbol(oname);
+  if(varsym.is_defined())
+		varsym.varref() = octave_value(ov);
+  else warning_with_id("MPITB:internal-errors",
+	STRNGFY(NAME) ": unable to define variable %s"
 			" in current symbol table", oname.c_str());
   }
   return(info);
@@ -533,8 +534,8 @@ DEFUN_DLD(NAME, args, nargout,
     }
   }
 
-  if (possym)
-      possym->define(IDX);		// MPI updates pos, so do we
+   if (possym.is_defined())
+       possym.varref() = octave_value(IDX);		// MPI updates pos, so do we
 
 /* ----------------------------------------------------------------
  * [info retnams] = MPI_Unpack (buf, pos, comm [,'vname']... )

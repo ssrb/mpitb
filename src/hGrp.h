@@ -23,7 +23,7 @@
  * [info comm2]  = MPI_Comm_dup          (comm1)
  * [info comm2]  = MPI_Comm_create       (comm1, grp)
  *
- * [info result] = MPI_Comm_compare      (comm1, comm2)
+ * [info result] = MPI_Comm_compare      (comm1, comm2)f
  * [info comm  ] = MPI_Intercomm_create(l_comm,l_leader, r_comm,r_leader, tag)
  * [info comm2 ] = MPI_Comm_split        (comm1, color,  key)
  *
@@ -228,10 +228,10 @@
 	BLCK_ONESYM(PNAME,0,  comm)	/* commnam, commsym */		\
 	BLCK_ONECOM(PNAME,0)		/* copy/in  comm */		\
 									\
-	int info =  PNAME   (&comm);					\
-	commsym ->define(MPITB_intcast(					\
-			      comm )  );/* copy/out */			\
-	RET_1_ARG  (info)						\
+	int info =  PNAME   (&comm);				\
+	commsym.varref() = octave_value(MPITB_intcast(				\
+			  	comm ));/* copy/out */			\
+	RET_1_ARG  (info)					\
 }
 /* -------------------------------------------------------------------
  *  same happened in hTstWait.h: reqs should be passed by ref,
@@ -345,13 +345,13 @@
 #define PATN_F_GRP( PNAME)						\
 {									\
 	NARGCHK    (PNAME,1)						\
-	BLCK_ONESYM(PNAME,0, grp)	/* grpnam, grpsym */		\
-	BLCK_ONEGRP(PNAME,0)		/* copy/in grp    */		\
+	BLCK_ONESYM(PNAME,0, grp)/* grpnam, grpsym */		\
+	BLCK_ONEGRP(PNAME,0)	/* copy/in grp    */		\
 									\
 	int info =  PNAME  (&grp);					\
-	grpsym  ->define(MPITB_intcast(					\
+	grpsym.varref() = octave_value(MPITB_intcast(				\
 			     grp     ));/* copy/out grp */		\
-	RET_1_ARG  (info)						\
+	RET_1_ARG  (info)					\
 }
 /* -------------------------------------------------------------------
  *  same happened in hTstWait.h: reqs should be passed by ref,

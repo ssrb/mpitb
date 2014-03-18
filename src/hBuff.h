@@ -14,7 +14,6 @@
  */
 #include "hType.h"		// datatype enums for switch
 
-
 /* ----------------------------------------------------------------
  * This define is handy to later choose to declare vars global/local
  * Compare MPI_Pack/Unpack to MPI_Send/Recv
@@ -72,11 +71,11 @@
  * ---------------------------------------------------------------- */
 #define CASE_UNIQUE_MAT(OV_T_ID, OV_T_NAM, OV_T_FUN)			\
 case OV_T_ID: {	OV_T_NAM a = ov.OV_T_FUN();		a(0)=a(0);	\
-		varsym -> define ( octave_value(a) ); }	break;
+		varsym.varref() = octave_value(a); }	break;
 
 #define CASE_UNIQUE_SPR(OV_T_ID, OV_T_NAM, OV_T_FUN)			\
 case OV_T_ID: {	OV_T_NAM a = ov.OV_T_FUN();	dummy = a.data();	\
-		varsym -> define ( octave_value(a) ); }	break;
+		varsym.varref() = octave_value(a); }	break;
 
 //		void *dummy __attribute__((unused))  =  a.data();
 
@@ -118,11 +117,11 @@ case OV_T_ID:	TYPE=get_MPI_Type(ov);					\
  * ---------------------------------------------------------------- */
 
 /*----------------------------------------------------------------*/
-void* get_MPI_Buff(symbol_record *varsym, int &SIZ, bool inbytes,
+void* get_MPI_Buff(symbol_table::symbol_record &varsym, int &SIZ, bool inbytes,
 				MPI_Datatype &TYPE, bool mk_uniq=false){
 /*----------------------------------------------------------------*/
   void * dummy ;				// data() sideffect in CASE_SPR
-  octave_value & ov = varsym->def();		// fast return for invalid t_id
+  octave_value ov = varsym.varval();		// fast return for invalid t_id
            int t_id = ov.type_id();		// see hType.h
 
 //switch (t_id){				// currently easier with if()
@@ -151,8 +150,8 @@ void* get_MPI_Buff(symbol_record *varsym, int &SIZ, bool inbytes,
      if(mk_uniq){ ov.make_unique();
 	warning_with_id("MPITB:getBuff-mk-unique",
 	STRNGFY(NAME) "(%s...) -> %s.make_unique(): %d -> %d copies\n",
-		varsym->name().c_str(),
-		varsym->name().c_str(),	ov_count, ov.get_count() );
+		varsym.name().c_str(),
+		varsym.name().c_str(),	ov_count, ov.get_count() );
 
 	switch (t_id){
 	CASE_UNIQUE_MAT(ov_sc_mat,       NDArray,           array_value)
@@ -160,10 +159,10 @@ void* get_MPI_Buff(symbol_record *varsym, int &SIZ, bool inbytes,
 	CASE_UNIQUE_MAT(ov_bl_mat,    boolNDArray,     bool_array_value)
 	CASE_UNIQUE_MAT(ov_ch_mat,    charNDArray,     char_array_value)
 		case    ov_string:{   charNDArray a=ov.char_array_value();
-			a(0)=a(0);  varsym->define(octave_value(a,true));}
+			a(0)=a(0);  varsym.varref() = octave_value(a,true);}
 		break;
 		case    ov_sq_str:{   charNDArray a=ov.char_array_value();
-			a(0)=a(0);  varsym->define(octave_value(a,true,'\''));}
+			a(0)=a(0); varsym.varref() = octave_value(a,true,'\'');}
 		break;
 
 	CASE_UNIQUE_MAT( ov_i8_mat,   int8NDArray,     int8_array_value)
@@ -183,22 +182,22 @@ void* get_MPI_Buff(symbol_record *varsym, int &SIZ, bool inbytes,
      }else{
 	warning_with_id("MPITB:getBuff-above-cnt",
 	STRNGFY(NAME) "(%s...) -> there are %d copies of %s right now (much)",
-		varsym->name().c_str(),	ov_count,
-		varsym->name().c_str() );
+		varsym.name().c_str(),	ov_count,
+		varsym.name().c_str() );
      }
   }else
 //	message_with_id("name","MPITB:id",fmt...);	// m-filename ?!?
    if (ov_count== OV_LIMIT){
 	warning_with_id("MPITB:getBuff-normalcnt",
 	STRNGFY(NAME) "(%s...) -> there are exactly %d copies of %s (fine)",
-		varsym->name().c_str(), OV_LIMIT,
-		varsym->name().c_str());
+		varsym.name().c_str(), OV_LIMIT,
+		varsym.name().c_str());
   }else
    if (ov_count < OV_LIMIT){				// should not happen
 	warning_with_id("MPITB:getBuff-below-cnt",
 	STRNGFY(NAME) "(%s...) -> there are %d copies of %s right now (few)\n"
 	"\t This should never happen, at least copied as function(argument)",
-		varsym->name().c_str(),	ov_count, varsym->name().c_str());
+		varsym.name().c_str(),	ov_count, varsym.name().c_str());
   }
 
   switch (t_id){

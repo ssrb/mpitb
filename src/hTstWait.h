@@ -104,7 +104,7 @@
 				
 
 #define REQ_ONE_END				/* req copied out */	\
-	reqsym->define( MPITB_intcast( req ) );
+	reqsym.varref() = octave_value( MPITB_intcast( req ) );
 					/* MPI updates req, so do we */
 
 
@@ -142,8 +142,8 @@
 #define REQ_MANY_END				/* copy reqs out */	\
 	string_vector reqstrvec = args.name_tags();			\
 	for (int i=0; i<nargin; i++){					\
-	  symbol_record*reqsym= curr_sym_tab -> lookup ( reqstrvec (i) );\
-			reqsym->define( MPITB_intcast( reqs[i] ) );	\
+	  symbol_table::symbol_record reqsym = symbol_table::find_symbol( reqstrvec (i) );\
+			reqsym.varref() = octave_value( MPITB_intcast( reqs[i] ) );	\
 	}
 					/* MPI updates req, so do we */
 

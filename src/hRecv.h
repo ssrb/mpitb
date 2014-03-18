@@ -92,7 +92,7 @@
 	BLCK_ONEINT(PNAME,2,stag)	/* stag           */		\
 	BLCK_NULSYM(PNAME,3, rcv)	/* rcvnam, rcvsym */		\
 				/* need special NULL checking, ...  */	\
-    if((!RP) && (! rcvsym)){	/*this !RP is why we don't  _ONESYM */	\
+    if((!RP) && (! rcvsym.is_defined())){	/*this !RP is why we don't  _ONESYM */	\
 	  error(STRFY(PNAME) ": required arg#%d: rcvbuf(var)", 4);	\
 	  return octave_value(MPI_ERR_ARG); /* error returns nothing */	\
 	}								\

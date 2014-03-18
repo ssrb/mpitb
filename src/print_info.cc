@@ -28,14 +28,14 @@
   }
 
   const std::string varnam = args.name_tags()(0);
-  symbol_record    *varsym = curr_sym_tab->lookup(varnam);
+  symbol_table::symbol_record varsym = symbol_table::find_symbol(varnam);
 
-  if (! varsym){
+  if (! varsym.is_defined()){
 	error("print_info: required var, not expression");
 	return octave_value();
   }
 
-  varsym->def().print_info(std::cout);
+  varsym.varval().print_info(std::cout);
 
   return octave_value();
 }

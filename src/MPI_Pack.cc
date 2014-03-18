@@ -550,15 +550,15 @@ t_id, Octave type_name, and corresponding MPI type\n\
 	BLCK_ONEINT(NAME,2,pos)		// pos -> IDX (global scope)
 	BLCK_ONECOM(NAME,3)		// comm-> COM (global scope)
 
-	BUF = get_MPI_Buff (bufsym,SIZ,true,	// SIZ in bytes
+	BUF = get_MPI_Buff (bufsym, SIZ, true,	// SIZ in bytes
 				 TYPE, true);	// buffer MK_UNIQ
 	IDX = pos ;				// it will be overwritten
 	COM = comm;
 
-    int info = pack_class ( args(0), varnam );
+  int info = pack_class ( args(0), varnam );
 
-    if (possym)
-	possym->define(IDX);		// MPI updates pos, so do we
-
+  if (possym.is_defined()) {
+	   possym.varref() = octave_value(IDX);	// MPI updates pos, so do we
+  }
 	RET_1_ARG (info)
 }

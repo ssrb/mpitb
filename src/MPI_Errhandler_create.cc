@@ -242,8 +242,7 @@ DEFUN_DLD(NAME, args, nargout,
     if (info ==  MPI_SUCCESS)
 			ehfun[i].OctaveCMD = "";
 
-    ehsym->define(MPITB_intcast(
-			ehfun[i].eh ));
+    ehsym.varref() =  octave_value(MPITB_intcast(ehfun[i].eh));
     RET_1_ARG   (info)
 }
 

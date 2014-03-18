@@ -443,9 +443,9 @@ DEFUN_DLD(NAME, args, nargout,
 	regfun[index].OctaveDEL  = "";
 
 	int info = NAME ( &keyval );	/* KEYVAL_INVALID */
-    if (keysym)
-	keysym-> define (  keyval );	/* return it as well */
-
+    if (keysym.is_defined()) {
+		 keysym.varref() = octave_value(keyval);	/* return it as well */
+	}
 	RET_1_ARG (info)
 }
 	/*   info     = MPI_Keyval_free   (kv) */

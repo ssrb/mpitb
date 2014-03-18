@@ -48,7 +48,7 @@ DEFUN_DLD(NAME, args, nargout,
 				   TYPE,false);	// false: don't make_unique
 	warning_with_id("MPITB:Address-verbose",
 		"MPITB:get_MPI_Buff(%s) == %ld (%p)",
-		varsym->name().c_str(),
+		varsym.name().c_str(),
 		reinterpret_cast<long>(BUF),BUF);
 
 	MPI_Aint               addr ;		// typedef long MPI_Aint;

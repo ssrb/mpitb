@@ -42,7 +42,7 @@ try with varying A type:\n\
 	NARGCHK    (NAME,1)
 	BLCK_ONESYM(NAME,0,var)		// varnam, varsym
 					// from hBuff.h
-octave_value & ov = varsym->def();	// fast return for invalid t_id
+octave_value ov = varsym.varval();	// fast return for invalid t_id
 	 int t_id = ov.type_id();	// see hType.h
 
 //switch (t_id){			// currently easier with if()
@@ -83,44 +83,44 @@ octave_value & ov = varsym->def();	// fast return for invalid t_id
 
     switch (t_id){
 case ov_sc_mat:{       NDArray a=ov.        array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_cx_mat:{ComplexNDArray a=ov.complex_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_bl_mat:{   boolNDArray a=ov.   bool_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_ch_mat:{   charNDArray a=ov.   char_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_string:{   charNDArray a=ov.   char_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a,true) );} break;
+			varsym.varref() = octave_value(a,true);} break;
 case ov_sq_str:{   charNDArray a=ov.   char_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a,true,'\'') );} break;
+			varsym.varref() = octave_value(a,true,'\'');} break;
 case ov_i8_mat:{   int8NDArray a=ov.   int8_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_i16_mat:{ int16NDArray a=ov.  int16_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_i32_mat:{ int32NDArray a=ov.  int32_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_i64_mat:{ int64NDArray a=ov.  int64_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_u8_mat:{  uint8NDArray a=ov.  uint8_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_u16_mat:{uint16NDArray a=ov. uint16_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_u32_mat:{uint32NDArray a=ov. uint32_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 case ov_u64_mat:{uint64NDArray a=ov. uint64_array_value();	a(0)=a(0);
-			varsym -> define ( octave_value(a) );}	break;
+			varsym.varref() = octave_value(a);}	break;
 
 
 case ov_bl_spr:{   SparseBoolMatrix a=ov.   sparse_bool_matrix_value();
 			void  *d  __attribute__((unused))  =  a.data();
-			varsym -> define ( octave_value(a) );  } break;
+			varsym.varref() = octave_value(a);  } break;
 case ov_sc_spr:{       SparseMatrix a=ov.        sparse_matrix_value();
 			void  *d  __attribute__((unused))  =  a.data();
-			varsym -> define ( octave_value(a) );  } break;
+			varsym.varref() = octave_value(a);  } break;
 case ov_cx_spr:{SparseComplexMatrix a=ov.sparse_complex_matrix_value();
 			void  *d  __attribute__((unused))  =  a.data();
-			varsym -> define ( octave_value(a) );  } break;
+			varsym.varref() = octave_value(a);  } break;
     }
 
 

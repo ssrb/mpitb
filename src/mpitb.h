@@ -354,7 +354,7 @@ typedef int octave_idx_type;
 
 #define BLCK_NULSYM(PNAME,ARGN,SYMNAME)	/* NAME of the var ARG Nth */	\
   const std::string SYMNAME##nam = args.name_tags()(ARGN);		\
-  symbol_record    *SYMNAME##sym = curr_sym_tab->lookup(SYMNAME##nam);
+  symbol_table::symbol_record  SYMNAME##sym = symbol_table::find_symbol (SYMNAME##nam);
 // BUG?: operator [] const ? (name_tags() string_vector::[])
 // PNAME not used here but used in similar _ONESYM, so kept for symmetry
 
@@ -376,9 +376,9 @@ typedef int octave_idx_type;
 
 #define BLCK_ONESYM(PNAME,ARGN,SYMNAME)	/* NAME of the var ARG Nth */	\
   const std::string SYMNAME##nam = args.name_tags()(ARGN);		\
-  symbol_record    *SYMNAME##sym = curr_sym_tab->lookup(SYMNAME##nam);	\
+  symbol_table::symbol_record  SYMNAME##sym = symbol_table::find_symbol (SYMNAME##nam);	\
 									\
-	if ( ! SYMNAME##sym){						\
+	if (!SYMNAME##sym.is_defined()){						\
 	error(STRFY(PNAME)	": required arg#%d: "			\
 	      STRFY(SYMNAME)	"(var)",	ARGN+1);		\
 	  RET_1_ARG(MPI_ERR_ARG);	/* error returns nothing */	\

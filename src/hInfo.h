@@ -127,7 +127,7 @@
 	BLCK_ONEINF(PNAME,0)		/* copy/in inf */		\
 									\
 	int info  = PNAME  (&inf);					\
-	    infsym->define( MPITB_intcast(				\
+	infsym.varref() = octave_value( MPITB_intcast(				\
 			    inf) );	/* copy/out inf */		\
 	RET_1_ARG  (info)						\
 }
